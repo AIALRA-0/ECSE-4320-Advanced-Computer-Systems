@@ -1,0 +1,3 @@
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/build_scalar/CMakeFiles/bench.dir
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/build_scalar/CMakeFiles/edit_cache.dir
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/build_scalar/CMakeFiles/rebuild_cache.dir

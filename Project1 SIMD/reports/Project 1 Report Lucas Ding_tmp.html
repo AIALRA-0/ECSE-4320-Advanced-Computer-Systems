@@ -1,0 +1,3047 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project 1 Report Lucas Ding.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="project-1-simd-advantage-evaluation">Project 1 SIMD Advantage Evaluation</h1>
+<p><strong>Lucas Ding</strong></p>
+<hr>
+<h2 id="0-introduction">0. Introduction</h2>
+<h3 id="01-purpose">0.1 Purpose</h3>
+<ul>
+<li>This experiment aims to systematically test and compare the scalar and SIMD versions of typical numerical kernels (such as SAXPY, DOT, MUL, STENCIL) under different data sizes, alignments, strides, and data types. By combining compiler reports, disassembly, and performance counters, it reveals the real-world benefits and limitations of vectorization in both compute-bound and memory bandwidth-bound scenarios. Using the Roofline model to locate performance bottlenecks, it comprehensively evaluates the strengths and constraints of SIMD instruction sets in single-thread high-performance computing.</li>
+</ul>
+<h3 id="02-core-concepts">0.2 Core Concepts</h3>
+<ul>
+<li>
+<p><strong>SIMD / Vectorization</strong>: SIMD (Single Instruction, Multiple Data) is a parallel computing technique that allows a single instruction to operate simultaneously on multiple data elements. For example, in the AVX2 instruction set, a 256-bit register can hold 8 single-precision floats (float32) or 4 double-precision floats (float64) at once, enabling multiple arithmetic operations to be completed within one CPU cycle, thus significantly improving throughput. The essence of vectorization is to “pack” element-wise loops into parallel operations, reducing instruction scheduling and loop overhead.</p>
+</li>
+<li>
+<p><strong>FTZ (Flush-to-Zero)</strong>: FTZ is a floating-point processing mode that forces results to zero when operations generate <em>subnormal (denormal)</em> numbers (values extremely close to zero but not zero). This avoids the CPU’s slow path when handling subnormal numbers, ensuring stable performance. When FTZ is enabled, all underflow results are flushed to zero instead of being kept as subnormals. It applies to <em>output results</em>.</p>
+</li>
+<li>
+<p><strong>DAZ (Denormals-Are-Zero)</strong>: DAZ is an optimization on the <em>input</em> side, where subnormal input values are treated as zero to avoid expensive subnormal computations. This prevents performance penalties when inputs fall in the subnormal range. DAZ simplifies extremely small <em>input values</em> to 0, while FTZ simplifies <em>output values</em> to 0.</p>
+</li>
+<li>
+<p><strong>CPE (Cycles Per Element)</strong>: measures the average number of CPU cycles needed to process one data element. For example, if a loop processes 100 million elements in one second on a 2.5 GHz CPU, you can compute the average cycles per element. Together with GFLOP/s, CPE helps diagnose bottlenecks: lower CPE means higher efficiency; higher GFLOP/s means better hardware utilization.</p>
+</li>
+<li>
+<p><strong>GiB/s (Gibibyte per second)</strong>:is often used to estimate memory bandwidth utilization. It’s computed as “total data moved / execution time”. Comparing this to theoretical bandwidth reveals whether performance is memory-bound. For instance, if a program moves 40 GiB in 1 second, its bandwidth is 40 GiB/s. If this approaches the system’s physical limit, further optimization may require cache or algorithmic restructuring rather than instruction-level tuning.</p>
+</li>
+</ul>
+<h3 id="03-tools-used">0.3 Tools Used</h3>
+<ul>
+<li><strong>Compilers</strong>: GCC / Clang</li>
+<li><strong>Disassembly/Reports</strong>: <code>g++ -fopt-info-vec*</code>, <code>clang++ -Rpass=loop-vectorize</code>, <code>objdump</code>, <code>llvm-objdump</code></li>
+<li><strong>Timing</strong>: <code>rdtsc</code> / <code>rdtscp</code>, with median/quantile statistics to reduce outliers</li>
+<li><strong>Performance Counters</strong>: Linux <code>perf</code></li>
+<li><strong>Python</strong>: <code>numpy</code>, <code>pandas</code>, <code>matplotlib</code></li>
+</ul>
+<h3 id="04-hardwaresoftware-information">0.4 Hardware/Software Information</h3>
+<pre class="hljs"><code><div>System Model: systeminfo | findstr /B /C:&quot;System Model&quot;   (Windows)
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image.png" alt="alt text"></p>
+<pre class="hljs"><code><div>OS Version: lsb_release -a             (WSL)
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-1.png" alt="alt text"></p>
+<pre class="hljs"><code><div>CPU Model: lscpu | grep &quot;Model name&quot; (WSL)
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-2.png" alt="alt text"></p>
+<pre class="hljs"><code><div>Supported ISA: lscpu | grep Flags        (WSL)
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-3.png" alt="alt text"></p>
+<pre class="hljs"><code><div>SMT/Hyper-Threading: lscpu | grep &quot;Thread(s) per core&quot; (WSL)
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-4.png" alt="alt text"></p>
+<pre class="hljs"><code><div>Frequency Policy: powercfg /GETACTIVESCHEME (Windows)
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-9.png" alt="alt text"></p>
+<pre class="hljs"><code><div>Compiler Version: gcc --version           (WSL)
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-6.png" alt="alt text"></p>
+<pre class="hljs"><code><div>Disassembly Tool: objdump --version       (WSL)
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-7.png" alt="alt text"></p>
+<pre class="hljs"><code><div>Performance Counter Tool: perf --version          (WSL)
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-8.png" alt="alt text"></p>
+<h3 id="05-repository-structure">0.5 Repository Structure</h3>
+<pre class="hljs"><code><div>/
+├── CMakeLists.txt               # Top-level CMake build file: controls scalar/SIMD builds, toggles FTZ/DAZ, and generates the bench executable
+├── README.md                    # Project overview and usage instructions
+
+├── src/
+│   └── bench.cpp                # Core program: SAXPY / DOT / MUL / STENCIL kernels + timing + CLI parsing + CSV output
+
+├── scripts/
+│   ├── run_all.sh               # Batch experiment script: sweeps kernel/dtype/N/stride/misalign; runs both builds; outputs data/*.csv
+│   ├── plot.py                  # Base plotting: merges data/*.csv to generate speedup &amp; GFLOP/s comparison charts
+│   ├── make_align_report.py     # Alignment analysis: compares aligned vs misaligned arrays, outputs tables &amp; plots/align/*
+│   ├── make_tail_report.py      # Tail handling analysis: quantifies remainder cost, outputs tables &amp; plots/tail/*
+│   ├── make_stride_report.py    # Stride/gather analysis: stride=1/2/4/8 performance, outputs tables &amp; plots/stride/*
+│   └── make_roofline_report.py  # Roofline model generator: plots achieved GFLOP/s vs arithmetic intensity (AI)
+
+├── data/
+│   ├── scalar.csv               # Scalar baseline measurements
+│   ├── simd.csv                 # SIMD measurement results
+│   ├── stride_abs.csv           # Stride analysis summary (auto-generated)
+│   └── ...                      # Additional CSVs from analysis scripts
+
+├── plots/
+│   ├── speedup_*.png            # Speedup plots (scalar vs SIMD)
+│   ├── gflops_*.png             # GFLOP/s throughput plots
+│   ├── align/
+│   │   ├── aln_vs_mis_delta_cpe.png
+│   │   └── aln_vs_mis_delta_gflops.png
+│   ├── tail/
+│   │   ├── tail_delta_cpe_%.png
+│   │   └── tail_delta_gflops_%.png
+│   ├── stride/
+│   │   ├── *_gflops_grouped_by_stride.png
+│   │   └── *_cpe_grouped_by_stride.png
+│   ├── dtype/
+│   │   ├── speedup_f32.png
+│   │   ├── speedup_f64.png
+│   │   ├── gflops_simd_*.png
+│   │   └── cpe_simd_*.png
+│   └── roofline/
+│       └── roofline_overview.png
+
+├── reports/
+│   ├── report.md                # Main report body
+│   ├── gcc_vectorize_report.scalar.txt  # GCC vectorization report (vectorization disabled)
+│   ├── gcc_vectorize_report.simd.txt    # GCC vectorization report (vectorization enabled)
+│   ├── scalar_saxpy_f32.asm     # Disassembly snippet: scalar SAXPY (f32)
+│   ├── simd_saxpy_f32.asm       # Disassembly snippet: SIMD SAXPY (f32)
+│   ├── scalar_saxpy_f64.asm     # Disassembly snippet: scalar SAXPY (f64)
+│   └── simd_saxpy_f64.asm       # Disassembly snippet: SIMD SAXPY (f64)
+
+├── build/                       # Build directory (vectorization enabled)
+└── build_scalar/                # Build directory (vectorization disabled)
+
+</div></code></pre>
+<h1 id="basic-tools-and-compilers">Basic tools and compilers</h1>
+<p>sudo apt update
+sudo apt install -y build-essential clang llvm binutils cmake git python3 python3-pip numactl</p>
+<h1 id="python-dependencies">Python dependencies</h1>
+<pre class="hljs"><code><div>sudo apt install python3-numpy python3-matplotlib python3-pandas
+</div></code></pre>
+<ul>
+<li>Powershell:</li>
+</ul>
+<pre class="hljs"><code><div># WSL2 lacks kernel-level CPU frequency control, so use Windows “Ultimate Performance” mode to ensure stable CPU frequency
+powercfg /L
+powercfg /S e9a42b02-d5df-448d-aa00-03f14749eb61
+powercfg /GETACTIVESCHEME
+</div></code></pre>
+<hr>
+<h2 id="1-program-implementation--build">1. Program Implementation &amp; Build</h2>
+<h3 id="10-core-concepts">1.0 Core Concepts</h3>
+<ul>
+<li>
+<p><strong>SAXPY / AXPY</strong>: SAXPY (Single-Precision A·X Plus Y) is a typical fused multiply-add kernel <code>y ← a·x + y</code>, where <code>a</code> is a scalar and <code>x</code>, <code>y</code> are vectors. As a streaming FMA, its performance mainly reflects memory bandwidth utilization.</p>
+</li>
+<li>
+<p><strong>DOT (Dot Product / Reduction)</strong>: The dot product multiplies two vectors element-wise and accumulates the results, <code>s ← Σ xᵢ·yᵢ</code>. As a reduction kernel, it tests not only SIMD throughput but also reduction dependency limitations.</p>
+</li>
+<li>
+<p><strong>MUL (Elementwise Multiply)</strong>: Elementwise multiplication <code>zᵢ ← xᵢ·yᵢ</code> is the simplest binary vector operation, free of reduction dependencies. Performance depends on memory load/store and instruction throughput — ideal for testing SIMD efficiency.</p>
+</li>
+<li>
+<p><strong>STENCIL (1D 3-Point Template)</strong>: A one-dimensional three-point stencil <code>yᵢ ← a·xᵢ₋₁ + b·xᵢ + c·xᵢ₊₁</code> is common in finite-difference and PDE solvers. Performance depends on arithmetic operations, cache locality, and bandwidth — suitable for studying prefetching, cache line use, and bandwidth bottlenecks.</p>
+</li>
+<li>
+<p><strong>Speedup</strong>: Defined as <code>scalar_time / SIMD_time</code>. A value &gt; 1 indicates acceleration. For example, scalar = 10 ms, SIMD = 4 ms ⇒ speedup = 2.5×.</p>
+</li>
+<li>
+<p><strong>Reduction Dependency</strong>: When each loop iteration depends on the result of the previous (e.g., <code>s = s + x[i]*y[i]</code>), limiting parallelism and SIMD efficiency.</p>
+</li>
+<li>
+<p><strong>Throughput</strong>: The number of floating-point operations per second, in GFLOP/s. Higher means better utilization.</p>
+</li>
+<li>
+<p><strong>GFLOP (Giga Floating Point Operations)</strong>: 1 GFLOP = 10⁹ FLOPs. Combined with time (s), GFLOP/s measures performance.</p>
+</li>
+<li>
+<p><strong>Vector Width / Lanes</strong>: Number of elements processed per SIMD instruction. AVX2 (256-bit) handles 8 <code>float32</code> or 4 <code>float64</code>.</p>
+</li>
+<li>
+<p><strong>Memory Bandwidth Bound</strong>: Performance limited by data transfer speed, even if compute resources are idle. Characterized by actual bandwidth ≈ physical max.</p>
+</li>
+<li>
+<p><strong>Compute Bound</strong>: Performance limited by compute capacity. SIMD acceleration is most effective here.</p>
+</li>
+<li>
+<p><strong>FMA (Fused Multiply-Add)</strong>: A single instruction performing multiply and add (<code>a*b + c</code>) — 2 FLOPs per instruction. Modern SIMD sets (AVX2/AVX-512) support FMA for higher compute density.</p>
+</li>
+</ul>
+<h3 id="11-purpose">1.1 Purpose</h3>
+<p>This section implements four classic numerical kernels (SAXPY, DOT, MUL, STENCIL) and exposes parameters such as data type, stride, alignment, and tail-handling as experimental knobs. Each run generates measurement results under different configurations. The program records execution time, throughput (GFLOP/s), cycles per element (CPE), and memory bandwidth (GiB/s), outputting CSVs for post-processing. Python scripts aggregate and plot these results, forming the raw data foundation for analysis.</p>
+<h3 id="12-cli-parameters--explanation">1.2 CLI Parameters &amp; Explanation</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Options</th>
+<th>Description (For Beginners)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--kernel</code></td>
+<td><code>saxpy</code> / <code>dot</code> / <code>mul</code> / <code>stencil</code></td>
+<td>Select kernel: Streaming FMA / Reduction / Elementwise Mul / 3-Point Stencil</td>
+</tr>
+<tr>
+<td><code>--dtype</code></td>
+<td><code>f32</code> / <code>f64</code></td>
+<td>Floating-point precision: single/double; affects vector width</td>
+</tr>
+<tr>
+<td><code>--n</code></td>
+<td>positive integer</td>
+<td>Number of elements (problem size); tests locality across L1/L2/LLC/DRAM</td>
+</tr>
+<tr>
+<td><code>--stride</code></td>
+<td>1/2/4/8…</td>
+<td>Access stride; &gt;1 reduces cache-line utilization, stresses prefetch/TLB</td>
+</tr>
+<tr>
+<td><code>--misalign</code></td>
+<td>toggle</td>
+<td>Intentionally misalign loads to test penalties of masks/prologues/epilogues</td>
+</tr>
+<tr>
+<td><code>--reps</code></td>
+<td>≥3</td>
+<td>Repetitions; use median/quantiles to smooth noise</td>
+</tr>
+<tr>
+<td><code>--warmups</code></td>
+<td>≥1</td>
+<td>Warmups for cache/frequency stabilization</td>
+</tr>
+<tr>
+<td><code>--pin</code></td>
+<td>core ID</td>
+<td>Pin to a specific core to avoid migration noise</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-cmake">1.3 CMake</h3>
+<p>See <code>CMakeLists.txt</code></p>
+<p><code>-march=native</code> enables ISA-specific optimizations (e.g., AVX2/AVX-512);
+<code>-ffast-math</code> / <code>-ffp-contract=fast</code> allows aggressive FMA fusion (note in report);
+<code>-fno-tree-vectorize</code> / <code>-fno-vectorize</code> disables auto-vectorization for scalar baseline.</p>
+<h3 id="14-main-program">1.4 Main Program</h3>
+<p>See <code>src/bench.cpp</code></p>
+<h3 id="15-build--run">1.5 Build &amp; Run</h3>
+<ul>
+<li>WSL:</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-comment"># Scalar baseline</span>
+mkdir -p build_scalar &amp;&amp; <span class="hljs-built_in">cd</span> build_scalar
+cmake -DFTZ_DAZ=ON -DBUILD_SCALAR=ON ..    
+cmake --build . -j
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-11.png" alt="alt text"></p>
+<pre class="hljs"><code><div><span class="hljs-comment"># Auto-vectorized version</span>
+mkdir -p build &amp;&amp; <span class="hljs-built_in">cd</span> build
+cmake -DFTZ_DAZ=ON -DBUILD_SCALAR=OFF ..   
+cmake --build . -j
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-10.png" alt="alt text"></p>
+<hr>
+<h2 id="2-batch-experiments">2. Batch Experiments</h2>
+<h3 id="21-purpose">2.1 Purpose</h3>
+<p>The goal of the batch experiment is to systematically cover all key experimental dimensions to ensure sufficient data support for subsequent analysis.
+All measurement results will be output in CSV format to <code>data/*.csv</code> files, ensuring traceability of experimental data.
+Then, a Python script will automatically aggregate and plot the charts, forming a closed loop from raw data to visual analysis.
+Specifically, we aim to automatically generate all dimensional data in one go to save experimental time, covering the following dimensions comprehensively:</p>
+<ol>
+<li><strong>Data Size N</strong>: By gradually increasing the vector length, make the working set overflow from L1 cache to L2 cache, then to the Last Level Cache (LLC), and finally into main memory (DRAM). This clearly shows how locality affects performance.</li>
+<li><strong>Alignment and Tail Handling</strong>: Measure performance under both aligned and misaligned array conditions, and compare cases with &quot;exact multiple lengths&quot; vs. &quot;remaining tails&quot; to quantify extra costs of SIMD prologue/epilogue and masked operations.</li>
+<li><strong>Stride</strong>: Access arrays with different strides (1, 2, 4, 8, etc.) to simulate sequential vs. gather-like access, observing how cache-line utilization and prefetching efficiency affect SIMD throughput.</li>
+<li><strong>Data Type (dtype)</strong>: Compare single-precision (float32) vs. double-precision (float64) to analyze the impact of fixed register width channel count (f32×8 vs f64×4 in AVX2), and differences between compute-bound and bandwidth-bound scenarios.</li>
+</ol>
+<h3 id="22-data-size-determination">2.2 Data Size Determination</h3>
+<p>To ensure working sets of different sizes map to cache levels, estimate each element’s byte size, then divide cache capacity by that number to get approximate element count N.
+This ensures selected N values cover the full path from L1 → L2 → LLC → DRAM.</p>
+<h4 id="bytes-per-element-estimation">Bytes Per Element Estimation</h4>
+<table>
+<thead>
+<tr>
+<th>Kernel</th>
+<th>Access Pattern</th>
+<th>f32 (4B)</th>
+<th>f64 (8B)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SAXPY</td>
+<td>Read <code>x</code> + Read/Write <code>y</code></td>
+<td>4 + (4+4) = 12 B/el</td>
+<td>8 + (8+8) = 24 B/el</td>
+<td>Reads one <code>x</code>, reads+writes <code>y</code></td>
+</tr>
+<tr>
+<td>DOT</td>
+<td>Read <code>x</code> + Read <code>y</code></td>
+<td>4 + 4 = 8 B/el</td>
+<td>8 + 8 = 16 B/el</td>
+<td>Reads two arrays and accumulates in register</td>
+</tr>
+<tr>
+<td>MUL</td>
+<td>Read <code>x</code> + Read <code>y</code> + Write <code>z</code></td>
+<td>4 + 4 + 4 = 12 B/el</td>
+<td>8 + 8 + 8 = 24 B/el</td>
+<td>Multiplies two arrays and writes to third</td>
+</tr>
+<tr>
+<td>STENCIL</td>
+<td>Read <code>x[i-1], x[i], x[i+1]</code> + Write <code>y</code></td>
+<td>(3×4+4)/iter≈8 B/el</td>
+<td>(3×8+8)/iter≈16 B/el</td>
+<td>Three overlapping reads, average per element ~8B(f32)/16B(f64)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="retrieve-cache-parameters">Retrieve Cache Parameters</h4>
+<pre class="hljs"><code><div>lscpu | grep <span class="hljs-string">"L1d cache"</span>
+lscpu | grep <span class="hljs-string">"L2 cache"</span>
+lscpu | grep <span class="hljs-string">"L3 cache"</span>
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-12.png" alt="alt text"></p>
+<h4 id="conversion-formula">Conversion Formula</h4>
+<p>$$
+N = \frac{\text{Cache Size (B)}}{\text{Bytes per Element (B)}}
+$$</p>
+<h4 id="element-counts">Element Counts</h4>
+<table>
+<thead>
+<tr>
+<th>Kernel</th>
+<th>dtype</th>
+<th>B/el</th>
+<th>L1d (786,432B)</th>
+<th>L2 (33,554,432B)</th>
+<th>L3 (37,748,736B)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SAXPY</td>
+<td>f32</td>
+<td>12</td>
+<td>65,536</td>
+<td>2,796,202</td>
+<td>3,145,728</td>
+</tr>
+<tr>
+<td>SAXPY</td>
+<td>f64</td>
+<td>24</td>
+<td>32,768</td>
+<td>1,398,101</td>
+<td>1,572,864</td>
+</tr>
+<tr>
+<td>DOT</td>
+<td>f32</td>
+<td>8</td>
+<td>98,304</td>
+<td>4,194,304</td>
+<td>4,718,592</td>
+</tr>
+<tr>
+<td>DOT</td>
+<td>f64</td>
+<td>16</td>
+<td>49,152</td>
+<td>2,097,152</td>
+<td>2,359,296</td>
+</tr>
+<tr>
+<td>MUL</td>
+<td>f32</td>
+<td>12</td>
+<td>65,536</td>
+<td>2,796,202</td>
+<td>3,145,728</td>
+</tr>
+<tr>
+<td>MUL</td>
+<td>f64</td>
+<td>24</td>
+<td>32,768</td>
+<td>1,398,101</td>
+<td>1,572,864</td>
+</tr>
+<tr>
+<td>STENCIL</td>
+<td>f32</td>
+<td>8</td>
+<td>98,304</td>
+<td>4,194,304</td>
+<td>4,718,592</td>
+</tr>
+<tr>
+<td>STENCIL</td>
+<td>f64</td>
+<td>16</td>
+<td>49,152</td>
+<td>2,097,152</td>
+<td>2,359,296</td>
+</tr>
+</tbody>
+</table>
+<h4 id="n-determination">N Determination</h4>
+<p>To comprehensively observe cache hierarchy effects, choose a set of vector lengths N such that working sets sequentially cover L1 → L2 → LLC → DRAM.
+Based on local cache parameters (L1d=768 KiB, L2=32 MiB, L3=36 MiB) and per-element byte estimates, approximate transition sizes:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Typical N</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>L1 Range</strong></td>
+<td>~65K</td>
+<td>SAXPY(f32) working set just fills L1 cache</td>
+</tr>
+<tr>
+<td><strong>L2 Range</strong></td>
+<td>~1M</td>
+<td>SAXPY(f64) near L2, DOT/STENCIL(f32) partially cover L2→LLC</td>
+</tr>
+<tr>
+<td><strong>LLC Range</strong></td>
+<td>~3M–4M</td>
+<td>SAXPY/MUL(f32) &amp; DOT/STENCIL(f32) near L3 capacity</td>
+</tr>
+<tr>
+<td><strong>DRAM Range</strong></td>
+<td>~8M</td>
+<td>Clearly exceeds LLC, enters main memory</td>
+</tr>
+<tr>
+<td><strong>DRAM (Large)</strong></td>
+<td>~32M</td>
+<td>Increases bandwidth pressure</td>
+</tr>
+<tr>
+<td><strong>DRAM (Huge)</strong></td>
+<td>~64M</td>
+<td>Very large, used to verify DRAM region stability</td>
+</tr>
+</tbody>
+</table>
+<h4 id="selected-n-values">Selected N Values</h4>
+<p>For practical execution and script simplicity, we use one unified exponential growth set of N (instead of tuning per dtype):</p>
+<pre class="hljs"><code><div>N = { 512; 1,024; 2,048; 4,096; 8,192; 65,536; 1,048,576; 8,388,608; 33,554,432; 67,108,864 }
+</div></code></pre>
+<table>
+<thead>
+<tr>
+<th>N</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>512–8K</strong></td>
+<td>Fully within L1 capacity, observe ideal compute throughput</td>
+</tr>
+<tr>
+<td><strong>65K</strong></td>
+<td>SAXPY(f32) near L1→L2 boundary, first L1 spill</td>
+</tr>
+<tr>
+<td><strong>1M</strong></td>
+<td>SAXPY(f64) near L2, DOT/STENCIL(f32) touching L2→LLC boundary</td>
+</tr>
+<tr>
+<td><strong>8M</strong></td>
+<td>Exceeds LLC, enters DRAM</td>
+</tr>
+<tr>
+<td><strong>32M</strong></td>
+<td>Larger DRAM size, increases bandwidth pressure</td>
+</tr>
+<tr>
+<td><strong>64M</strong></td>
+<td>Huge scale, verifies DRAM-region convergence</td>
+</tr>
+</tbody>
+</table>
+<p>This selection covers key cache turning points and ensures comparability across data types and kernels.</p>
+<h3 id="23-batch-script">2.3 Batch Script</h3>
+<p>Script: <strong><code>scripts/run_all.sh</code></strong></p>
+<p>Execution:</p>
+<pre class="hljs"><code><div>bash scripts/run_all.sh
+</div></code></pre>
+<p>Execution log in <code>run.log</code>
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-16.png" alt="alt text">
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-18.png" alt="alt text"></p>
+<h3 id="parameter-explanation">Parameter Explanation</h3>
+<ul>
+<li>
+<p><strong>simd / scalar</strong> — version executed</p>
+<ul>
+<li><code>simd</code> → Auto-vectorized version</li>
+<li><code>scalar</code> → Vectorization disabled</li>
+</ul>
+</li>
+<li>
+<p><strong>kernel</strong> — numerical kernel</p>
+<ul>
+<li><code>saxpy</code>: y ← a·x + y</li>
+<li><code>dot</code>: Dot product reduction</li>
+<li><code>mul</code>: Elementwise multiplication</li>
+<li><code>stencil</code>: 1D three-point stencil</li>
+</ul>
+</li>
+<li>
+<p><strong>dtype</strong> — data type</p>
+<ul>
+<li><code>f32</code> → float32 (single precision, 4 bytes)</li>
+<li><code>f64</code> → float64 (double precision, 8 bytes)</li>
+</ul>
+</li>
+<li>
+<p><strong>N</strong> — data size, determines problem scale</p>
+<ul>
+<li><code>N=8192</code> → 8192 elements, roughly L1/L2 region</li>
+<li><code>N=67108864</code> → ~67M elements, definitely DRAM</li>
+</ul>
+</li>
+<li>
+<p><strong>stride</strong> — access stride</p>
+<ul>
+<li><code>stride=1</code> → contiguous access, optimal cache use</li>
+<li><code>stride=2/4/8</code> → skip elements, simulate sparse/non-contiguous access, poorer bandwidth</li>
+</ul>
+</li>
+<li>
+<p><strong>mis</strong> — intentional misalignment</p>
+<ul>
+<li><code>mis=0</code> → aligned (array start 64B-aligned)</li>
+<li><code>mis=1</code> → misaligned (+1 offset), test penalty of unaligned load/store</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="3-baseline-and-correctness">3. Baseline and Correctness</h2>
+<h3 id="31-concept-explanation">3.1 Concept Explanation</h3>
+<ul>
+<li>
+<p><strong>Baseline (Scalar)</strong>: The scalar version serves as the performance baseline, quantifying the actual acceleration brought by automatic vectorization (SIMD).</p>
+</li>
+<li>
+<p><strong>Correctness (Verification)</strong>: Performance optimization must not change program semantics. SIMD/FMA/fast-math may reorder floating-point operations, so we must verify that numerical errors remain within acceptable bounds.</p>
+</li>
+<li>
+<p><strong>Goal:</strong> Verify that SIMD results are numerically consistent with scalar baseline results, establishing a trustworthy baseline for subsequent speedup computation.</p>
+</li>
+</ul>
+<h3 id="32-execution-results">3.2 Execution Results</h3>
+<h4 id="relative-error-tolerance">Relative Error Tolerance</h4>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Relative Error rtol</th>
+<th>Absolute Error atol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float32 (f32)</td>
+<td>1e-6</td>
+<td>1e-7</td>
+</tr>
+<tr>
+<td>float64 (f64)</td>
+<td>1e-12</td>
+<td>1e-13</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Explanation:</strong>
+Due to use of <code>-ffast-math</code> and FMA instructions, operation order may differ, leading to accumulated rounding errors.
+A relaxed tolerance is therefore set:</p>
+<p>$$
+|a-b| \le \text{atol} + \text{rtol} \times \max(|a|, |b|)
+$$</p>
+<p>This ensures numerical equivalence, not bitwise equality.</p>
+<h4 id="verification-strategy">Verification Strategy</h4>
+<p>The program provides a <code>--verify</code> flag to perform numerical correctness comparison before and after timing:</p>
+<ol>
+<li>Copy input data</li>
+<li>Run scalar reference implementation (same stride / misalignment)</li>
+<li>Run test kernel (scalar or SIMD)</li>
+<li>Compare outputs: element-wise or aggregate (dot)</li>
+<li>Compute maximum relative error <code>max_rel_err</code></li>
+<li>If all satisfy <code>|a-b| ≤ atol + rtol·max(|a|,|b|)</code>, then <code>verified=1</code></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Relative Error rtol</th>
+<th>Absolute Error atol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float32 (f32)</td>
+<td>1e-6</td>
+<td>1e-7</td>
+</tr>
+<tr>
+<td>float64 (f64)</td>
+<td>1e-12</td>
+<td>1e-13</td>
+</tr>
+</tbody>
+</table>
+<h4 id="verification-commands">Verification Commands</h4>
+<p>Example entries:</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># Scalar</span>
+./build_scalar/bench --kernel saxpy   --dtype f32 --n 4096    --reps 11 --stride 1 --verify
+./build_scalar/bench --kernel dot     --dtype f32 --n 1048576 --reps 11 --stride 2 --misalign --verify
+./build_scalar/bench --kernel mul     --dtype f64 --n 262144  --reps 11 --stride 4 --verify
+./build_scalar/bench --kernel stencil --dtype f64 --n 1048576 --reps 11 --stride 1 --verify
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-32.png" alt="alt text"></p>
+<pre class="hljs"><code><div><span class="hljs-comment"># SIMD</span>
+./build/bench --kernel saxpy   --dtype f32 --n 4096    --reps 11 --stride 1 --verify
+./build/bench --kernel dot     --dtype f32 --n 1048576 --reps 11 --stride 2 --misalign --verify
+./build/bench --kernel mul     --dtype f64 --n 262144  --reps 11 --stride 4 --verify
+./build/bench --kernel stencil --dtype f64 --n 1048576 --reps 11 --stride 1 --verify
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-31.png" alt="alt text"></p>
+<p>Batch execution:</p>
+<pre class="hljs"><code><div>bash scripts/run_all.sh
+</div></code></pre>
+<p>Check correctness for SIMD outputs:</p>
+<pre class="hljs"><code><div>awk -F, <span class="hljs-string">'NR&gt;1 &amp;&amp; $13==0 {print}'</span> data/simd.csv
+</div></code></pre>
+<ul>
+<li><code>-F,</code> — set comma as delimiter</li>
+<li><code>NR&gt;1</code> — skip header line</li>
+<li><code>$13==0</code> — filter rows with <code>verified=0</code></li>
+</ul>
+<p>If there is no output, it means all entries passed verification (<code>verified=1</code>) and numerical results are correct.</p>
+<h3 id="33-actual-results">3.3 Actual Results</h3>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-33.png" alt="alt text"></p>
+<ul>
+<li>All kernels (<code>saxpy</code>, <code>dot</code>, <code>mul</code>, <code>stencil</code>) passed verification across all test sizes, strides, and alignments</li>
+<li><code>verified=1</code> for all cases</li>
+<li>Maximum relative error <code>max_rel_err</code>:</li>
+</ul>
+<pre class="hljs"><code><div>awk -F, <span class="hljs-string">'
+NR&gt;1 {
+  if($2=="f32" &amp;&amp; $14&gt;max32) max32=$14;
+  if($2=="f64" &amp;&amp; $14&gt;max64) max64=$14;
+}
+END {
+  print "f32 max_rel_err =", max32;
+  print "f64 max_rel_err =", max64;
+}'</span> data/simd.csv
+</div></code></pre>
+<ul>
+<li>f32 ≤ <code>7.7493250543414e-06</code></li>
+<li>f64 ≤ <code>3.4367477939427e-07</code></li>
+</ul>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-36.png" alt="alt text"></p>
+<p>Verification passed — SIMD and Scalar results are numerically consistent; <code>fast-math</code>/FMA introduced no unacceptable deviation.</p>
+<h3 id="34-timing-method-repetition--error-bars">3.4 Timing Method (Repetition &amp; Error Bars)</h3>
+<p>See <code>bench.cpp</code></p>
+<p>Each configuration is measured multiple times to improve statistical stability:</p>
+<ul>
+<li>
+<p><strong>Warmup</strong>: 2 warmups (<code>--warmups=2</code>) to avoid cold cache effects</p>
+</li>
+<li>
+<p><strong>Repetitions</strong>: 9 runs (<code>--reps=9</code>) per configuration</p>
+</li>
+<li>
+<p><strong>Statistics</strong>:</p>
+<ul>
+<li>Reported time = <strong>median</strong>, minimizing outlier influence</li>
+<li>Also output <strong>p05 / p95</strong> (5% and 95% quantiles) to indicate performance range</li>
+</ul>
+</li>
+<li>
+<p><strong>Error Bars</strong>: represent p05–p95 interval, reflecting run-to-run stability</p>
+</li>
+<li>
+<p><strong>Environment Control</strong>: Performance governor, CPU pinning (<code>--pin=1</code>), FTZ/DAZ enabled to ensure reproducibility</p>
+</li>
+</ul>
+<h3 id="35-plotting">3.5 Plotting</h3>
+<p>Plot script: <strong><code>scripts/plot.py</code></strong></p>
+<p>Run plotting:</p>
+<pre class="hljs"><code><div>python3 scripts/plot.py
+</div></code></pre>
+<p>Example results (with repetitions &amp; error bars):
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/speedup_saxpy_f32.png" alt="">
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/gflops_saxpy_f64.png" alt=""></p>
+<hr>
+<h2 id="4-vectorization-verification">4. Vectorization Verification</h2>
+<h3 id="41-explanation">4.1 Explanation</h3>
+<p>Add “no-inline” and visible symbols to each kernel to prevent inlining/renaming issues, and try to disable LTO to avoid function merging:</p>
+<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">if</span> defined(__GNUC__) || defined(__clang__)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> NOINLINE __attribute__((noinline))</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">else</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> NOINLINE</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">template</span>&lt;class T&gt;
+NOINLINE <span class="hljs-keyword">void</span> <span class="hljs-title">kernel_saxpy</span><span class="hljs-params">(T a, <span class="hljs-keyword">const</span> T* x, T* y, <span class="hljs-keyword">size_t</span> n, <span class="hljs-keyword">size_t</span> stride)</span> </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">size_t</span> i=<span class="hljs-number">0</span>;i&lt;n;i+=stride) y[i] = a*x[i] + y[i];
+}
+
+<span class="hljs-function"><span class="hljs-keyword">template</span>&lt;class T&gt;
+NOINLINE T <span class="hljs-title">kernel_dot</span><span class="hljs-params">(<span class="hljs-keyword">const</span> T* x, <span class="hljs-keyword">const</span> T* y, <span class="hljs-keyword">size_t</span> n, <span class="hljs-keyword">size_t</span> stride)</span> </span>{
+  T s = <span class="hljs-number">0</span>; <span class="hljs-keyword">for</span> (<span class="hljs-keyword">size_t</span> i=<span class="hljs-number">0</span>;i&lt;n;i+=stride) s += x[i]*y[i]; <span class="hljs-keyword">return</span> s;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">template</span>&lt;class T&gt;
+NOINLINE <span class="hljs-keyword">void</span> <span class="hljs-title">kernel_mul</span><span class="hljs-params">(<span class="hljs-keyword">const</span> T* x, <span class="hljs-keyword">const</span> T* y, T* z, <span class="hljs-keyword">size_t</span> n, <span class="hljs-keyword">size_t</span> stride)</span> </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">size_t</span> i=<span class="hljs-number">0</span>;i&lt;n;i+=stride) z[i] = x[i]*y[i];
+}
+
+<span class="hljs-function"><span class="hljs-keyword">template</span>&lt;class T&gt;
+NOINLINE <span class="hljs-keyword">void</span> <span class="hljs-title">kernel_stencil</span><span class="hljs-params">(<span class="hljs-keyword">const</span> T* x, T* y, <span class="hljs-keyword">size_t</span> n, T a, T b, T c)</span> </span>{
+  <span class="hljs-keyword">if</span> (n&lt;<span class="hljs-number">3</span>) <span class="hljs-keyword">return</span>;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">size_t</span> i=<span class="hljs-number">1</span>;i+<span class="hljs-number">1</span>&lt;n;i++) y[i] = a*x[i<span class="hljs-number">-1</span>] + b*x[i] + c*x[i+<span class="hljs-number">1</span>];
+}
+</div></code></pre>
+<h3 id="42-commands">4.2 Commands</h3>
+<h4 id="gcc-scalar-baseline-report">GCC Scalar Baseline Report:</h4>
+<pre class="hljs"><code><div><span class="hljs-built_in">cd</span> build_scalar
+cmake -DFTZ_DAZ=ON -DBUILD_SCALAR=ON ..
+make clean
+make VERBOSE=1 2&gt;../gcc_vectorize_report.scalar.txt
+cat ../gcc_vectorize_report.scalar.txt | grep -i vector
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-25.png" alt="alt text">
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-27.png" alt="alt text"></p>
+<p>No vector-related output →  Correct (vectorization disabled)</p>
+<h4 id="gcc-vectorization-report">GCC Vectorization Report:</h4>
+<pre class="hljs"><code><div><span class="hljs-built_in">cd</span> build
+cmake -DFTZ_DAZ=ON -DBUILD_SCALAR=OFF ..
+make clean
+make VERBOSE=1 2&gt;../gcc_vectorize_report.simd.txt
+cat ../gcc_vectorize_report.simd.txt | grep -i vector
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-26.png" alt="alt text">
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-24.png" alt="alt text"></p>
+<p>Vector-related output exists →  Correct (vectorization enabled)</p>
+<h4 id="disassembly">Disassembly:</h4>
+<pre class="hljs"><code><div>nm -C build/bench | grep kernel_saxpy
+nm -C build_scalar/bench | grep kernel_saxpy
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-28.png" alt="alt text"></p>
+<p>Scalar</p>
+<pre class="hljs"><code><div>objdump -dC -Mintel build_scalar/bench | awk <span class="hljs-string">'/0000000000006980/,/ret/'</span> &gt; scalar_saxpy_f32.asm
+objdump -dC -Mintel build_scalar/bench | awk <span class="hljs-string">'/0000000000006b90/,/ret/'</span> &gt; scalar_saxpy_f64.asm
+grep -E <span class="hljs-string">'mulss|addss|movss'</span> scalar_saxpy_f32.asm
+grep -E <span class="hljs-string">'mulsd|addsd|movsd'</span> scalar_saxpy_f64.asm
+grep -E <span class="hljs-string">'ymm|zmm'</span> scalar_saxpy_f32.asm || <span class="hljs-built_in">echo</span> <span class="hljs-string">"No wide vectors (scalar build confirmed)"</span>
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-30.png" alt="alt text"></p>
+<p>SIMD</p>
+<pre class="hljs"><code><div>objdump -dC -Mintel build/bench | awk <span class="hljs-string">'/0000000000006940/,/ret/'</span> &gt; simd_saxpy_f32.asm
+objdump -dC -Mintel build/bench | awk <span class="hljs-string">'/0000000000007000/,/ret/'</span> &gt; simd_saxpy_f64.asm
+
+grep -E <span class="hljs-string">'vfmadd|vmul|vadd|ymm|zmm'</span> simd_saxpy_f32.asm
+grep -E <span class="hljs-string">'vfmadd|vmul|vadd|ymm|zmm'</span> simd_saxpy_f64.asm
+</div></code></pre>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/reports/image-29.png" alt="alt text"></p>
+<h3 id="43-interpretation">4.3 Interpretation</h3>
+<h4 id="vector-width">Vector Width</h4>
+<p>The compiler report shows “optimized: basic block part vectorized using 32 byte vectors”, indicating use of the AVX2 (256-bit) instruction set.
+Therefore, vector width = 256-bit → f32×8 / f64×4.
+Each SIMD instruction can process 8 float32 or 4 float64 elements simultaneously.</p>
+<h4 id="fma-usage">FMA Usage</h4>
+<p>Disassembly reveals the presence of <code>vfmadd213ss</code> and <code>vfmadd213sd</code> instructions, indicating that the compiler successfully enabled FMA (Fused Multiply-Add) operations.
+However, these instructions are scalar variants, and the main computation loop was not fully vectorized — only few wide-vector FMA forms such as vfmadd231ps/pd ymm were generated.
+As a result, FMA execution occurs only within the scalar pipeline rather than in vector registers</p>
+<hr>
+<h2 id="5-locality-scan">5. Locality Scan</h2>
+<h3 id="51-purpose">5.1 Purpose</h3>
+<ul>
+<li>By scanning <code>N</code> across cache levels (L1 → L2 → LLC → DRAM), we can observe changes in GFLOP/s and CPE, and explain why SIMD gains are compressed once kernels become memory-bound.</li>
+<li>The data has already been collected through the batch-run script — we can directly analyze the figures.</li>
+</ul>
+<h3 id="52-charts">5.2 Charts</h3>
+<h4 id="saxpy">SAXPY</h4>
+<p><strong>Speedup (saxpy, f32):</strong>
+This figure shows how the SIMD implementation of <code>saxpy(f32, stride=1, aligned)</code> accelerates compared to the scalar baseline as data size increases.
+At small scales, the speedup remains around 1.5–2×. As data size grows, the speedup gradually rises, peaking near 7× around 10⁵ elements, demonstrating SIMD’s strong parallelism.
+When the data exceeds cache capacity and enters the memory bandwidth-bound region, the speedup rapidly drops, approaching 1×, indicating that both SIMD and scalar versions are now constrained primarily by memory access speed.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/speedup_saxpy_f32.png" alt=""></p>
+<p><strong>GFLOP/s (saxpy, f32):</strong>
+This plot shows floating-point throughput (GFLOP/s) for scalar vs. SIMD implementations across different data sizes.
+At small sizes, both are low, but SIMD already shows an advantage. As size increases, SIMD throughput rapidly climbs, peaking around 40 GFLOP/s near 10⁵ elements, far exceeding the scalar’s &lt;10 GFLOP/s.
+Beyond cache capacity, both decline and converge, marking the transition from compute-bound to memory-bound performance.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/gflops_saxpy_f32.png" alt=""></p>
+<p><strong>Speedup (saxpy, f64):</strong>
+For <code>saxpy(f64, stride=1, aligned)</code>, speedup starts between 1–1.5× for small sizes, increases in cache-friendly ranges, and peaks around 2.6× near 10⁵ elements.
+Once data surpasses cache limits, entering bandwidth-bound regions, the speedup falls to 1.1–1.2×, showing that SIMD acceleration in double precision is modest and mainly visible in compute-bound phases.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/speedup_saxpy_f64.png" alt=""></p>
+<p><strong>GFLOP/s (saxpy, f64):</strong>
+At small scales, both versions achieve 7–9 GFLOP/s, with SIMD slightly ahead.
+When entering cache-efficient ranges, SIMD throughput rises to 16–18 GFLOP/s, while scalar drops to 5–6 GFLOP/s, widening the gap.
+As size grows beyond cache, both fall sharply and converge near 1 GFLOP/s, indicating bandwidth-limited performance where SIMD’s advantage fades.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/gflops_saxpy_f64.png" alt=""></p>
+<h4 id="dot">DOT</h4>
+<p><strong>Speedup (dot, f32):</strong>
+<code>dot(f32, stride=1, aligned)</code> shows 2–3× SIMD acceleration at small scales.
+In cache-friendly regions, speedup increases, peaking at 7–8× near 10⁵ elements.
+Beyond cache, in the bandwidth-limited zone, speedup drops and stabilizes around 1–1.5×, indicating SIMD benefits mainly under compute-bound conditions.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/speedup_dot_f32.png" alt=""></p>
+<p><strong>GFLOP/s (dot, f32):</strong>
+Scalar performance remains around 5–7 GFLOP/s across all scales.
+SIMD reaches 10–15 GFLOP/s early and peaks over 45 GFLOP/s at 10⁵ elements, greatly surpassing scalar.
+When exceeding cache, SIMD quickly declines, approaching 3–5 GFLOP/s, close to scalar — showing bandwidth as the new bottleneck.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/gflops_dot_f32.png" alt=""></p>
+<p><strong>Speedup (dot, f64):</strong>
+<code>dot(f64)</code> starts around 1.5–2×, rising above 3× near 10⁴ elements — peak performance within cache-friendly regions thanks to parallelism and FMA.
+Once beyond cache, the speedup drops and stabilizes at 1–1.5×, reflecting reduced SIMD lanes and bandwidth bottlenecks in double precision.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/speedup_dot_f64.png" alt=""></p>
+<p><strong>GFLOP/s (dot, f64):</strong>
+Initially, scalar achieves ~5–6 GFLOP/s, SIMD slightly higher.
+Within cache, SIMD rises sharply to 20+ GFLOP/s, while scalar remains near 6 GFLOP/s, highlighting SIMD’s compute-bound advantage.
+Past cache capacity, SIMD declines, converging near 2–3 GFLOP/s, matching scalar — bandwidth limits dominate, diminishing SIMD’s gains.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/gflops_dot_f64.png" alt=""></p>
+<h4 id="mul">MUL</h4>
+<p><strong>Speedup (mul, f32):</strong>
+<code>mul(f32, stride=1, aligned)</code> sees modest gains (1.3–1.6×) at small scales.
+In cache-friendly zones, speedup climbs, peaking near 3× around 10⁵ elements, showcasing ideal SIMD parallelism.
+Beyond cache, speedup falls and stabilizes near 1–1.2×, showing performance constrained by memory access.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/speedup_mul_f32.png" alt=""></p>
+<p><strong>GFLOP/s (mul, f32):</strong>
+Scalar: 5–6 GFLOP/s, SIMD: 7–10 GFLOP/s at small scales.
+As size grows, SIMD peaks around 17 GFLOP/s (10⁵ elements), scalar remains ~6 GFLOP/s.
+Beyond cache, SIMD drops to 1–2 GFLOP/s, converging with scalar, proving memory bandwidth dominates.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/gflops_mul_f32.png" alt=""></p>
+<p><strong>Speedup (mul, f64):</strong>
+At small sizes, speedup is low (1–1.3×), sometimes ≈1 due to measurement noise.
+Within cache, peaks around 2× (10⁴–10⁵ elements), showing SIMD’s compute-stage benefit.
+Beyond cache, speedup declines to ~1, fully bandwidth-bound.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/speedup_mul_f64.png" alt=""></p>
+<p><strong>GFLOP/s (mul, f64):</strong>
+At small scales, scalar ≈ 4–5 GFLOP/s, SIMD slightly ahead.
+In cache-friendly regions, SIMD peaks ~8 GFLOP/s, nearly 2× scalar.
+Past cache, both collapse to ~1 GFLOP/s, showing full bandwidth limitation.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/gflops_mul_f64.png" alt=""></p>
+<h4 id="stencil">STENCIL</h4>
+<p><strong>Speedup (stencil, f32):</strong>
+<code>stencil(f32, stride=1, aligned)</code> shows ~2× speedup at small sizes.
+In cache-efficient regions, peaks at 6–7× (~10⁴–10⁵ elements), benefiting from local reuse and parallelism.
+Beyond cache, speedup declines toward 1×, as memory bandwidth dominates.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/speedup_stencil_f32.png" alt=""></p>
+<p><strong>GFLOP/s (stencil, f32):</strong>
+Scalar maintains 10–15 GFLOP/s consistently.
+SIMD rapidly scales, peaking ~70 GFLOP/s at 10⁵ elements, vastly exceeding scalar.
+Beyond cache, SIMD falls, converging near 10 GFLOP/s, marking bandwidth limitation.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/gflops_stencil_f32.png" alt=""></p>
+<p><strong>Speedup (stencil, f64):</strong>
+At small scales, limited (~1–1.3×).
+Within cache, rises to 2.5–3× (~10⁵ elements), showing strong SIMD utility in compute-bound phases.
+Past cache, drops to 1–1.2×, memory-bound regime.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/speedup_stencil_f64.png" alt=""></p>
+<p><strong>GFLOP/s (stencil, f64):</strong>
+Small scales: scalar 13–15 GFLOP/s, SIMD slightly higher.
+In cache, SIMD surges to 30+ GFLOP/s, scalar steady at 13 GFLOP/s.
+Beyond cache, both drop to 3–4 GFLOP/s, dominated by bandwidth constraints.</p>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/gflops_stencil_f64.png" alt=""></p>
+<h3 id="53-result-interpretation">5.3 Result Interpretation</h3>
+<p>When a kernel enters the memory bandwidth-bound phase, SIMD performance gains are greatly reduced, because the bottleneck shifts from <em>“how fast the CPU can compute”</em> to <em>“how fast memory can feed data.”</em></p>
+<h4 id="compute-%E2%86%92-bandwidth">Compute → Bandwidth</h4>
+<p>In compute-bound stages, CPU arithmetic throughput (FLOP/s) dominates.
+SIMD can process multiple elements per instruction, boosting throughput.
+But once the working set exceeds cache capacity, memory latency and bandwidth** become the new bottleneck.
+The CPU’s floating-point units become starved, spending most cycles waiting on data from DRAM.
+Since both scalar and SIMD versions must load/store the same total data volume, the memory subsystem caps performance.
+In other words, everyone’s stuck in the same traffic — SIMD lanes can’t go faster than the bus.</p>
+<h4 id="compressed-speedup">Compressed Speedup</h4>
+<p>In the bandwidth-bound region, SIMD’s theoretical advantage (processing 4/8/16 elements per instruction) doesn’t translate to real gains:</p>
+<ul>
+<li>SIMD instructions are faster, but memory stalls dominate;</li>
+<li>Frontend and execution ports are often idle;</li>
+<li>Throughput stops scaling with SIMD width;</li>
+<li>Measured speedup collapses from multi× peaks to 1–1.5×**.</li>
+</ul>
+<p>Thus, SIMD’s only residual gains come from reduced loop overhead, address calculations, or branches — memory bandwidth caps total performance.</p>
+<h4 id="additional-factors">Additional Factors</h4>
+<p>Besides bandwidth limits, other factors exacerbate SIMD constraints:</p>
+<ul>
+<li><strong>Prefetch inefficiency</strong> – Large working sets make access patterns unpredictable, reducing prefetch accuracy.</li>
+<li><strong>Lower cache-line utilization</strong> – Sparse use increases wasted bandwidth.</li>
+<li><strong>RFO (Read-For-Ownership)</strong> – Write-allocate reads add extra traffic.</li>
+<li><strong>Page crossings &amp; TLB misses</strong> – Frequent page switches add latency.</li>
+<li><strong>AVX frequency throttling</strong> – Wide-vector ops may trigger CPU downclocking, reducing throughput.</li>
+</ul>
+<h4 id="inevitable-performance-turning-point">Inevitable Performance Turning Point</h4>
+<p>As working sets cross L1 → L2 → LLC → DRAM, the system transitions from <em>compute-bound</em> to <em>bandwidth-bound</em>:</p>
+<ul>
+<li>GFLOP/s curves flatten or decline</li>
+<li>Speedup curves drop sharply</li>
+<li>Scalar &amp; SIMD performance converge</li>
+</ul>
+<p>Ultimately, in DRAM regions, SIMD acceleration compresses to ~1–1.5×, dictated by physical memory limits, not instruction-level parallelism.</p>
+<hr>
+<h2 id="6-alignment--tail-handling-experiment-analysis">6. Alignment &amp; Tail Handling Experiment Analysis</h2>
+<h3 id="61-objective">6.1 Objective</h3>
+<p>This experiment investigates two factors affecting SIMD vector performance:</p>
+<ol>
+<li><strong>Alignment (Aligned) vs Misalignment (Misaligned)</strong>: whether data addresses fall on boundaries aligned with vector width.</li>
+<li><strong>Tail Handling</strong>: when array length is not a multiple of vector width, the remaining “tail elements” require special handling.</li>
+</ol>
+<h3 id="62-alignment-vs-misalignment">6.2 Alignment vs Misalignment</h3>
+<h4 id="experimental-method">Experimental Method</h4>
+<ul>
+<li>
+<p>Extract verified samples (<code>verified=1</code>) from <code>data/simd.csv</code>;</p>
+</li>
+<li>
+<p>Use <code>(kernel, dtype, stride, n)</code> as the key, and compare <code>misalign=0</code> vs <code>misalign=1</code>;</p>
+</li>
+<li>
+<p>Compute three performance deltas:</p>
+<ul>
+<li><code>ΔGFLOP/s</code>: drop in throughput → worse;</li>
+<li><code>ΔCPE</code>: increase in cycles per element → worse;</li>
+<li><code>ΔGiB/s</code>: drop in bandwidth utilization → worse.</li>
+</ul>
+</li>
+<li>
+<p>Perform pointwise pairing (aligned vs misaligned) to get Δ% per sample (negative = degradation).
+Aggregate geometric mean by <code>(kernel, dtype, stride)</code> to summarize average degradation.
+See script <strong><code>make_align_report.py</code></strong>.</p>
+</li>
+</ul>
+<h4 id="results-overview">Results Overview</h4>
+<p>See directory <code>plot/align</code></p>
+<table>
+<thead>
+<tr>
+<th>kernel</th>
+<th>dtype</th>
+<th style="text-align:right">stride</th>
+<th style="text-align:right">ΔGFLOP/s (%)</th>
+<th style="text-align:right">ΔCPE (%)</th>
+<th style="text-align:right">ΔGiB/s (%)</th>
+<th style="text-align:right">samples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">-1.91</td>
+<td style="text-align:right">+1.14</td>
+<td style="text-align:right">-1.91</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">-3.85</td>
+<td style="text-align:right">+3.66</td>
+<td style="text-align:right">-3.85</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">+9.80</td>
+<td style="text-align:right">-9.03</td>
+<td style="text-align:right">+9.80</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">-1.29</td>
+<td style="text-align:right">+1.60</td>
+<td style="text-align:right">-1.29</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f64</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">+4.96</td>
+<td style="text-align:right">-2.77</td>
+<td style="text-align:right">+4.96</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f64</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">-1.69</td>
+<td style="text-align:right">+1.72</td>
+<td style="text-align:right">-1.69</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f64</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-0.50</td>
+<td style="text-align:right">-0.07</td>
+<td style="text-align:right">-0.50</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f64</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">-3.30</td>
+<td style="text-align:right">+3.29</td>
+<td style="text-align:right">-3.30</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f32</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">-3.33</td>
+<td style="text-align:right">+3.42</td>
+<td style="text-align:right">-3.33</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f32</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">-0.68</td>
+<td style="text-align:right">+0.69</td>
+<td style="text-align:right">-0.68</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f32</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">+0.71</td>
+<td style="text-align:right">-0.51</td>
+<td style="text-align:right">+0.71</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f32</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">+2.31</td>
+<td style="text-align:right">-1.70</td>
+<td style="text-align:right">+2.31</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f64</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">-4.43</td>
+<td style="text-align:right">+4.70</td>
+<td style="text-align:right">-4.43</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f64</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">-1.09</td>
+<td style="text-align:right">+1.10</td>
+<td style="text-align:right">-1.09</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f64</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">+3.56</td>
+<td style="text-align:right">-3.43</td>
+<td style="text-align:right">+3.56</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f64</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">-7.72</td>
+<td style="text-align:right">+7.27</td>
+<td style="text-align:right">-7.72</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f32</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">-5.97</td>
+<td style="text-align:right">+6.46</td>
+<td style="text-align:right">-5.97</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f32</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">+6.77</td>
+<td style="text-align:right">-7.15</td>
+<td style="text-align:right">+6.77</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f32</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-2.61</td>
+<td style="text-align:right">+3.35</td>
+<td style="text-align:right">-2.61</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f32</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">-2.06</td>
+<td style="text-align:right">+1.13</td>
+<td style="text-align:right">-2.06</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f64</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">-6.29</td>
+<td style="text-align:right">+6.23</td>
+<td style="text-align:right">-6.29</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f64</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">+0.26</td>
+<td style="text-align:right">-0.30</td>
+<td style="text-align:right">+0.26</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f64</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">+2.20</td>
+<td style="text-align:right">-2.20</td>
+<td style="text-align:right">+2.20</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f64</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">+3.34</td>
+<td style="text-align:right">-2.43</td>
+<td style="text-align:right">+3.34</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td>stencil</td>
+<td>f32</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">-9.49</td>
+<td style="text-align:right">+10.49</td>
+<td style="text-align:right">-9.49</td>
+<td style="text-align:right">9</td>
+</tr>
+<tr>
+<td>stencil</td>
+<td>f64</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">-10.73</td>
+<td style="text-align:right">+12.68</td>
+<td style="text-align:right">-10.73</td>
+<td style="text-align:right">9</td>
+</tr>
+<tr>
+<td>ALL</td>
+<td>-</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">-1.27</td>
+<td style="text-align:right">+1.51</td>
+<td style="text-align:right">-1.27</td>
+<td style="text-align:right">258</td>
+</tr>
+</tbody>
+</table>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/align/aln_vs_mis_delta_cpe.png" alt="alt text">
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/align/aln_vs_mis_delta_gflops.png" alt="alt text"></p>
+<h4 id="overall-trend"><strong>Overall Trend</strong></h4>
+<p>From 258 verified samples, misaligned access on average causes:</p>
+<ul>
+<li><strong>GFLOP/s ↓1.3%</strong>,</li>
+<li><strong>CPE ↑1.5%</strong>.</li>
+</ul>
+<p>The effect is minor but consistently measurable, especially in bandwidth-bound kernels.</p>
+<h4 id="kernel-wise-differences"><strong>Kernel-wise Differences</strong></h4>
+<ul>
+<li><strong>Memory-bound kernels (stencil / saxpy):</strong> alignment-sensitive; performance drops 5–10%, primarily due to load/store inefficiencies.</li>
+<li><strong>Compute-bound kernels (dot / mul):</strong> smaller impact (1–3%), some positive deviations (stride=4) due to noise or incidental alignment.</li>
+<li><strong>Double precision (f64):</strong> slightly higher penalty, affected by wider data and cacheline crossings.</li>
+</ul>
+<h4 id="root-causes"><strong>Root Causes</strong></h4>
+<ol>
+<li><strong>Cross-cacheline Access:</strong> misaligned addresses may span 64B boundaries, requiring two loads.</li>
+<li><strong>LoadU Latency:</strong> <code>_mm256_loadu_ps/pd</code> incurs higher latency than aligned loads.</li>
+<li><strong>Prefetch Inefficiency:</strong> misalignment disrupts linear access, reducing prefetch hit rate.</li>
+<li><strong>TLB Pressure:</strong> fragmented address distribution increases TLB misses.</li>
+</ol>
+<h4 id="conclusion"><strong>Conclusion</strong></h4>
+<p>Misaligned memory access imposes limited but consistent penalties on SIMD throughput, particularly under stride=1 contiguous patterns.
+Alignment remains a fundamental prerequisite for high-performance SIMD execution.</p>
+<h3 id="63-tail-handling-effects">6.3 Tail Handling Effects</h3>
+<h4 id="experimental-method">Experimental Method</h4>
+<ul>
+<li>
+<p>Select aligned samples only (<code>misalign=0</code>).</p>
+</li>
+<li>
+<p>Check <code>n % vector_width</code>:</p>
+<ul>
+<li>remainder = 0 → <strong>exact multiple (tail=0)</strong></li>
+<li>remainder ≠ 0 → <strong>has tail (tail=1)</strong></li>
+</ul>
+</li>
+<li>
+<p>Compute geometric mean of performance per group, then compare <strong>tail=1 vs tail=0</strong>.
+See script <strong><code>make_tail_report.py</code></strong>.</p>
+</li>
+</ul>
+<h4 id="results-overview">Results Overview</h4>
+<table>
+<thead>
+<tr>
+<th>kernel</th>
+<th>dtype</th>
+<th style="text-align:right">stride</th>
+<th style="text-align:right">ΔGFLOP/s (%)</th>
+<th style="text-align:right">ΔCPE (%)</th>
+<th style="text-align:right">ΔGiB/s (%)</th>
+<th style="text-align:right">samples(exact/tail)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">+0.11</td>
+<td style="text-align:right">-1.51</td>
+<td style="text-align:right">+0.11</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">-3.87</td>
+<td style="text-align:right">+2.65</td>
+<td style="text-align:right">-3.87</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">+3.44</td>
+<td style="text-align:right">-3.77</td>
+<td style="text-align:right">+3.44</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">-0.75</td>
+<td style="text-align:right">+0.29</td>
+<td style="text-align:right">-0.75</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f64</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">-32.71</td>
+<td style="text-align:right">+43.23</td>
+<td style="text-align:right">-32.71</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f64</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">-25.93</td>
+<td style="text-align:right">+30.43</td>
+<td style="text-align:right">-25.93</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f64</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-23.33</td>
+<td style="text-align:right">+26.16</td>
+<td style="text-align:right">-23.33</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f64</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">-21.37</td>
+<td style="text-align:right">+22.03</td>
+<td style="text-align:right">-21.37</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f32</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">+3.27</td>
+<td style="text-align:right">-9.07</td>
+<td style="text-align:right">+3.27</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f32</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">-10.66</td>
+<td style="text-align:right">+5.10</td>
+<td style="text-align:right">-10.66</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f32</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-13.54</td>
+<td style="text-align:right">+9.56</td>
+<td style="text-align:right">-13.54</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f32</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">-2.38</td>
+<td style="text-align:right">-3.28</td>
+<td style="text-align:right">-2.38</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f64</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">+4.48</td>
+<td style="text-align:right">-10.87</td>
+<td style="text-align:right">+4.48</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f64</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">-7.02</td>
+<td style="text-align:right">+1.44</td>
+<td style="text-align:right">-7.02</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f64</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-7.52</td>
+<td style="text-align:right">+2.14</td>
+<td style="text-align:right">-7.52</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>f64</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">+4.06</td>
+<td style="text-align:right">-10.07</td>
+<td style="text-align:right">+4.06</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f32</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">-0.68</td>
+<td style="text-align:right">-0.40</td>
+<td style="text-align:right">-0.68</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f32</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">+0.55</td>
+<td style="text-align:right">-1.38</td>
+<td style="text-align:right">+0.55</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f32</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-3.57</td>
+<td style="text-align:right">+2.19</td>
+<td style="text-align:right">-3.57</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f32</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">-7.15</td>
+<td style="text-align:right">+6.01</td>
+<td style="text-align:right">-7.15</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f64</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">+6.36</td>
+<td style="text-align:right">-5.20</td>
+<td style="text-align:right">+6.36</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f64</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">-0.11</td>
+<td style="text-align:right">+0.88</td>
+<td style="text-align:right">-0.11</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f64</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">-0.85</td>
+<td style="text-align:right">+1.69</td>
+<td style="text-align:right">-0.85</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>f64</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">+5.62</td>
+<td style="text-align:right">-2.38</td>
+<td style="text-align:right">+5.62</td>
+<td style="text-align:right">10/10</td>
+</tr>
+<tr>
+<td>stencil</td>
+<td>f32</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">-13.15</td>
+<td style="text-align:right">+6.14</td>
+<td style="text-align:right">-13.15</td>
+<td style="text-align:right">9/9</td>
+</tr>
+<tr>
+<td>stencil</td>
+<td>f64</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">+2.37</td>
+<td style="text-align:right">-7.00</td>
+<td style="text-align:right">+2.37</td>
+<td style="text-align:right">9/9</td>
+</tr>
+<tr>
+<td>ALL</td>
+<td>-</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">-5.55</td>
+<td style="text-align:right">+4.04</td>
+<td style="text-align:right">-5.55</td>
+<td style="text-align:right">258/258</td>
+</tr>
+</tbody>
+</table>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/tail/tail_delta_cpe_%.png" alt="alt text">
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/tail/tail_delta_gflops_%.png" alt="alt text"></p>
+<h4 id="overall-trend">Overall Trend</h4>
+<ul>
+<li><strong>Average impact:</strong>
+With tails (<code>tail=1</code>) vs exact multiples (<code>tail=0</code>):
+<strong>GFLOP/s ↓5.55%</strong>, <strong>CPE ↑4.04%</strong>.
+This matches microarchitectural experience: tail masking/cleanup incurs minor overhead, never orders of magnitude.</li>
+</ul>
+<h4 id="observations-by-kernel">Observations by Kernel</h4>
+<ul>
+<li>
+<p><strong>dot / f64:</strong> Significant drop (−21% to −33%) because</p>
+<ul>
+<li>f64 vectors are narrower (AVX2 = 4 lanes), so incomplete vectors are more frequent;</li>
+<li>reductions trigger extra tail merges, adding control dependencies.</li>
+</ul>
+</li>
+<li>
+<p><strong>dot / f32:</strong> Small, mixed (±few %), likely due to measurement noise or cache effects.</p>
+</li>
+<li>
+<p><strong>mul / f32,f64:</strong> Around −10%, some positive outliers (+4%) from random layout benefits.</p>
+</li>
+<li>
+<p><strong>saxpy:</strong> Mostly within −7% ~ +6%, mild variations. Bandwidth-bound kernels hide compute-side mask costs but still lose minor efficiency.</p>
+</li>
+<li>
+<p><strong>stencil:</strong> f32 ≈ −13%* f64 ≈ +2%; tail masks sometimes reduce redundant edge accesses, giving slight positive anomalies.</p>
+</li>
+</ul>
+<h4 id="root-causes">Root Causes</h4>
+<ol>
+<li><strong>Mask/Tail Loop Overhead:</strong> extra instructions and control branches for remainder elements.</li>
+<li><strong>Underutilized Registers:</strong> partially filled vectors raise per-element instruction cost.</li>
+<li><strong>Reduction Merge Penalties (dot):</strong> tail triggers extra merge, lengthening critical path.</li>
+<li><strong>Cache/Prefetch Randomness:</strong> occasionally, tails avoid conflicts or improve locality, yielding small positive deviations.</li>
+</ol>
+<h4 id="conclusion"><strong>Conclusion</strong></h4>
+<p>Tail handling typically costs ~5% performance, more for f64 + dot, others fluctuate within ±10%.
+It is a non-negligible bottleneck in SIMD kernels, especially for tight loops or short vectors.
+Techniques like padding or loop peeling can effectively mitigate the loss.</p>
+<hr>
+<h3 id="64-summary-conclusion">6.4 Summary Conclusion</h3>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Throughput Change (ΔGFLOP/s)</th>
+<th>CPE Change</th>
+<th>Impact Stability</th>
+<th>Main Causes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Misaligned Loads</td>
+<td>≈ −1% ~ −5%</td>
+<td>≈ +1% ~ +5%</td>
+<td>Low ~ Medium</td>
+<td>Cross-cacheline accesses, higher latency of <code>loadu</code>, disrupted prefetch/alignment assumptions</td>
+</tr>
+<tr>
+<td>Tail Handling</td>
+<td>Avg −5.55%</td>
+<td>Avg +4.04%</td>
+<td>Medium ~ High</td>
+<td>Extra masked/tail loop path, reduced register utilization, reduction finalization overhead</td>
+</tr>
+</tbody>
+</table>
+<h4 id="optimization-suggestions">Optimization Suggestions</h4>
+<ol>
+<li><strong>Avoid Tail Handling</strong>: Ensure <code>n</code> is a multiple of the vector width; for fixed-size problems, pad to multiples of 8 (f32) / 4 (f64) under AVX2.</li>
+<li><strong>Guarantee Alignment</strong>: Use <code>posix_memalign</code> / <code>_aligned_malloc</code> for 32B/64B alignment; ensure array starts and access strides (<code>stride</code>) are alignment-consistent.</li>
+<li><strong>Loop Structure</strong>: For hot kernels, manually peel loops — pure SIMD main loop + one small scalar tail pass — to minimize branching overhead.</li>
+<li><strong>Compiler Options</strong>: Use <code>-O3 -march=native -ffast-math</code> (or equivalent for MSVC/Clang) to allow the vectorizer to auto-generate optimal mask paths; confirm no stray <code>#pragma</code> suppresses vectorization.</li>
+<li><strong>Baseline Measurement</strong>: Use paired sizes <code>(N, N+δ)</code> for consistency; pin to a core, maintain constant power/thermal conditions, and filter noise (e.g., fixed power plan / disable Turbo for comparisons).</li>
+</ol>
+<hr>
+<h2 id="7-stride--pseudo-gather-effect">7. Stride / Pseudo-Gather Effect</h2>
+<h3 id="71-objective">7.1 Objective</h3>
+<p>This section aims to evaluate the impact of non-contiguous access (stride &gt; 1) on effective bandwidth and SIMD execution efficiency. By comparing stride=1 (sequential access) with stride=2/4/8 (strided or pseudo-gather mode) under the same problem size N, we analyze the systematic influence of access stride on GFLOP/s, GiB/s, and CPE. Using hardware counter data, we further interpret results from the perspectives of cache utilization, prefetcher efficiency, and TLB overhead.</p>
+<h3 id="72-experimental-method-and-data-collection-script">7.2 Experimental Method and Data Collection Script</h3>
+<p>The experiment script <code>scripts/make_stride_report.py</code> filters samples directly from existing <code>data/simd.csv</code> and <code>data/scalar.csv</code>. Three representative N values from different working set regions are selected, and the script automatically detects available stride values (typically 1, 2, 4, 8). It outputs the summary table <code>data/stride_abs.csv</code> and plots under <code>plots/stride/</code>.</p>
+<h3 id="73-experimental-results">7.3 Experimental Results</h3>
+<p>Below are key bar charts exported from the automatically generated file <code>plots/stride/stride_summary.md</code>, illustrating how stride affects performance. Detailed data can be found in the corresponding summary tables (partial excerpts shown here):</p>
+<table>
+<thead>
+<tr>
+<th>kernel</th>
+<th>dtype</th>
+<th style="text-align:right">N</th>
+<th style="text-align:right">stride</th>
+<th style="text-align:right">GFLOP/s</th>
+<th style="text-align:right">CPE</th>
+<th style="text-align:right">GFLOP/s rel(s=1)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">3.131</td>
+<td style="text-align:right">1.994</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">3.122</td>
+<td style="text-align:right">1.997</td>
+<td style="text-align:right">0.997</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">3.131</td>
+<td style="text-align:right">1.991</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">512</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">3.131</td>
+<td style="text-align:right">1.991</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">513</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">2.965</td>
+<td style="text-align:right">1.988</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">513</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">2.965</td>
+<td style="text-align:right">1.987</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">513</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">2.948</td>
+<td style="text-align:right">1.999</td>
+<td style="text-align:right">0.994</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">513</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">2.948</td>
+<td style="text-align:right">1.999</td>
+<td style="text-align:right">0.994</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">2.760</td>
+<td style="text-align:right">2.259</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">2.753</td>
+<td style="text-align:right">2.265</td>
+<td style="text-align:right">0.997</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">3.235</td>
+<td style="text-align:right">1.927</td>
+<td style="text-align:right">1.172</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">1024</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">3.185</td>
+<td style="text-align:right">1.957</td>
+<td style="text-align:right">1.154</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">1025</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">2.950</td>
+<td style="text-align:right">1.998</td>
+<td style="text-align:right">1.000</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">1025</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">3.046</td>
+<td style="text-align:right">1.935</td>
+<td style="text-align:right">1.033</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">1025</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">2.767</td>
+<td style="text-align:right">2.256</td>
+<td style="text-align:right">0.938</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>f32</td>
+<td style="text-align:right">1025</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">3.228</td>
+<td style="text-align:right">1.933</td>
+<td style="text-align:right">1.094</td>
+</tr>
+</tbody>
+</table>
+<h3 id="74-chart-preview">7.4 Chart Preview</h3>
+<h4 id="dot">dot</h4>
+<ul>
+<li>GFLOP/s (f32)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/dot_f32_gflops_grouped_by_stride.png" alt=""></li>
+<li>CPE (f32)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/dot_f32_cpe_grouped_by_stride.png" alt=""></li>
+<li>GFLOP/s (f64)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/dot_f64_gflops_grouped_by_stride.png" alt=""></li>
+<li>CPE (f64)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/dot_f64_cpe_grouped_by_stride.png" alt=""></li>
+</ul>
+<h4 id="mul">mul</h4>
+<ul>
+<li>GFLOP/s (f32)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/mul_f32_gflops_grouped_by_stride.png" alt=""></li>
+<li>CPE (f32)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/mul_f32_cpe_grouped_by_stride.png" alt=""></li>
+<li>GFLOP/s (f64)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/mul_f64_gflops_grouped_by_stride.png" alt=""></li>
+<li>CPE (f64)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/mul_f64_cpe_grouped_by_stride.png" alt=""></li>
+</ul>
+<h4 id="saxpy">saxpy</h4>
+<ul>
+<li>GFLOP/s (f32)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/saxpy_f32_gflops_grouped_by_stride.png" alt=""></li>
+<li>CPE (f32)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/saxpy_f32_cpe_grouped_by_stride.png" alt=""></li>
+<li>GFLOP/s (f64)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/saxpy_f64_gflops_grouped_by_stride.png" alt=""></li>
+<li>CPE (f64)
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/stride/saxpy_f64_cpe_grouped_by_stride.png" alt=""></li>
+</ul>
+<h4 id="stencil">stencil</h4>
+<p>The stencil kernel inherently includes fixed-neighborhood access. When stride ≠ 1, the dependency pattern is disrupted. Therefore, only stride=1 is tested here as the baseline.</p>
+<h3 id="75-result-interpretation">7.5 Result Interpretation</h3>
+<h4 id="overall-trend">Overall Trend</h4>
+<h5 id="large-n-%E2%86%92-dram-region">Large N → DRAM Region</h5>
+<p>For three streaming or element-wise kernels (dot / mul / saxpy), when N is large (e.g., 8M, 32M, 64M), increasing stride consistently causes significant performance degradation, reflected as:</p>
+<ul>
+<li>GFLOP/s continuously decreases</li>
+<li>CPE increases significantly</li>
+</ul>
+<p>This reveals a typical bandwidth bottleneck under non-contiguous access: as stride &gt; 1, valid data per cache line decreases, access intervals widen, prefetchers lose prediction accuracy, and TLBs must perform more frequent translations, reducing overall memory efficiency.</p>
+<p>Compared to f32, f64 typically exhibits:</p>
+<ul>
+<li>Lower GFLOP/s (throughput limited)</li>
+<li>Higher CPE (more visible latency impact)</li>
+</ul>
+<p>This is due to double precision consuming twice the bandwidth, exposing DRAM limitations earlier and causing faster degradation in memory-bound kernels.</p>
+<p>Stencil is only tested with stride=1 as its access pattern already involves fixed-radius neighbors. Additional stride would break semantics. Its results show typical DRAM-bound behavior: GFLOP/s remains flat or slightly drops, and CPE rises gradually.</p>
+<h5 id="medium--small-n-l1--l2-region">Medium / Small N (L1 / L2 Region)</h5>
+<p>Within cache-resident regions (512–8K), some kernels show non-monotonic behavior at stride=2/4:</p>
+<ul>
+<li>For example, <code>dot f32/f64 @ 4K/8K</code>, <code>mul f32 @ 64K</code>, <code>saxpy f64 @ 2K/4K</code></li>
+<li>GFLOP/s matches or slightly exceeds stride=1</li>
+</ul>
+<p>This local improvement is explainable:</p>
+<ul>
+<li>Working set fits in cache → no bandwidth bottleneck</li>
+<li>Hardware prefetcher still tracks fixed intervals</li>
+<li>Certain strides improve alignment or reduce cache conflicts</li>
+<li>Compiler may generate better loadu/unroll paths for specific strides</li>
+</ul>
+<p>However, once N exceeds cache capacity (into L3 or DRAM), performance becomes monotonic: stride increases → L2/L3 misses surge, prefetch fails, and CPE rises.</p>
+<h4 id="per-kernel-analysis">Per-Kernel Analysis</h4>
+<table>
+<thead>
+<tr>
+<th>Kernel</th>
+<th>Characteristics and Trends</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dot</td>
+<td>Sensitive to stride. Slightly better at s=2/4 in cache, but performance drops beyond DRAM: GFLOP/s halves, CPE rises.</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>At small N, s=2 may improve due to alignment/prefetch; at large N, monotonic decline.</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>Similar to mul but more severe; at DRAM scale, s=8 GFLOP/s often &lt;40% of s=1, CPE doubles.</td>
+</tr>
+<tr>
+<td>stencil</td>
+<td>Only s=1 tested; non-unit stride breaks dependencies. Used as continuous-access baseline.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="summary">Summary</h4>
+<ul>
+<li>Large N / DRAM region: performance limited by memory bandwidth; larger stride = cacheline waste + prefetch failure + more TLB pressure → lower GFLOP/s, higher CPE</li>
+<li>Small N / cache region: stride=2/4 may temporarily perform well but is not scalable</li>
+</ul>
+<h4 id="core-conclusions">Core Conclusions</h4>
+<ul>
+<li>Sequential access (stride=1) remains optimal</li>
+<li>Fixed strides acceptable in cache regions but degrade sharply in DRAM</li>
+<li>Non-aligned or odd strides (3, 5) degrade further, not tested here</li>
+</ul>
+<h3 id="76-microarchitectural-analysis">7.6 Microarchitectural Analysis</h3>
+<h4 id="cacheline-utilization">Cacheline Utilization</h4>
+<p>Larger stride reduces valid data per cacheline and increases useless loads, inflating DRAM traffic.
+Modern CPUs (64B cachelines) can fully utilize lines at stride=1: f32 uses 16 elements, f64 uses 8.
+At stride=2, utilization halves; stride=4, one-quarter; stride=8, one-eighth; the rest is wasted bandwidth occupying channels and cache space.</p>
+<p>Cachelines are fetched whole; if stride causes frequent cross-line access, each step fetches a new line, raising L1 misses and L2 pressure. In DRAM regions, such invalid transfers directly raise GiB/s load and CPE.
+If stride is 2^k and properly aligned (e.g., stride=2/4/8 starting at a cacheline boundary), adjacent accesses may still share lines, slowing degradation.
+Otherwise, if stride misaligns with cacheline size, cross-line access increases, cacheline reuse collapses, and performance drops sharply (especially near L2/L3 miss onset).</p>
+<h4 id="prefetcher-efficiency">Prefetcher Efficiency</h4>
+<p>At stride=1, hardware prefetchers achieve stable high hit rates and full bandwidth utilization.
+At stride=2/4, most CPUs with stride-based prefetchers can recognize fixed-step sequences, maintaining good performance. Some may even outperform s=1 (e.g., stride=2 reducing bank conflicts).
+However, when stride ≥ 8, access gaps exceed prefetch windows or break recognizable patterns. Prefetch streams terminate, L2 misses increase, and prefetch hit rates collapse.</p>
+<p>Memory bottlenecks shift from bandwidth to latency; cores wait on data fills, pipelines idle, CPE spikes.
+For large N (DRAM), stride=8 prefetch failure compounds with TLB misses and low cacheline utilization, causing “multi-factor amplification”.
+In saxpy and dot, GFLOP/s steadily declines.</p>
+<p>If stride triggers false or repeated prefetch, cache pollution worsens. Compilers may unroll or use loadu to enhance ILP, but cannot offset bandwidth waste.</p>
+<h4 id="tlb-pressure">TLB Pressure</h4>
+<p>Larger strides increase page-crossing frequency.
+On 4 KiB pages with 8 B elements (f64), stride = 8 crosses a page every 64 elements, whereas stride = 1 crosses every 512.
+The resulting 8× higher TLB demand leads to more misses, each incurring a multi-level page walk (tens–hundreds of cycles).</p>
+<p>When N is large, working sets exceed TLB capacity (~1–2 K entries); high strides accelerate eviction, lowering hit rates and raising CPE.
+f64 workloads are more affected due to larger footprints.
+Non-unit or irregular strides also disable hardware TLB prefetching, causing additional stalls.</p>
+<p>Solutions: use huge pages to cut walk depth, or tiling to limit the effective stride × N span.</p>
+<h4 id="execution-ports-and-vectorization">Execution Ports and Vectorization</h4>
+<p>Memory-bound kernels bottleneck on latency/bandwidth, not compute.
+As stride grows, load count stays constant but useful data per load drops; effective work per cycle decreases, raising CPE and ALU idle rate.
+Even with SIMD, registers hold many unused elements, lowering effective GFLOP/s.</p>
+<p>Compilers may emit offset <code>vmovups/loadu</code> or gather instructions; gathers are much slower than sequential loads.
+At stride=2/4 with 2^k alignment, unrolling and shuffling can merge accesses, easing port pressure, explaining occasional stride=2/4 performance parity or gains.
+For stride=8 or irregular patterns, such optimizations fail; gather paths dominate, causing port stalls and CPE surges. At large N, ALU utilization can fall below 20%.</p>
+<h3 id="77-conclusions-and-recommendations">7.7 Conclusions and Recommendations</h3>
+<h4 id="conclusions">Conclusions</h4>
+<ul>
+<li>Stride impact transitions from stable to degraded as N grows</li>
+<li>Compilers and prefetchers handle low strides (2/4) well</li>
+<li>High strides (≥8) degrade bandwidth heavily for both f32 and f64</li>
+</ul>
+<h4 id="recommendations">Recommendations</h4>
+<ul>
+<li>
+<p>Prefer linear access (stride=1); use SoA/contiguous layouts</p>
+</li>
+<li>
+<p>If strided access is unavoidable:</p>
+<ul>
+<li>Keep stride=2^k, avoid misaligned patterns</li>
+<li>Apply index reordering or blocking in preprocessing</li>
+<li>On high-end CPUs, consider AVX-512 gather or software prefetching</li>
+</ul>
+</li>
+<li>
+<p>Monitor TLB hit rate and cache misses to avoid pseudo-random jumps caused by stride-page size interactions</p>
+</li>
+</ul>
+<hr>
+<h2 id="8-data-type-comparison">8. Data Type Comparison</h2>
+<h3 id="81-research-questions--criteria">8.1 Research Questions &amp; Criteria</h3>
+<p>This section aims to analyze the differences between different data types (f32 and f64) in SIMD throughput, bandwidth-limited performance, and overall speedup, examining their scalability and bottleneck characteristics across different cache levels.</p>
+<p><strong>Core Research Questions:</strong></p>
+<ol>
+<li>
+<p><strong>SIMD Lane Count</strong>
+On the AVX2 256-bit platform, f32 can process 8 elements per instruction, while f64 can only process 4. Theoretically, the ideal SIMD throughput ceiling of f32 is 2× that of f64.</p>
+</li>
+<li>
+<p><strong>Arithmetic Intensity (AI = FLOPs / Bytes)</strong>
+Under the same workload, f64 requires twice the byte traffic, entering the bandwidth-limited region earlier and being more easily constrained by the DRAM bottleneck.</p>
+</li>
+<li>
+<p><strong>Observation Metrics:</strong></p>
+<ul>
+<li><strong>GFLOP/s</strong>: Reflects arithmetic throughput;</li>
+<li><strong>CPE (Cycles per Element)</strong>: Measures the average cycle cost per element;</li>
+<li><strong>Speedup = GFLOP/s(SIMD) ÷ GFLOP/s(Scalar)</strong>: Reflects the actual acceleration brought by vectorization.</li>
+</ul>
+</li>
+</ol>
+<h3 id="82-simd-lane-width-and-arithmetic-intensity-derivation">8.2 SIMD Lane Width and Arithmetic Intensity Derivation</h3>
+<h4 id="simd-lane-count-example-avx2-256-bit">SIMD Lane Count (Example: AVX2 256-bit)</h4>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Element Size (Byte)</th>
+<th>Lane Count (Lanes / Instruction)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>f32</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>f64</td>
+<td>8</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<h4 id="memory-access-patterns-and-arithmetic-intensity-of-each-kernel">Memory Access Patterns and Arithmetic Intensity of Each Kernel</h4>
+<table>
+<thead>
+<tr>
+<th>Kernel</th>
+<th>Access Pattern (per element)</th>
+<th>f32 B/el</th>
+<th>f64 B/el</th>
+<th>Arithmetic Intensity (FLOPs/Byte)*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>saxpy</td>
+<td>read x + read/write y</td>
+<td>12</td>
+<td>24</td>
+<td>2 / 12B = 0.167; 2 / 24B = 0.083</td>
+</tr>
+<tr>
+<td>dot</td>
+<td>read x + read y</td>
+<td>8</td>
+<td>16</td>
+<td>2 / 8B = 0.25; 2 / 16B = 0.125</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>read x,y + write z</td>
+<td>12</td>
+<td>24</td>
+<td>1 / 12B ≈ 0.083; 1 / 24B ≈ 0.042</td>
+</tr>
+<tr>
+<td>stencil(3pt)</td>
+<td>3 reads x + 1 write y (avg.)</td>
+<td>~8</td>
+<td>~16</td>
+<td>~2–4 FLOPs / 8–16B (f64 ≈ f32 / 2)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="inference">Inference:</h4>
+<ul>
+<li><strong>Compute-Bound Phase (L1/L2 Region):</strong>
+f32, due to its wider lanes, has a theoretical peak GFLOP/s roughly 2× that of f64.</li>
+<li><strong>Bandwidth-Bound Phase (LLC/DRAM Region):</strong>
+Both are limited by the same traffic, and GFLOP/s converges; however, f32 still holds a slight advantage (more FLOPs per byte).</li>
+<li><strong>Reduction Kernels (dot/f64):</strong>
+Due to narrower lanes, longer reduction chains, and sensitivity to tail processing, SIMD acceleration gains are minimal.</li>
+</ul>
+<h3 id="83-result-overview">8.3 Result Overview</h3>
+<p>The following core conclusions are derived from the table results; see <code>\plots\dtype\dtype_summary.md</code> for details, excerpts as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">dtype</th>
+<th style="text-align:left">kernel</th>
+<th style="text-align:left">region</th>
+<th style="text-align:right">gmean_speedup</th>
+<th style="text-align:right">gmean_gflops_simd</th>
+<th style="text-align:right">gmean_gflops_scalar</th>
+<th style="text-align:right">gmean_cpe_simd</th>
+<th style="text-align:right">gmean_cpe_scalar</th>
+<th style="text-align:right">samples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">f32</td>
+<td style="text-align:left">dot</td>
+<td style="text-align:left">DRAM</td>
+<td style="text-align:right">0.986</td>
+<td style="text-align:right">1.704</td>
+<td style="text-align:right">1.727</td>
+<td style="text-align:right">3.665</td>
+<td style="text-align:right">3.616</td>
+<td style="text-align:right">48</td>
+</tr>
+<tr>
+<td style="text-align:left">f32</td>
+<td style="text-align:left">dot</td>
+<td style="text-align:left">L1</td>
+<td style="text-align:right">0.915</td>
+<td style="text-align:right">2.985</td>
+<td style="text-align:right">3.261</td>
+<td style="text-align:right">2.072</td>
+<td style="text-align:right">1.932</td>
+<td style="text-align:right">72</td>
+</tr>
+<tr>
+<td style="text-align:left">f32</td>
+<td style="text-align:left">dot</td>
+<td style="text-align:left">L2</td>
+<td style="text-align:right">1.014</td>
+<td style="text-align:right">3.291</td>
+<td style="text-align:right">3.247</td>
+<td style="text-align:right">1.952</td>
+<td style="text-align:right">1.926</td>
+<td style="text-align:right">24</td>
+</tr>
+<tr>
+<td style="text-align:left">f32</td>
+<td style="text-align:left">dot</td>
+<td style="text-align:left">LLC</td>
+<td style="text-align:right">0.956</td>
+<td style="text-align:right">2.821</td>
+<td style="text-align:right">2.952</td>
+<td style="text-align:right">2.201</td>
+<td style="text-align:right">2.118</td>
+<td style="text-align:right">16</td>
+</tr>
+<tr>
+<td style="text-align:left">f32</td>
+<td style="text-align:left">mul</td>
+<td style="text-align:left">DRAM</td>
+<td style="text-align:right">0.939</td>
+<td style="text-align:right">0.607</td>
+<td style="text-align:right">0.646</td>
+<td style="text-align:right">5.134</td>
+<td style="text-align:right">4.858</td>
+<td style="text-align:right">48</td>
+</tr>
+<tr>
+<td style="text-align:left">f32</td>
+<td style="text-align:left">mul</td>
+<td style="text-align:left">L1</td>
+<td style="text-align:right">0.975</td>
+<td style="text-align:right">1.659</td>
+<td style="text-align:right">1.701</td>
+<td style="text-align:right">1.909</td>
+<td style="text-align:right">1.828</td>
+<td style="text-align:right">72</td>
+</tr>
+<tr>
+<td style="text-align:left">f32</td>
+<td style="text-align:left">mul</td>
+<td style="text-align:left">L2</td>
+<td style="text-align:right">1.002</td>
+<td style="text-align:right">1.724</td>
+<td style="text-align:right">1.721</td>
+<td style="text-align:right">1.812</td>
+<td style="text-align:right">1.835</td>
+<td style="text-align:right">24</td>
+</tr>
+<tr>
+<td style="text-align:left">f32</td>
+<td style="text-align:left">mul</td>
+<td style="text-align:left">LLC</td>
+<td style="text-align:right">0.817</td>
+<td style="text-align:right">1.326</td>
+<td style="text-align:right">1.622</td>
+<td style="text-align:right">2.355</td>
+<td style="text-align:right">1.957</td>
+<td style="text-align:right">16</td>
+</tr>
+<tr>
+<td style="text-align:left">f32</td>
+<td style="text-align:left">saxpy</td>
+<td style="text-align:left">DRAM</td>
+<td style="text-align:right">0.975</td>
+<td style="text-align:right">1.52</td>
+<td style="text-align:right">1.56</td>
+<td style="text-align:right">4.119</td>
+<td style="text-align:right">4.003</td>
+<td style="text-align:right">48</td>
+</tr>
+<tr>
+<td style="text-align:left">f32</td>
+<td style="text-align:left">saxpy</td>
+<td style="text-align:left">L1</td>
+<td style="text-align:right">0.921</td>
+<td style="text-align:right">3.228</td>
+<td style="text-align:right">3.505</td>
+<td style="text-align:right">1.929</td>
+<td style="text-align:right">1.8</td>
+<td style="text-align:right">72</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong>Overall Speedup</strong></p>
+<ul>
+<li>In <strong>L1/L2 Regions (Compute-Bound):</strong> f32 SIMD acceleration typically reaches 0.9–1.0×, with local kernels (e.g., stencil) up to <strong>2–3×</strong>;</li>
+<li>In <strong>DRAM Regions (Bandwidth-Bound):</strong> Speedup generally drops to <strong>≈1.0</strong> or slightly below, indicating that memory access becomes the bottleneck, completely masking SIMD lane advantages.</li>
+</ul>
+</li>
+<li>
+<p><strong>f32 vs f64 GFLOP/s Comparison</strong></p>
+<ul>
+<li>Across all kernels, <strong>f32 GFLOP/s is significantly higher than f64</strong>;</li>
+<li>For <code>stencil</code>, f32 reaches 39 GFLOP/s in L1, f64 about 20 GFLOP/s;</li>
+<li>In the DRAM region, the gap narrows (f32: 5.7 vs f64: 3.2).</li>
+</ul>
+</li>
+<li>
+<p><strong>CPE Comparison</strong></p>
+<ul>
+<li>L1/L2: f32 CPE is significantly lower than f64 (more efficient vectorization).</li>
+<li>DRAM: f32 and f64 CPE both rise significantly, indicating increased ALU idle cycles.</li>
+</ul>
+</li>
+</ul>
+<h3 id="84-chart-preview">8.4 Chart Preview</h3>
+<p>The results are visualized as follows:</p>
+<h4 id="speedup-comparison">Speedup Comparison</h4>
+<ul>
+<li>
+<p>f32 Speedup by Region
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/dtype/speedup_f32.png" alt=""></p>
+</li>
+<li>
+<p>f64 Speedup by Region
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/dtype/speedup_f64.png" alt=""></p>
+</li>
+</ul>
+<h4 id="simd-gflops-comparison-by-kernel-f32-vs-f64">SIMD GFLOP/s Comparison by Kernel (f32 vs f64)</h4>
+<ul>
+<li>dot
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/dtype/gflops_simd_dot.png" alt=""></li>
+<li>mul
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/dtype/gflops_simd_mul.png" alt=""></li>
+<li>saxpy
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/dtype/gflops_simd_saxpy.png" alt=""></li>
+<li>stencil
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/dtype/gflops_simd_stencil.png" alt=""></li>
+</ul>
+<h4 id="simd-cpe-comparison-by-kernel-f32-vs-f64">SIMD CPE Comparison by Kernel (f32 vs f64)</h4>
+<ul>
+<li>dot
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/dtype/cpe_simd_dot.png" alt=""></li>
+<li>mul
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/dtype/cpe_simd_mul.png" alt=""></li>
+<li>saxpy
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/dtype/cpe_simd_saxpy.png" alt=""></li>
+<li>stencil
+<img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/dtype/cpe_simd_stencil.png" alt=""></li>
+</ul>
+<h3 id="85-analysis">8.5 Analysis</h3>
+<h4 id="compute-bound-phase-l1l2-region">Compute-Bound Phase (L1/L2 Region)</h4>
+<ul>
+<li>
+<p><strong>f32 Shows a Clear Advantage:</strong>
+In the L1/L2 region, f32 SIMD GFLOP/s is often <strong>1.5–2.0×</strong> that of f64, with speedup close to or slightly below theoretical peak.</p>
+<ul>
+<li>stencil f32 L1 reaches 39 GFLOP/s, f64 about 20 GFLOP/s, reflecting wider lanes and higher data reuse efficiency.</li>
+<li>CPE decreases accordingly, indicating good coordination between instruction stream and cache hit rate.</li>
+</ul>
+</li>
+<li>
+<p><strong>f64 Acceleration Is Limited:</strong>
+Although vectorization is effective, due to larger data volume and instruction scheduling pressure, f64 speedup is mostly 0.9–1.0× at small scales.</p>
+</li>
+</ul>
+<h4 id="bandwidth-bound-phase-llcdram-region">Bandwidth-Bound Phase (LLC/DRAM Region)</h4>
+<ul>
+<li>
+<p><strong>Speedup Converges or Declines:</strong>
+When N enters the DRAM region, f32/f64 speedups of all kernels approach 1, and some kernels even fall below 1 (e.g., <code>mul</code>/<code>dot</code>).</p>
+<ul>
+<li>This indicates that vectorization cannot improve the bandwidth ceiling, and lane-width advantages are fully hidden by data traffic.</li>
+</ul>
+</li>
+<li>
+<p><strong>CPE Rises Significantly:</strong>
+The bandwidth bottleneck causes ALUs to wait for memory, increasing CPE by 1.5–3×.</p>
+</li>
+</ul>
+<h4 id="kernel-differences">Kernel Differences</h4>
+<table>
+<thead>
+<tr>
+<th>Kernel</th>
+<th>Characteristics and Difference Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>dot</strong></td>
+<td>Reduction type; highly sensitive to f64; SIMD acceleration limited by tail and dependency chain; Speedup ≈ 0.9–1.0.</td>
+</tr>
+<tr>
+<td><strong>mul</strong></td>
+<td>Pure element-wise multiplication, memory-dominated; slight acceleration in L1, fully limited in DRAM region.</td>
+</tr>
+<tr>
+<td><strong>saxpy</strong></td>
+<td>Bandwidth-dominated; f32 slightly better in cache; f64 clamped earlier.</td>
+</tr>
+<tr>
+<td><strong>stencil</strong></td>
+<td>Relatively high arithmetic intensity, significant speedup (2–3×) in L1/L2; still limited in DRAM region.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="86-conclusions--recommendations">8.6 Conclusions &amp; Recommendations</h3>
+<p><strong>Conclusions:</strong></p>
+<ul>
+<li><strong>f32 Is Better for Extracting Single-Thread SIMD Throughput:</strong>
+Wider lanes and higher arithmetic intensity fully leverage SIMD potential in cache regions.</li>
+<li><strong>f64 Has Higher Precision but Hits Bandwidth Limit Earlier:</strong>
+In the DRAM region, performance converges or declines, with Speedup &lt; 1.</li>
+<li><strong>Memory-Dominated Kernels Are All Bandwidth-Locked at Large N:</strong>
+At this point, optimization should focus on access patterns (stride=1, SoA) and data reuse rather than mere vectorization.</li>
+</ul>
+<p><strong>Recommendations:</strong></p>
+<ul>
+<li><strong>Prefer f32:</strong> When numerical precision tolerance allows, use f32 as much as possible to fully exploit SIMD throughput;</li>
+<li><strong>f64 Scenarios:</strong> Optimize reuse, block computation, reduce memory access, and delay bandwidth bottleneck;</li>
+<li><strong>Access Pattern Optimization:</strong> Maintain SoA + stride=1; perform data reordering when necessary;</li>
+<li><strong>Reduction Kernels:</strong> For f64, apply padding and explicit peeling to reduce tail-handling overhead;</li>
+<li><strong>Performance Alignment Strategy:</strong> If a unified performance model is required, compensate for lane difference by increasing f64 arithmetic intensity (e.g., fused operations).</li>
+</ul>
+<hr>
+<h2 id="9-roofline-analysis">9. Roofline Analysis</h2>
+<h3 id="91-research-goals-and-model-introduction">9.1 Research Goals and Model Introduction</h3>
+<p>In modern high-performance architectures, application performance is constrained by two key resources: computational power and memory bandwidth.
+The Roofline model provides an intuitive way to express performance constraints as:</p>
+<p>$$
+P = \min(P_\text{peak}, B \times \text{AI})
+$$</p>
+<p>where:</p>
+<ul>
+<li>$P_\text{peak}$: theoretical peak compute power (GFLOP/s)</li>
+<li>$B$: sustainable memory bandwidth (GiB/s)</li>
+<li>$\text{AI}$: arithmetic intensity (FLOPs / Byte)</li>
+</ul>
+<p>By plotting the Roofline curve on a log–log scale (x-axis = AI, y-axis = performance), one can quickly determine the bottleneck type:</p>
+<ul>
+<li>Points near the sloped line (y = B × AI) → Memory-bound</li>
+<li>Points near the horizontal line (y = P_peak) → Compute-bound</li>
+</ul>
+<p>Research goals:</p>
+<ul>
+<li>Establish a Roofline model for single-thread SIMD kernels</li>
+<li>Locate performance bottlenecks for different <code>(kernel, dtype)</code></li>
+<li>Quantify measured utilization (%) to guide optimization</li>
+</ul>
+<hr>
+<h3 id="92-parameter-settings">9.2 Parameter Settings</h3>
+<ul>
+<li>The measured peak performance at small (N) is approximately 46.8 GFLOP/s.</li>
+<li>To provide a conservative margin (≈ +15 %), we multiply it by 1.15, yielding a theoretical peak $P_{\text{peak}} = 53.76 \text{GFLOP/s}$.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Peak performance $P_\text{peak}$</td>
+<td>53.76 GFLOP/s</td>
+<td>Taken as small-N high-frequency SIMD peak × 1.15</td>
+</tr>
+<tr>
+<td>Memory bandwidth $B_\text{mem}$</td>
+<td>69.66 GiB/s</td>
+<td>95th percentile of GiB/s from CSV</td>
+</tr>
+<tr>
+<td>Data filter</td>
+<td><code>stride=1</code></td>
+<td>Only contiguous access, excluding random access effects</td>
+</tr>
+<tr>
+<td>Region tagging</td>
+<td>Off (<code>region=ALL</code>)</td>
+<td>Aggregated overall performance</td>
+</tr>
+<tr>
+<td>Aggregation method</td>
+<td>Geometric Mean</td>
+<td>Reduces outlier influence, reflects central trend</td>
+</tr>
+</tbody>
+</table>
+<p>Arithmetic Intensity (AI) is computed as:
+$$
+AI = \frac{\text{FLOPs per element}}{\text{Bytes per element}}
+$$</p>
+<ul>
+<li>f32/f64 byte traffic per element: 12/24 (saxpy), 8/16 (dot), 12/24 (mul), 8/16 (stencil)</li>
+<li>stencil uses about 3 FLOPs per element, AI is the highest</li>
+</ul>
+<hr>
+<h3 id="93-measured-results">9.3 Measured Results</h3>
+<ul>
+<li>Check using <code>make_roofline_report.py</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">kernel</th>
+<th style="text-align:left">dtype</th>
+<th style="text-align:right">gmean_ai</th>
+<th style="text-align:right">gmean_gflops</th>
+<th style="text-align:right">pred_cap</th>
+<th style="text-align:right">util_%</th>
+<th style="text-align:left">bottleneck</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">dot</td>
+<td style="text-align:left">f32</td>
+<td style="text-align:right">0.250</td>
+<td style="text-align:right">2.850</td>
+<td style="text-align:right">17.415</td>
+<td style="text-align:right">16.4%</td>
+<td style="text-align:left">Memory-bound</td>
+</tr>
+<tr>
+<td style="text-align:left">dot</td>
+<td style="text-align:left">f64</td>
+<td style="text-align:right">0.125</td>
+<td style="text-align:right">2.441</td>
+<td style="text-align:right">8.708</td>
+<td style="text-align:right">28.0%</td>
+<td style="text-align:left">Memory-bound</td>
+</tr>
+<tr>
+<td style="text-align:left">mul</td>
+<td style="text-align:left">f32</td>
+<td style="text-align:right">0.083</td>
+<td style="text-align:right">1.355</td>
+<td style="text-align:right">5.805</td>
+<td style="text-align:right">23.3%</td>
+<td style="text-align:left">Memory-bound</td>
+</tr>
+<tr>
+<td style="text-align:left">mul</td>
+<td style="text-align:left">f64</td>
+<td style="text-align:right">0.042</td>
+<td style="text-align:right">1.059</td>
+<td style="text-align:right">2.903</td>
+<td style="text-align:right">36.5%</td>
+<td style="text-align:left">Memory-bound</td>
+</tr>
+<tr>
+<td style="text-align:left">saxpy</td>
+<td style="text-align:left">f32</td>
+<td style="text-align:right">0.167</td>
+<td style="text-align:right">2.899</td>
+<td style="text-align:right">11.610</td>
+<td style="text-align:right">25.0%</td>
+<td style="text-align:left">Memory-bound</td>
+</tr>
+<tr>
+<td style="text-align:left">saxpy</td>
+<td style="text-align:left">f64</td>
+<td style="text-align:right">0.083</td>
+<td style="text-align:right">2.385</td>
+<td style="text-align:right">5.805</td>
+<td style="text-align:right">41.1%</td>
+<td style="text-align:left">Memory-bound</td>
+</tr>
+<tr>
+<td style="text-align:left">stencil</td>
+<td style="text-align:left">f32</td>
+<td style="text-align:right">0.375</td>
+<td style="text-align:right">20.579</td>
+<td style="text-align:right">26.123</td>
+<td style="text-align:right">78.8%</td>
+<td style="text-align:left">Memory-bound</td>
+</tr>
+<tr>
+<td style="text-align:left">stencil</td>
+<td style="text-align:left">f64</td>
+<td style="text-align:right">0.187</td>
+<td style="text-align:right">10.077</td>
+<td style="text-align:right">13.062</td>
+<td style="text-align:right">77.2%</td>
+<td style="text-align:left">Memory-bound</td>
+</tr>
+</tbody>
+</table>
+<p><img src="file:///c:/Users/AIALRA-PORTABLE/Desktop/Proj 1/plots/roofline/roofline_overview.png" alt="roofline_overview"></p>
+<p>All points are distributed along the sloped region (B×AI), none reach the P_peak horizontal line, indicating that overall performance is constrained by memory bandwidth rather than compute capability.</p>
+<h3 id="94-detailed-analysis">9.4 Detailed Analysis</h3>
+<h4 id="global-trend">Global Trend</h4>
+<ul>
+<li>All kernels are memory-bound: arithmetic intensity (AI) is generally less than 0.5, GFLOP/s ≪ P_peak.</li>
+<li>Bandwidth utilization is low: most util_% &lt; 40%, indicating insufficient memory reuse and unexploited DRAM bandwidth.</li>
+<li>stencil exception: due to high local reuse, AI reaches 0.375/0.187, util_% approaches 80%, nearing the Roofline upper limit.</li>
+</ul>
+<h4 id="comparison-by-kernel">Comparison by Kernel</h4>
+<table>
+<thead>
+<tr>
+<th>Kernel</th>
+<th>AI(f32/f64)</th>
+<th>Characteristics</th>
+<th>Observation and Inference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dot</td>
+<td>0.25 / 0.125</td>
+<td>Typical reduction kernel with memory and dependency mix</td>
+<td>Measured util_% 16–28%, compute units wait for memory, SIMD limited</td>
+</tr>
+<tr>
+<td>mul</td>
+<td>0.083 / 0.042</td>
+<td>Pure element-wise multiplication</td>
+<td>Fully memory-dominated, compute units idle; f64 slightly better due to higher GF/AI ratio</td>
+</tr>
+<tr>
+<td>saxpy</td>
+<td>0.167 / 0.083</td>
+<td>FMA double FLOPs, high memory intensity</td>
+<td>SIMD issue rate higher than mul, but bandwidth still bottleneck</td>
+</tr>
+<tr>
+<td>stencil</td>
+<td>0.375 / 0.187</td>
+<td>High local reuse, good cache reuse</td>
+<td>Measured performance close to theoretical limit, indicating memory-friendly pattern</td>
+</tr>
+</tbody>
+</table>
+<h4 id="comparison-by-data-type">Comparison by Data Type</h4>
+<ul>
+<li>f32 advantage (high AI): smaller element size, higher AI, higher bandwidth cap, theoretical GFLOP/s limit ≈ 2× f64.</li>
+<li>f64 higher utilization: though cap ≈ ½, actual utilization slightly higher (36–41% vs 16–25%), indicating more stable memory behavior and higher prefetch success.</li>
+<li>Overall: f32 &gt; f64 in GFLOP/s; f64 &gt; f32 in util_%.</li>
+</ul>
+<h4 id="utilization-and-potential-distribution">Utilization and Potential Distribution</h4>
+<table>
+<thead>
+<tr>
+<th>Range</th>
+<th>util_% Range</th>
+<th>Representative Kernel</th>
+<th>Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>70~80%</td>
+<td>stencil</td>
+<td>High reuse, bandwidth near saturation</td>
+<td></td>
+</tr>
+<tr>
+<td>20~40%</td>
+<td>dot/mul/saxpy</td>
+<td>Bandwidth-dominated, memory efficiency improvable</td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;20%</td>
+<td>dot-f32</td>
+<td>Long dependency chain, reduction lowers parallelism</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="95-microarchitectural-analysis">9.5 Microarchitectural Analysis</h3>
+<h4 id="cache-line-utilization">Cache Line Utilization</h4>
+<ul>
+<li>stride=1 ensures each cacheline fully used, but low-AI kernels (e.g. mul) still bandwidth-bound due to low FLOPs/Byte.</li>
+<li>stencil has high reuse, L1/L2 reuse significant, fewer load misses, forming efficient memory path.</li>
+</ul>
+<h4 id="prefetcher-efficiency">Prefetcher Efficiency</h4>
+<ul>
+<li>Sequential access (stride=1) ensures high hardware prefetch accuracy.</li>
+<li>f64 kernels have lower cross-page frequency (larger element spacing), less TLB pressure, more stability.</li>
+<li>Low-AI kernels may cause “early prefetch” bandwidth waste, suggest blocking.</li>
+</ul>
+<h4 id="instruction-issue-and-simd-utilization">Instruction Issue and SIMD Utilization</h4>
+<ul>
+<li>dot reduction has cross-element dependencies, reducing pipeline parallelism.</li>
+<li>mul/saxpy have independent operations but cannot fully hide latency.</li>
+<li>stencil uses FMA and aggregated loads, highest compute utilization.</li>
+</ul>
+<h4 id="memory-system">Memory System</h4>
+<ul>
+<li>All kernel points fall into DRAM Roofline region, main bottleneck is memory subsystem.</li>
+<li>For dot/mul, TLB miss and L3 bandwidth are key constraints.</li>
+</ul>
+<h3 id="96-conclusions-and-optimization-suggestions">9.6 Conclusions and Optimization Suggestions</h3>
+<h4 id="conclusions">Conclusions</h4>
+<ul>
+<li>All single-thread SIMD kernels are limited by memory bandwidth; low AI (&lt;0.5) determines performance ceiling.</li>
+<li>stencil kernel has high reuse, performance near theoretical limit, a high-AI optimization case.</li>
+<li>dot/mul/saxpy are memory-dominated, limited room for improvement on current architecture.</li>
+</ul>
+<h4 id="optimization">Optimization</h4>
+<h5 id="increase-arithmetic-intensity-ai">Increase Arithmetic Intensity (AI)</h5>
+<p>AI is low across all kernels, one main performance-limiting factor. The key is to increase FLOPs per byte, i.e., let each memory access do more computation.
+Suggestions:</p>
+<ul>
+<li>Data blocking: spatial/temporal blocking keeps working set in L1/L2, increases reuse.</li>
+<li>Register tiling: keep intermediates in registers, avoid frequent writes, reduce memory traffic.</li>
+<li>Loop fusion: merge loops accessing same data, reduce redundant reads/writes, increase arithmetic density.</li>
+</ul>
+<h5 id="memory-path-optimization">Memory Path Optimization</h5>
+<p>For bandwidth-bound kernels (dot, mul, saxpy), bottleneck lies in memory efficiency. Ensure shortest, contiguous access path.
+Strategies:</p>
+<ul>
+<li>Keep stride=1: avoid cross-cacheline access, ensure effective prefetch.</li>
+<li>Use SoA layout: better SIMD alignment, higher cacheline efficiency than AoS.</li>
+<li>Use prefetching: for streaming kernels, add compiler prefetch hints (<code>__builtin_prefetch</code>) or software prefetching.</li>
+</ul>
+<h5 id="compute-utilization-and-pipeline-scheduling">Compute Utilization and Pipeline Scheduling</h5>
+<p>Some kernels (e.g. dot) also limited by dependency chains and pipeline bubbles.
+Suggestions:</p>
+<ul>
+<li>Use FMA instead of separate mul/add, reduce issued instructions.</li>
+<li>Loop unrolling and ILP enhancement: unroll to reduce overhead, increase independent ops to fill pipeline.</li>
+<li>SIMD gather/scatter optimization: for non-contiguous access, use gather to maintain throughput.</li>
+</ul>
+<h5 id="thread-level-parallelism-tlp">Thread-Level Parallelism (TLP)</h5>
+<p>If single-thread performance nears Roofline limit, scale bandwidth use horizontally via parallel partition.</p>
+<ul>
+<li>NUMA-aware blocking: partition data by NUMA node, reduce cross-node access.</li>
+<li>Multi-core parallel execution: use OpenMP/pthreads to partition large data, distribute across memory controllers, improve total bandwidth use.</li>
+</ul>
+<h5 id="data-type-selection">Data Type Selection</h5>
+<p>In most kernels, f32’s theoretical ceiling &gt; f64, but both bandwidth-limited in DRAM. Prefer f32 if precision allows, higher GFLOP/s and SIMD lane use.</p>
+<ul>
+<li>f32 smaller elements → higher AI, better cacheline fill.</li>
+<li>f64 irreplaceable for precision-critical cases, use blocking and reuse to reduce bandwidth amplification.</li>
+</ul>
+<hr>
+<h2 id="10-exceptions-limitations-and-threats-to-validity">10. Exceptions, Limitations, and Threats to Validity</h2>
+<p>In this experiment, all tests were conducted under single-thread, fixed-frequency, and FTZ/DAZ enabled conditions to ensure the repeatability and validity of the results. However, several potential factors may affect the accuracy or interpretation of the results, which are summarized as follows:</p>
+<h3 id="101-denormals">10.1 Denormals</h3>
+<p>If input data or intermediate computation results contain very small magnitude values (subnormal numbers), the CPU may trigger a slow path, significantly slowing down the floating-point unit. In this experiment, the following options were uniformly enabled during the build phase:</p>
+<pre class="hljs"><code><div>-ffast-math -funsafe-math-optimizations -ffp-contract=fast
+</div></code></pre>
+<p>And FTZ (Flush-to-Zero) / DAZ (Denormals-Are-Zero) were enabled at runtime, meaning:</p>
+<ul>
+<li>All subnormal values in input/output are treated as zero.</li>
+<li>The exceptional slow path is avoided.</li>
+</ul>
+<p>Verification showed that no obvious &quot;tail anomalies&quot; or &quot;extremely slow segments&quot; were observed in any samples, indicating that FTZ/DAZ effectively suppressed this issue.</p>
+<h3 id="102-thermal-effects-and-frequency-scaling">10.2 Thermal Effects and Frequency Scaling</h3>
+<p>During long batch tests (especially at large N=64M), CPU core temperatures may continuously rise, triggering automatic frequency reduction. To ensure frequency stability, the following controls were applied:</p>
+<ul>
+<li>Fixed power plan: “Ultimate Performance” enabled on the Windows side.</li>
+<li>Disabled dynamic frequency scaling: locked to the Performance governor in WSL.</li>
+<li>Randomized test order: to avoid thermal accumulation caused by consecutive large-N samples.</li>
+<li>Monitoring indicators: No obvious “decreasing trend over time” or abnormal fluctuations were observed, indicating that thermal effects had negligible influence on the statistical results.</li>
+</ul>
+<h3 id="103-page-faults-and-tlb-misses">10.3 Page Faults and TLB Misses</h3>
+<p>When using very large N (≥ 64M), the working set far exceeds the physical cache capacity, and the accessed space spans thousands of pages, which may cause frequent TLB misses:</p>
+<ul>
+<li>Combinations like f64 stride=8 cross pages earlier.</li>
+<li>Each TLB miss may introduce an additional delay of tens to hundreds of cycles.</li>
+<li>It can be quantified by <code>perf stat -e dTLB-load-misses</code>.</li>
+</ul>
+<p>Since the test environment enabled Huge Page support and stride=1 dominates, the overall impact was limited, but future multi-stride studies should explicitly control paging policies.</p>
+<h3 id="104-single-thread-assumption">10.4 Single-Thread Assumption</h3>
+<p>This project strictly limited execution to a single thread, without enabling any OpenMP / pthreads / TBB parallel mechanisms, in order to isolate SIMD acceleration effects from multithreaded bandwidth expansion. All Roofline and bandwidth estimates are based on single-core measurement results. This means that the conclusions only apply to single-core SIMD performance analysis, and under multithreaded conditions, NUMA bandwidth and thread interference should be re-evaluated.</p>
+<h3 id="105-platform-and-environment-differences">10.5 Platform and Environment Differences</h3>
+<p>This experiment was run in a Windows + WSL2 environment, which may introduce the following differences:</p>
+<ul>
+<li>File I/O latency: due to filesystem bridging in WSL.</li>
+<li>Timestamp precision: rdtsc/rdtscp timing may slightly fluctuate in a virtualized layer.</li>
+<li>perf availability: some PMU counters require root privileges.</li>
+<li>Frequency control differences: WSL cannot directly control <code>cpufreq</code>, relying on the host OS instead.</li>
+</ul>
+<p>To address these issues, the experiment uniformly adopted:</p>
+<ul>
+<li>Using <code>rdtscp</code> + statistical quantiles (median/p05/p95) to smooth noise.</li>
+<li>Single-core pinning (--pin) to prevent migration.</li>
+<li>Multiple repeated validations to ensure trend consistency.</li>
+</ul>
+<p>Overall evaluation: The above factors may introduce 1–3% random error but will not change the main trend conclusions. The experimental results have good stability and reproducibility.</p>
+<hr>
+<h2 id="11-report-summary">11. Report Summary</h2>
+<p>Through systematic experimental design and automated scripting, this project conducted a comprehensive evaluation of performance differences between scalar and SIMD implementations for typical numerical kernels, covering multiple dimensions (kernel / dtype / stride / alignment / N / tail). The main conclusions are as follows:</p>
+<h3 id="111-simd-acceleration-characteristics">11.1 SIMD Acceleration Characteristics</h3>
+<p>In compute-bound regions (L1/L2):</p>
+<ul>
+<li>SIMD provides significant acceleration (up to 4–8×), with f32 outperforming f64.</li>
+<li>Benefiting from FMA and ILP expansion, CPE decreases and GFLOP/s increases.</li>
+</ul>
+<p>In memory-bound regions (LLC/DRAM):</p>
+<ul>
+<li>Speedup converges to around 1×, limited by DRAM physical bandwidth.</li>
+<li>SIMD instructions only reduce scheduling overhead and cannot overcome memory bottlenecks.</li>
+</ul>
+<h3 id="112-summary-of-dimensional-influences">11.2 Summary of Dimensional Influences</h3>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Main Phenomenon</th>
+<th>Conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alignment</td>
+<td>Misaligned accesses cause LoadU delay and cacheline crossing, GFLOP/s decreases by 1–5%</td>
+<td>Ensure 32/64B alignment</td>
+</tr>
+<tr>
+<td>Tail</td>
+<td>Non-integer multiple vector widths require mask loops, CPE increases by 4%, GFLOP/s decreases by 5%</td>
+<td>Recommend padding or loop peeling</td>
+</tr>
+<tr>
+<td>Stride</td>
+<td>Increasing stride significantly reduces bandwidth utilization, at s=8 it can drop by up to 50%</td>
+<td>Maintain stride=1 for contiguous access</td>
+</tr>
+<tr>
+<td>Data Type</td>
+<td>f32 SIMD has wider lanes and higher AI, peak GFLOP/s is about twice that of f64</td>
+<td>f32 can better exploit SIMD advantages</td>
+</tr>
+<tr>
+<td>Kernel Type</td>
+<td>stencil has high AI, close to Roofline limit; dot/mul/saxpy are bandwidth-bound</td>
+<td>Increasing arithmetic density significantly improves performance</td>
+</tr>
+</tbody>
+</table>
+<h3 id="113-roofline-positioning">11.3 Roofline Positioning</h3>
+<ul>
+<li>All points lie below the B × AI sloped line, confirming bandwidth-dominated bottlenecks.</li>
+<li>The stencil kernel, due to high reuse, approaches the Roofline top line with utilization of 70–80%.</li>
+<li>dot / mul / saxpy have utilization of 20–40%; improvement should focus on increasing AI and data reuse.</li>
+</ul>
+
+</body>
+</html>

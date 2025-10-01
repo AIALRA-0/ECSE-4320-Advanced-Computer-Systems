@@ -1,0 +1,582 @@
+/usr/include/c++/13/bits/stl_iterator.h:1148:47: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_iterator.h:1148:47: missed: not vectorized: control flow in loop.
+/usr/include/c++/13/bits/stl_heap.h:229:28: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_heap.h:229:28: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/13/bits/stl_algo.h:1817:57: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1817:57: missed: not vectorized: control flow in loop.
+/usr/include/c++/13/bits/stl_algo.h:1799:20: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1799:20: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/13/bits/stl_algobase.h:748:23: missed: statement clobbers memory: __builtin_memmove (_30, __first_1, _28);
+/usr/include/c++/13/bits/stl_heap.h:422:31: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_heap.h:422:31: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/13/bits/stl_heap.h:358:4: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_heap.h:358:4: missed: not vectorized: latch block not empty.
+/usr/include/c++/13/bits/stl_algo.h:1929:4: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1929:4: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+/usr/include/c++/13/bits/stl_algo.h:1882:4: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1882:4: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+/usr/include/c++/13/bits/stl_algo.h:1880:17: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1880:17: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/13/bits/stl_algo.h:1877:17: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1877:17: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/13/bits/stl_algo.h:1932:25: missed: statement clobbers memory: std::__introsort_loop.isra (__cut, __last, __depth_limit_4);
+/usr/include/c++/13/bits/stl_heap.h:356:22: missed: statement clobbers memory: std::__adjust_heap.isra (__first, __parent_51, _48, _55);
+/usr/include/c++/13/bits/stl_heap.h:264:25: missed: statement clobbers memory: std::__adjust_heap.isra (__first, 0, _34, _30);
+/usr/include/c++/13/bits/move.h:198:11: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algo.h:1839:53: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1839:53: missed: not vectorized: control flow in loop.
+/usr/include/c++/13/bits/stl_algo.h:1799:20: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1799:20: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/13/bits/stl_algobase.h:2144:22: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:144:15: missed: not vectorized: unsupported use in stmt.
+/usr/include/c++/13/bits/predefined_ops.h:318:23: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/predefined_ops.h:318:23: missed: not vectorized: control flow in loop.
+/usr/include/c++/13/bits/stl_algo.h:1947:25: missed: statement clobbers memory: std::__introsort_loop.isra (__first, __last, _134);
+/usr/include/c++/13/bits/stl_algo.h:1864:23: missed: statement clobbers memory: std::__insertion_sort.isra (__first, __last);
+/usr/include/c++/13/bits/stl_algo.h:1859:25: missed: statement clobbers memory: std::__insertion_sort.isra (__first, D.272246);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:151:40: missed: not vectorized: vectorization is not profitable.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:151:40: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/char_traits.h:399:25: missed: statement clobbers memory: _3 = __builtin_strlen (__s_1(D));
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (__out_2(D), __s_1(D), _4);
+/usr/include/c++/13/bits/basic_ios.h:158:20: missed: statement clobbers memory: std::basic_ios<char>::clear (_12, _14);
+/usr/include/c++/13/bits/char_traits.h:399:25: missed: statement clobbers memory: _18 = __builtin_strlen (_10);
+/usr/include/c++/13/bits/basic_string.tcc:229:13: missed: statement clobbers memory: _22 = std::__cxx11::basic_string<char>::_M_create (_1(D), &__dnew, 0);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (_31, _10, _18);
+/usr/include/c++/13/bits/basic_string.h:646:28: missed: statement clobbers memory: std::__throw_logic_error ("basic_string: construction from null is not valid");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _1 = posix_memalign (&D.266921, align_5(D), size_6(D));
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (p_2(D));
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:117:18: missed: statement clobbers memory: __builtin_memset (&set, 0, 128);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:118:26: missed: statement clobbers memory: sched_setaffinity (0, 128, &set);
+/usr/include/c++/13/ext/string_conversions.h:82:34: missed: statement clobbers memory: __tmp_11 = __convf_7(D) (__str_8(D), &__endptr, __base#0_9(D));
+/usr/include/c++/13/ext/string_conversions.h:88:27: missed: statement clobbers memory: std::__throw_out_of_range (__name_17(D));
+/usr/include/c++/13/ext/string_conversions.h:85:31: missed: statement clobbers memory: std::__throw_invalid_argument (__name_17(D));
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_7, _15);
+/usr/include/c++/13/bits/new_allocator.h:151:48: missed: statement clobbers memory: _41 = operator new (_40);
+/usr/include/c++/13/bits/stl_uninitialized.h:1131:21: missed: statement clobbers memory: __builtin_memmove (_41, _2, _27);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_2, _42);
+/usr/include/c++/13/bits/vector.tcc:71:22: missed: statement clobbers memory: std::__throw_length_error ("vector::reserve");
+/usr/include/c++/13/bits/vector.tcc:96:27: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/char_traits.h:399:25: missed: statement clobbers memory: _8 = __builtin_strlen (__rhs_5(D));
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _6 = __builtin_memcmp (_4, __rhs_5(D), _7);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:169:19: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:169:40: missed: not vectorized: no vectype for stmt: _3 = *_2;
+ scalar_type: const float
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:174:19: optimized: loop vectorized using 32 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:174:19: optimized:  loop versioned for vectorization because of possible aliasing
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:174:19: optimized: loop vectorized using 16 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:174:19: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:174:19: missed: not vectorized: number of iterations cannot be computed.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:197:10: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:197:30: missed: not vectorized: no vectype for stmt: _43 = *_42;
+ scalar_type: const float
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:191:12: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:157:5: missed: not vectorized: unsupported use in stmt.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:220:10: optimized: loop vectorized using 32 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:220:10: optimized: loop vectorized using 16 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:220:10: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:220:10: missed: not vectorized: number of iterations cannot be computed.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:214:15: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:214:15: missed: not vectorized: number of iterations cannot be computed.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:232:19: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:232:36: missed: not vectorized: no vectype for stmt: _3 = *_2;
+ scalar_type: const float
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:237:19: optimized: loop vectorized using 32 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:237:19: optimized:  loop versioned for vectorization because of possible aliasing
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:237:19: optimized: loop vectorized using 16 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:237:19: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:237:19: missed: not vectorized: number of iterations cannot be computed.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:244:21: optimized: loop vectorized using 32 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:244:21: optimized:  loop versioned for vectorization because of possible aliasing
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:244:21: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/new_allocator.h:151:48: missed: statement clobbers memory: _40 = operator new (_14);
+/usr/include/c++/13/bits/stl_algobase.h:437:23: missed: statement clobbers memory: __builtin_memmove (iftmp.9_33, _21, _17);
+/usr/include/c++/13/bits/new_allocator.h:139:41: missed: statement clobbers memory: std::__throw_bad_array_new_length ();
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:169:19: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:169:40: missed: not vectorized: no vectype for stmt: _3 = *_2;
+ scalar_type: const double
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:174:19: optimized: loop vectorized using 32 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:174:19: optimized:  loop versioned for vectorization because of possible aliasing
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:174:19: optimized: loop vectorized using 16 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:174:19: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:174:19: missed: not vectorized: number of iterations cannot be computed.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:197:10: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:197:30: missed: not vectorized: no vectype for stmt: _43 = *_42;
+ scalar_type: const double
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:191:12: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:157:5: missed: not vectorized: unsupported use in stmt.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:220:10: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:220:35: missed: not vectorized: no vectype for stmt: _213 = *_214;
+ scalar_type: const double
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:220:10: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:220:10: missed: not vectorized: number of iterations cannot be computed.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:214:15: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:214:15: missed: not vectorized: number of iterations cannot be computed.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:232:19: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:232:36: missed: not vectorized: no vectype for stmt: _3 = *_2;
+ scalar_type: const double
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:237:19: optimized: loop vectorized using 32 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:237:19: optimized:  loop versioned for vectorization because of possible aliasing
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:237:19: optimized: loop vectorized using 16 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:237:19: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:237:19: missed: not vectorized: number of iterations cannot be computed.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:244:21: optimized: loop vectorized using 32 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:244:21: optimized:  loop versioned for vectorization because of possible aliasing
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:244:21: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/new_allocator.h:151:48: missed: statement clobbers memory: _58 = operator new (prephitmp_74);
+/usr/include/c++/13/bits/stl_uninitialized.h:1131:21: missed: statement clobbers memory: __builtin_memmove (iftmp.9_15, _40, _1);
+/usr/include/c++/13/bits/stl_uninitialized.h:1131:21: missed: statement clobbers memory: __builtin_memcpy (_85, __position_8, _87);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_40, _59);
+/usr/include/c++/13/bits/stl_vector.h:1899:24: missed: statement clobbers memory: std::__throw_length_error ("vector::_M_realloc_insert");
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algo.h:1839:53: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1839:53: missed: not vectorized: control flow in loop.
+/usr/include/c++/13/bits/stl_algo.h:1799:20: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1799:20: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/13/bits/stl_algo.h:1817:57: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1817:57: missed: not vectorized: control flow in loop.
+/usr/include/c++/13/bits/stl_algo.h:1799:20: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1799:20: missed: not vectorized: number of iterations cannot be computed.
+/usr/include/c++/13/bits/stl_algo.h:1817:57: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1817:57: missed: not vectorized: control flow in loop.
+/usr/include/c++/13/bits/stl_algo.h:1799:20: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/stl_algo.h:1799:20: missed: not vectorized: number of iterations cannot be computed.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:129:16: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:129:16: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:132:26: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:132:26: missed: not vectorized: latch block not empty.
+/usr/include/c++/13/bits/this_thread_sleep.h:80:20: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/this_thread_sleep.h:80:20: missed: not vectorized: control flow in loop.
+/usr/include/c++/13/bits/new_allocator.h:151:48: missed: statement clobbers memory: _92 = operator new (40);
+/usr/include/c++/13/bits/this_thread_sleep.h:80:20: missed: statement clobbers memory: _99 = nanosleep (&__ts, &__ts);
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1534:25: missed: statement clobbers memory: __builtin_ia32_lfence ();
+/usr/lib/gcc/x86_64-linux-gnu/13/include/ia32intrin.h:114:31: missed: statement clobbers memory: _13 = __builtin_ia32_rdtsc ();
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1534:25: missed: statement clobbers memory: __builtin_ia32_lfence ();
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:131:49: missed: statement clobbers memory: c0 = std::chrono::_V2::steady_clock::now ();
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:132:21: missed: statement clobbers memory: D.245695 = std::chrono::_V2::steady_clock::now ();
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1534:25: missed: statement clobbers memory: __builtin_ia32_lfence ();
+/usr/lib/gcc/x86_64-linux-gnu/13/include/ia32intrin.h:124:32: missed: statement clobbers memory: _33 = __builtin_ia32_rdtscp (&aux);
+/usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h:1534:25: missed: statement clobbers memory: __builtin_ia32_lfence ();
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:133:50: missed: statement clobbers memory: c1 = std::chrono::_V2::steady_clock::now ();
+/usr/include/c++/13/bits/vector.tcc:123:21: missed: statement clobbers memory: std::vector<double>::_M_realloc_insert<double> (&ests, D.273130, &D.245736);
+/usr/include/c++/13/bits/stl_algo.h:1947:25: missed: statement clobbers memory: std::__introsort_loop.isra (__first, __last, _118);
+/usr/include/c++/13/bits/stl_algobase.h:748:23: missed: statement clobbers memory: __builtin_memmove (_177, _35, _175);
+/usr/include/c++/13/bits/stl_algobase.h:748:23: missed: statement clobbers memory: __builtin_memmove (_152, _35, _150);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_35, _190);
+/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:1337:24: missed: statement clobbers memory: __builtin_ia32_pause ();
+/usr/include/c++/13/bits/this_thread_sleep.h:75:20: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/this_thread_sleep.h:75:20: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/random.tcc:412:42: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/random.tcc:412:42: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/random.tcc:404:32: optimized: loop vectorized using 32 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:84:19: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:84:19: missed: not vectorized: control flow in loop.
+/usr/include/c++/13/bits/random.tcc:333:32: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/random.tcc:335:14: missed: not vectorized: no vectype for stmt: __x_13 = MEM[(struct mersenne_twister_engine *)&rng]._M_x[_12];
+ scalar_type: long unsigned int
+/usr/include/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 64, 312, 156, 31, 13043109905998158313, 29, 6148914691236517205, 17, 8202884508482404352, 37, 18444473444759240704, 43, 6364136223846793005>::_M_gen_rand (&rng);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:361:21: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:361:21: missed: not vectorized: control flow in loop.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _8 = posix_memalign (&D.273476, 64, _7);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _12 = posix_memalign (&D.273477, 64, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _15 = posix_memalign (&D.273478, 64, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:316:15: missed: statement clobbers memory: init_array<double> (_18, _6);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:317:15: missed: statement clobbers memory: init_array<double> (_20, n_3);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:318:15: missed: statement clobbers memory: init_array<double> (_17, n_3);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _25 = posix_memalign (&D.273473, 64, _7);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _28 = posix_memalign (&D.273474, 64, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _31 = posix_memalign (&D.273475, 64, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_34, _18, _7);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_36, _20, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_38, _17, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _43 = posix_memalign (&D.273470, 64, _7);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _46 = posix_memalign (&D.273471, 64, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _49 = posix_memalign (&D.273472, 64, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_52, _18, _7);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_54, _20, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_51, _17, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:340:22: missed: statement clobbers memory: retval.166_63 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_62, "saxpy");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:343:29: missed: statement clobbers memory: retval.168_69 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_62, "dot");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:348:29: missed: statement clobbers memory: retval.171_78 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_62, "mul");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:351:29: missed: statement clobbers memory: retval.173_83 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_62, "stencil");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:352:30: missed: statement clobbers memory: kernel_stencil<double> (xwv_67, _54, n_3, 9.0000000000000002220446049250313080847263336181640625e-1, 1.100000000000000088817841970012523233890533447265625e+0, 8.000000000000000444089209850062616169452667236328125e-1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:349:29: missed: statement clobbers memory: retval.172_80 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_79, "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:350:62: missed: statement clobbers memory: kernel_mul_sample<double> (xwv_67, _54, _51, n_3, pretmp_909);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:349:60: missed: statement clobbers memory: kernel_mul_index<double> (xwv_67, _54, _51, n_3, pretmp_909);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:344:43: missed: statement clobbers memory: _71 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_70, "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:346:37: missed: statement clobbers memory: iftmp.169_75 = kernel_dot_sample<double> (xwv_67, _54, n_3, pretmp_908);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:345:36: missed: statement clobbers memory: iftmp.169_73 = kernel_dot_index<double> (xwv_67, _54, n_3, pretmp_908);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:344:24: missed: not vectorized: volatile type: s2 ={v} iftmp.169_76;
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:347:13: missed: not vectorized: volatile type: vol.170_77 ={v} s2;
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:341:29: missed: statement clobbers memory: retval.167_65 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_64, "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:342:64: missed: statement clobbers memory: kernel_saxpy_sample<double> (1.1109999999999999875655021241982467472553253173828125e+0, xwv_67, _54, n_3, pretmp_907);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:341:62: missed: statement clobbers memory: kernel_saxpy_index<double> (1.1109999999999999875655021241982467472553253173828125e+0, xwv_67, _54, n_3, pretmp_907);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_52);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_54);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_670);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:360:41: missed: statement clobbers memory: std::vector<double>::reserve (&tns, _86);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_18, _34, _7);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_20, _36, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_17, _38, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:58:30: missed: statement clobbers memory: t.t0 = std::chrono::_V2::steady_clock::now ();
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _770 = __builtin_memcmp (_404, "dot", 3);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:374:39: missed: statement clobbers memory: _104 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_103, "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:376:33: missed: statement clobbers memory: iftmp.177_108 = kernel_dot_sample<double> (x_100, _20, n_3, pretmp_906);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:375:32: missed: statement clobbers memory: iftmp.177_106 = kernel_dot_index<double> (x_100, _20, n_3, pretmp_906);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:374:20: missed: not vectorized: volatile type: s2 ={v} iftmp.177_109;
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:377:9: missed: not vectorized: volatile type: vol.178_110 ={v} s2;
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _760 = __builtin_memcmp (_345, "saxpy", 5);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:378:25: missed: statement clobbers memory: retval.179_111 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_95, "mul");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:381:25: missed: statement clobbers memory: retval.181_116 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_95, "stencil");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:382:26: missed: statement clobbers memory: kernel_stencil<double> (x_100, _20, n_3, 9.0000000000000002220446049250313080847263336181640625e-1, 1.100000000000000088817841970012523233890533447265625e+0, 8.000000000000000444089209850062616169452667236328125e-1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:379:25: missed: statement clobbers memory: retval.180_113 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_112, "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:380:58: missed: statement clobbers memory: kernel_mul_sample<double> (x_100, _20, _17, n_3, pretmp_905);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:379:56: missed: statement clobbers memory: kernel_mul_index<double> (x_100, _20, _17, n_3, pretmp_905);
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _765 = __builtin_memcmp (_768, "index", 5);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:372:60: missed: statement clobbers memory: kernel_saxpy_sample<double> (1.1109999999999999875655021241982467472553253173828125e+0, x_100, _20, n_3, pretmp_904);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:371:58: missed: statement clobbers memory: kernel_saxpy_index<double> (1.1109999999999999875655021241982467472553253173828125e+0, x_100, _20, n_3, pretmp_904);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:59:29: missed: statement clobbers memory: t.t1 = std::chrono::_V2::steady_clock::now ();
+/usr/include/c++/13/bits/vector.tcc:123:21: missed: statement clobbers memory: std::vector<double>::_M_realloc_insert<double> (&tns, D.273515, &D.273496);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:387:32: missed: statement clobbers memory: std::vector<double>::vector (&D.273495, &tns);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:387:32: missed: statement clobbers memory: med_123 = percentile (&D.273495, 5.0e-1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:387:32: missed: statement clobbers memory: std::vector<double>::~vector (&D.273495);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:388:32: missed: statement clobbers memory: std::vector<double>::vector (&D.273494, &tns);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:388:32: missed: statement clobbers memory: p05_124 = percentile (&D.273494, 5.000000000000000277555756156289135105907917022705078125e-2);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:388:32: missed: statement clobbers memory: std::vector<double>::~vector (&D.273494);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:389:32: missed: statement clobbers memory: std::vector<double>::vector (&D.273493, &tns);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:389:32: missed: statement clobbers memory: p95_125 = percentile (&D.273493, 9.499999999999999555910790149937383830547332763671875e-1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:389:32: missed: statement clobbers memory: std::vector<double>::~vector (&D.273493);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _128 = posix_memalign (&D.273468, 64, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _131 = posix_memalign (&D.273469, 64, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_134, _36, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_136, _38, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:400:18: missed: statement clobbers memory: retval.182_139 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_138, "saxpy");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:437:23: missed: statement clobbers memory: retval.186_223 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_138, "mul");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:470:23: missed: statement clobbers memory: retval.190_306 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_138, "stencil");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:488:25: missed: statement clobbers memory: retval.192_352 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_351, "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:516:37: missed: statement clobbers memory: v_399 = kernel_dot_sample<double> (x0v_144, _36, n_3, pretmp_902);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:491:36: missed: statement clobbers memory: v_357 = kernel_dot_index<double> (x0v_144, _36, n_3, pretmp_902);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _324 = posix_memalign (&D.273463, 64, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_327, _36, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:474:26: missed: statement clobbers memory: kernel_stencil<double> (x0v_144, _327, n_3, 9.0000000000000002220446049250313080847263336181640625e-1, 1.100000000000000088817841970012523233890533447265625e+0, 8.000000000000000444089209850062616169452667236328125e-1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_327);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:438:25: missed: statement clobbers memory: retval.187_225 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_224, "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _278 = posix_memalign (&D.273464, 64, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_281, _38, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:456:31: missed: statement clobbers memory: kernel_mul_sample<double> (x0v_144, _36, _281, n_3, _283);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_281);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _240 = posix_memalign (&D.273465, 64, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_243, _38, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:441:30: missed: statement clobbers memory: kernel_mul_index<double> (x0v_144, _36, _243, n_3, _245);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_243);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:401:25: missed: statement clobbers memory: retval.183_141 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_140, "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _195 = posix_memalign (&D.273466, 64, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_198, _36, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:423:33: missed: statement clobbers memory: kernel_saxpy_sample<double> (1.1109999999999999875655021241982467472553253173828125e+0, x0v_144, _198, n_3, _200);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_198);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _157 = posix_memalign (&D.273467, 64, _11);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_160, _36, _11);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:407:32: missed: statement clobbers memory: kernel_saxpy_index<double> (1.1109999999999999875655021241982467472553253173828125e+0, x0v_144, _160, n_3, _162);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_160);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_134);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_136);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:542:16: missed: statement clobbers memory: _428 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_427, "saxpy");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:543:16: missed: statement clobbers memory: _429 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_427, "dot");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:544:16: missed: statement clobbers memory: _430 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_427, "mul");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:547:35: missed: statement clobbers memory: _431 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_427, "stencil");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:553:55: missed: statement clobbers memory: estimate_cpu_hz_stable ();
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:553:55: missed: statement clobbers memory: hz_est_local_440 = estimate_cpu_hz_stable ();
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:560:16: missed: statement clobbers memory: retval.201_449 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_448, "saxpy");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:560:16: missed: statement clobbers memory: retval.201_84 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_533, "saxpy");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:561:21: missed: statement clobbers memory: retval.202_450 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_644, "dot");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:562:21: missed: statement clobbers memory: retval.203_451 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (_644, "mul");
+/usr/include/c++/13/bits/basic_string.h:4037:30: missed: statement clobbers memory: _465 = std::__ostream_insert<char, std::char_traits<char> > (&cout, _464, _463);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_465, ",", 1);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_465, "f64", 3);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_465, ",", 1);
+/usr/include/c++/13/ostream:173:25: missed: statement clobbers memory: _466 = std::basic_ostream<char>::_M_insert<long unsigned int> (_465, n_3);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_466, ",", 1);
+/usr/include/c++/13/ostream:173:25: missed: statement clobbers memory: _469 = std::basic_ostream<char>::_M_insert<long unsigned int> (_466, _468);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_469, ",", 1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:577:27: missed: statement clobbers memory: _473 = std::basic_ostream<char>::operator<< (_469, _523);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_473, ",", 1);
+/usr/include/c++/13/ostream:173:25: missed: statement clobbers memory: _476 = std::basic_ostream<char>::_M_insert<long unsigned int> (_473, _475);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_476, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _477 = std::basic_ostream<char>::_M_insert<double> (_476, med_123);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_477, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _478 = std::basic_ostream<char>::_M_insert<double> (_477, p05_124);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_478, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _479 = std::basic_ostream<char>::_M_insert<double> (_478, p95_125);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_479, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _481 = std::basic_ostream<char>::_M_insert<double> (_479, iftmp.198_359);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_481, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _483 = std::basic_ostream<char>::_M_insert<double> (_481, cpe_759);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_483, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _485 = std::basic_ostream<char>::_M_insert<double> (_483, iftmp.204_484);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_485, ",", 1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:585:43: missed: statement clobbers memory: _490 = std::basic_ostream<char>::operator<< (_485, iftmp.206_489);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:585:43: missed: statement clobbers memory: std::operator<<.isra (_490, ",");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:590:17: missed: statement clobbers memory: std::operator<<.isra (&cout, "-1\n");
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _498 = std::basic_ostream<char>::_M_insert<double> (&cout, max_rel_err_497);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:588:76: missed: statement clobbers memory: std::operator<<.isra (_498, "\n");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_34);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_36);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_38);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_18);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_20);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_17);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:595:3: missed: statement clobbers memory: std::vector<double>::~vector (&tns);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:24: missed: statement clobbers memory: __builtin_fwrite ("Allocation failed\n", 1, 18, stderr.165_778);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:24: missed: statement clobbers memory: __builtin_fwrite ("Allocation failed\n", 1, 18, stderr.165_24);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_18);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_20);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_263);
+/usr/include/c++/13/bits/stl_algobase.h:262:7: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/stl_algobase.h:262:7: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/stl_algobase.h:262:7: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/stl_algobase.h:262:7: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/stl_algobase.h:262:7: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/stl_algobase.h:262:7: optimized: basic block part vectorized using 32 byte vectors
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:84:19: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:84:19: missed: not vectorized: control flow in loop.
+/usr/include/c++/13/bits/random.tcc:333:32: missed: couldn't vectorize loop
+/usr/include/c++/13/bits/random.tcc:335:14: missed: not vectorized: no vectype for stmt: __x_14 = MEM[(struct mersenne_twister_engine *)&rng]._M_x[_13];
+ scalar_type: long unsigned int
+/usr/include/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 64, 312, 156, 31, 13043109905998158313, 29, 6148914691236517205, 17, 8202884508482404352, 37, 18444473444759240704, 43, 6364136223846793005>::_M_gen_rand (&rng);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:361:21: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:361:21: missed: not vectorized: control flow in loop.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:279:24: missed: couldn't vectorize loop
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:279:24: missed: not vectorized: control flow in loop.
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:275:28: missed: statement clobbers memory: std::ios_base::sync_with_stdio (0);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (&MEM[(struct basic_string *)&A].D.32620._M_local_buf, "saxpy", 5);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (&MEM[(struct basic_string *)&A + 32B].D.32620._M_local_buf, "f32", 3);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (&MEM[(struct basic_string *)&A + 104B].D.32620._M_local_buf, "index", 5);
+/usr/include/c++/13/bits/char_traits.h:399:25: missed: statement clobbers memory: _201 = __builtin_strlen (_5);
+/usr/include/c++/13/bits/basic_string.tcc:229:13: missed: statement clobbers memory: _205 = std::__cxx11::basic_string<char>::_M_create (&s, &__dnew, 0);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (_42, _5, _201);
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _414 = __builtin_memcmp (_194, "--misalign", 10);
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _361 = __builtin_memcmp (_515, "--reps", 6);
+/usr/include/c++/13/bits/char_traits.h:399:25: missed: statement clobbers memory: _387 = __builtin_strlen (_385);
+/usr/include/c++/13/bits/basic_string.tcc:229:13: missed: statement clobbers memory: _391 = std::__cxx11::basic_string<char>::_M_create (&D.246280, &__dnew, 0);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (_1421, _385, _387);
+/usr/include/c++/13/ext/string_conversions.h:82:34: missed: statement clobbers memory: __tmp_371 = strtoull (_55, &__endptr, 10);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_363, _366);
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _320 = __builtin_memcmp (_1069, "--n", 3);
+/usr/include/c++/13/bits/char_traits.h:399:25: missed: statement clobbers memory: _346 = __builtin_strlen (_344);
+/usr/include/c++/13/bits/basic_string.tcc:229:13: missed: statement clobbers memory: _350 = std::__cxx11::basic_string<char>::_M_create (&D.246271, &__dnew, 0);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (_1004, _344, _346);
+/usr/include/c++/13/ext/string_conversions.h:82:34: missed: statement clobbers memory: __tmp_330 = strtoull (_59, &__endptr, 10);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_322, _325);
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _265 = __builtin_memcmp (_805, "--dtype", 7);
+/usr/include/c++/13/bits/char_traits.h:399:25: missed: statement clobbers memory: _305 = __builtin_strlen (_303);
+/usr/include/c++/13/bits/basic_string.tcc:229:13: missed: statement clobbers memory: _309 = std::__cxx11::basic_string<char>::_M_create (&D.246262, &__dnew, 0);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (_1062, _303, _305);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (_273, &D.246262.D.32620._M_local_buf, _278);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_267, _270);
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _198 = __builtin_memcmp (_1145, "--kernel", 8);
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _402 = __builtin_memcmp (prephitmp_1030, "--stride", 8);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:286:14: missed: statement clobbers memory: retval.63_56 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&s, "--warmups");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:287:14: missed: statement clobbers memory: retval.64_58 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&s, "--pin");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:288:14: missed: statement clobbers memory: retval.65_60 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&s, "--verify");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:289:14: missed: statement clobbers memory: retval.66_62 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&s, "--stride_mode");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:24: missed: statement clobbers memory: __fprintf_chk (stderr.67_6, 2, "Unknown arg: %s\n", _98);
+/usr/include/c++/13/bits/basic_string.h:804:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&s);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:289:51: missed: statement clobbers memory: D.246332 = main(int, char**)::<lambda()>::operator().isra (&argv, &i); [return slot optimization]
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (_416, &D.246332.D.32620._M_local_buf, _421);
+/usr/include/c++/13/bits/basic_string.h:804:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.246332);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:287:50: missed: statement clobbers memory: D.246315 = main(int, char**)::<lambda()>::operator().isra (&argv, &i); [return slot optimization]
+/usr/include/c++/13/bits/basic_string.h:4121:40: missed: statement clobbers memory: _38 = __gnu_cxx::__stoa<long int, int, char, int> (strtol, "stoi", _43, 0B, 10);
+/usr/include/c++/13/bits/basic_string.h:804:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.246315);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:286:53: missed: statement clobbers memory: D.246306 = main(int, char**)::<lambda()>::operator().isra (&argv, &i); [return slot optimization]
+/usr/include/c++/13/bits/basic_string.h:4121:40: missed: statement clobbers memory: _45 = __gnu_cxx::__stoa<long int, int, char, int> (strtol, "stoi", _47, 0B, 10);
+/usr/include/c++/13/bits/basic_string.h:804:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.246306);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:284:53: missed: statement clobbers memory: D.246289 = main(int, char**)::<lambda()>::operator().isra (&argv, &i); [return slot optimization]
+/usr/include/c++/13/ext/string_conversions.h:82:34: missed: statement clobbers memory: __tmp_406 = strtoull (_51, &__endptr, 10);
+/usr/include/c++/13/bits/basic_string.h:804:19: missed: statement clobbers memory: std::__cxx11::basic_string<char>::_M_dispose (&D.246289);
+/usr/include/c++/13/ext/string_conversions.h:88:27: missed: statement clobbers memory: std::__throw_out_of_range ("stoull");
+/usr/include/c++/13/ext/string_conversions.h:85:31: missed: statement clobbers memory: std::__throw_invalid_argument ("stoull");
+/usr/include/c++/13/bits/char_traits.h:399:25: missed: statement clobbers memory: _250 = __builtin_strlen (_248);
+/usr/include/c++/13/bits/basic_string.tcc:229:13: missed: statement clobbers memory: _254 = std::__cxx11::basic_string<char>::_M_create (&D.246253, &__dnew, 0);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (_720, _248, _250);
+/usr/include/c++/13/bits/char_traits.h:435:49: missed: statement clobbers memory: __builtin_memcpy (_218, &D.246253.D.32620._M_local_buf, _223);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_212, _215);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (prephitmp_1366, _440);
+/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:829:33: missed: statement clobbers memory: _31 = __builtin_ia32_stmxcsr ();
+/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:861:26: missed: statement clobbers memory: __builtin_ia32_ldmxcsr (_27);
+/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:829:33: missed: statement clobbers memory: _103 = __builtin_ia32_stmxcsr ();
+/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:861:26: missed: statement clobbers memory: __builtin_ia32_ldmxcsr (_105);
+/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:829:33: missed: statement clobbers memory: _106 = __builtin_ia32_stmxcsr ();
+/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:861:26: missed: statement clobbers memory: __builtin_ia32_ldmxcsr (_107);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:117:18: missed: statement clobbers memory: __builtin_memset (&set, 0, 128);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:118:26: missed: statement clobbers memory: sched_setaffinity (0, 128, &set);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:597:13: missed: statement clobbers memory: retval.70_35 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&A.dtype, "f32");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:598:25: missed: statement clobbers memory: main(int, char**)::<lambda(auto:28)>::operator().constprop (&run);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _459 = posix_memalign (&D.274265, 64, _458);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _463 = posix_memalign (&D.274264, 64, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _466 = posix_memalign (&D.274263, 64, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:316:15: missed: statement clobbers memory: init_array<float> (_469, _457);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:317:15: missed: statement clobbers memory: init_array<float> (_471, n_454);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:318:15: missed: statement clobbers memory: init_array<float> (_468, n_454);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _476 = posix_memalign (&D.274268, 64, _458);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _479 = posix_memalign (&D.274267, 64, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _482 = posix_memalign (&D.274266, 64, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_485, _469, _458);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_487, _471, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_489, _468, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _494 = posix_memalign (&D.274271, 64, _458);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _497 = posix_memalign (&D.274270, 64, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _500 = posix_memalign (&D.274269, 64, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_503, _469, _458);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_505, _471, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_502, _468, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:340:22: missed: statement clobbers memory: retval.98_514 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "saxpy");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:343:29: missed: statement clobbers memory: retval.100_520 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "dot");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:348:29: missed: statement clobbers memory: retval.103_529 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "mul");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:351:29: missed: statement clobbers memory: retval.105_534 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "stencil");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:352:30: missed: statement clobbers memory: kernel_stencil<float> (xwv_518, _505, n_454, 8.9999997615814208984375e-1, 1.10000002384185791015625e+0, 8.00000011920928955078125e-1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:349:29: missed: statement clobbers memory: retval.104_531 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A + 104B], "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:350:62: missed: statement clobbers memory: kernel_mul_sample<float> (xwv_518, _505, _502, n_454, pretmp_115);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:349:60: missed: statement clobbers memory: kernel_mul_index<float> (xwv_518, _505, _502, n_454, pretmp_115);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:344:43: missed: statement clobbers memory: _522 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A + 104B], "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:346:37: missed: statement clobbers memory: iftmp.101_526 = kernel_dot_sample<float> (xwv_518, _505, n_454, pretmp_114);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:345:36: missed: statement clobbers memory: iftmp.101_524 = kernel_dot_index<float> (xwv_518, _505, n_454, pretmp_114);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:344:24: missed: not vectorized: volatile type: s2 ={v} iftmp.101_527;
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:347:13: missed: not vectorized: volatile type: vol.102_528 ={v} s2;
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:341:29: missed: statement clobbers memory: retval.99_516 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A + 104B], "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:342:64: missed: statement clobbers memory: kernel_saxpy_sample<float> (1.11099994182586669921875e+0, xwv_518, _505, n_454, pretmp_83);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:341:62: missed: statement clobbers memory: kernel_saxpy_index<float> (1.11099994182586669921875e+0, xwv_518, _505, n_454, pretmp_83);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_503);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_505);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_41);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:360:41: missed: statement clobbers memory: std::vector<double>::reserve (&tns, _537);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_469, _485, _458);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_471, _487, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_468, _489, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:58:30: missed: statement clobbers memory: t.t0 = std::chrono::_V2::steady_clock::now ();
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _1003 = __builtin_memcmp (_1133, "dot", 3);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:374:39: missed: statement clobbers memory: _555 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A + 104B], "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:376:33: missed: statement clobbers memory: iftmp.109_559 = kernel_dot_sample<float> (x_551, _471, n_454, pretmp_118);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:375:32: missed: statement clobbers memory: iftmp.109_557 = kernel_dot_index<float> (x_551, _471, n_454, pretmp_118);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:374:20: missed: not vectorized: volatile type: s2 ={v} iftmp.109_560;
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:377:9: missed: not vectorized: volatile type: vol.110_561 ={v} s2;
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _993 = __builtin_memcmp (_181, "saxpy", 5);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:378:25: missed: statement clobbers memory: retval.111_562 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "mul");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:381:25: missed: statement clobbers memory: retval.113_567 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "stencil");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:382:26: missed: statement clobbers memory: kernel_stencil<float> (x_551, _471, n_454, 8.9999997615814208984375e-1, 1.10000002384185791015625e+0, 8.00000011920928955078125e-1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:379:25: missed: statement clobbers memory: retval.112_564 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A + 104B], "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:380:58: missed: statement clobbers memory: kernel_mul_sample<float> (x_551, _471, _468, n_454, pretmp_117);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:379:56: missed: statement clobbers memory: kernel_mul_index<float> (x_551, _471, _468, n_454, pretmp_117);
+/usr/include/c++/13/bits/char_traits.h:389:25: missed: statement clobbers memory: _998 = __builtin_memcmp (_172, "index", 5);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:372:60: missed: statement clobbers memory: kernel_saxpy_sample<float> (1.11099994182586669921875e+0, x_551, _471, n_454, pretmp_80);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:371:58: missed: statement clobbers memory: kernel_saxpy_index<float> (1.11099994182586669921875e+0, x_551, _471, n_454, pretmp_80);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:59:29: missed: statement clobbers memory: t.t1 = std::chrono::_V2::steady_clock::now ();
+/usr/include/c++/13/bits/vector.tcc:123:21: missed: statement clobbers memory: std::vector<double>::_M_realloc_insert<double> (&tns, D.274293, &D.274245);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:387:32: missed: statement clobbers memory: std::vector<double>::vector (&D.274246, &tns);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:387:32: missed: statement clobbers memory: med_574 = percentile (&D.274246, 5.0e-1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:387:32: missed: statement clobbers memory: std::vector<double>::~vector (&D.274246);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:388:32: missed: statement clobbers memory: std::vector<double>::vector (&D.274247, &tns);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:388:32: missed: statement clobbers memory: p05_575 = percentile (&D.274247, 5.000000000000000277555756156289135105907917022705078125e-2);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:388:32: missed: statement clobbers memory: std::vector<double>::~vector (&D.274247);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:389:32: missed: statement clobbers memory: std::vector<double>::vector (&D.274248, &tns);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:389:32: missed: statement clobbers memory: p95_576 = percentile (&D.274248, 9.499999999999999555910790149937383830547332763671875e-1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:389:32: missed: statement clobbers memory: std::vector<double>::~vector (&D.274248);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _579 = posix_memalign (&D.274273, 64, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _582 = posix_memalign (&D.274272, 64, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_585, _487, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_587, _489, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:400:18: missed: statement clobbers memory: retval.114_590 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "saxpy");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:437:23: missed: statement clobbers memory: retval.118_678 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "mul");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:470:23: missed: statement clobbers memory: retval.122_765 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "stencil");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:488:25: missed: statement clobbers memory: retval.124_813 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A + 104B], "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:516:37: missed: statement clobbers memory: v_860 = kernel_dot_sample<float> (x0v_595, _487, n_454, pretmp_67);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:491:36: missed: statement clobbers memory: v_818 = kernel_dot_index<float> (x0v_595, _487, n_454, pretmp_67);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _783 = posix_memalign (&D.274278, 64, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_786, _487, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:474:26: missed: statement clobbers memory: kernel_stencil<float> (x0v_595, _786, n_454, 8.9999997615814208984375e-1, 1.10000002384185791015625e+0, 8.00000011920928955078125e-1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_786);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:438:25: missed: statement clobbers memory: retval.119_680 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A + 104B], "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _735 = posix_memalign (&D.274277, 64, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_738, _489, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:456:31: missed: statement clobbers memory: kernel_mul_sample<float> (x0v_595, _487, _738, n_454, pretmp_134);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_738);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _695 = posix_memalign (&D.274276, 64, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_698, _489, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:441:30: missed: statement clobbers memory: kernel_mul_index<float> (x0v_595, _487, _698, n_454, pretmp_134);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_698);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:401:25: missed: statement clobbers memory: retval.115_592 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A + 104B], "index");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _648 = posix_memalign (&D.274275, 64, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_651, _487, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:423:33: missed: statement clobbers memory: kernel_saxpy_sample<float> (1.11099994182586669921875e+0, x0v_595, _651, n_454, pretmp_139);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_651);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:68:37: missed: statement clobbers memory: _608 = posix_memalign (&D.274274, 64, _462);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:33: missed: statement clobbers memory: __builtin_memcpy (_611, _487, _462);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:407:32: missed: statement clobbers memory: kernel_saxpy_index<float> (1.11099994182586669921875e+0, x0v_595, _611, n_454, pretmp_139);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_611);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_585);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_587);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:542:16: missed: statement clobbers memory: _889 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "saxpy");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:543:16: missed: statement clobbers memory: _890 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "dot");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:544:16: missed: statement clobbers memory: _891 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "mul");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:547:35: missed: statement clobbers memory: _892 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "stencil");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:553:55: missed: statement clobbers memory: estimate_cpu_hz_stable ();
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:553:55: missed: statement clobbers memory: hz_est_local_901 = estimate_cpu_hz_stable ();
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:560:16: missed: statement clobbers memory: retval.133_910 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "saxpy");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:560:16: missed: statement clobbers memory: retval.133_1022 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "saxpy");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:561:21: missed: statement clobbers memory: retval.134_911 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "dot");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:562:21: missed: statement clobbers memory: retval.135_912 = std::operator==<char, std::char_traits<char>, std::allocator<char> > (&MEM <struct string> [(void *)&A], "mul");
+/usr/include/c++/13/bits/basic_string.h:4037:30: missed: statement clobbers memory: _926 = std::__ostream_insert<char, std::char_traits<char> > (&cout, _925, _924);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_926, ",", 1);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_926, "f32", 3);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_926, ",", 1);
+/usr/include/c++/13/ostream:173:25: missed: statement clobbers memory: _927 = std::basic_ostream<char>::_M_insert<long unsigned int> (_926, n_454);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_927, ",", 1);
+/usr/include/c++/13/ostream:173:25: missed: statement clobbers memory: _930 = std::basic_ostream<char>::_M_insert<long unsigned int> (_927, _929);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_930, ",", 1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:577:27: missed: statement clobbers memory: _934 = std::basic_ostream<char>::operator<< (_930, _1078);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_934, ",", 1);
+/usr/include/c++/13/ostream:173:25: missed: statement clobbers memory: _937 = std::basic_ostream<char>::_M_insert<long unsigned int> (_934, _936);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_937, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _938 = std::basic_ostream<char>::_M_insert<double> (_937, med_574);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_938, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _939 = std::basic_ostream<char>::_M_insert<double> (_938, p05_575);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_939, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _940 = std::basic_ostream<char>::_M_insert<double> (_939, p95_576);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_940, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _942 = std::basic_ostream<char>::_M_insert<double> (_940, iftmp.130_997);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_942, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _944 = std::basic_ostream<char>::_M_insert<double> (_942, cpe_671);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_944, ",", 1);
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _946 = std::basic_ostream<char>::_M_insert<double> (_944, iftmp.136_945);
+/usr/include/c++/13/ostream:667:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_946, ",", 1);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:585:43: missed: statement clobbers memory: _951 = std::basic_ostream<char>::operator<< (_946, iftmp.138_950);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:585:43: missed: statement clobbers memory: std::operator<<.isra (_951, ",");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:590:17: missed: statement clobbers memory: std::operator<<.isra (&cout, "-1\n");
+/usr/include/c++/13/ostream:223:25: missed: statement clobbers memory: _959 = std::basic_ostream<char>::_M_insert<double> (&cout, max_rel_err_958);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:588:76: missed: statement clobbers memory: std::operator<<.isra (_959, "\n");
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_485);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_487);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_489);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_469);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_471);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_468);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:595:3: missed: statement clobbers memory: std::vector<double>::~vector (&tns);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:79:24: missed: statement clobbers memory: __builtin_fwrite ("Allocation failed\n", 1, 18, stderr.97_475);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_469);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_471);
+/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/src/bench.cpp:75:7: missed: statement clobbers memory: free (_1417);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_1052, _1055);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_1046, _1049);
+/usr/include/c++/13/bits/new_allocator.h:172:26: missed: statement clobbers memory: operator delete (_1040, _1043);
+/usr/include/c++/13/bits/basic_string.h:646:28: missed: statement clobbers memory: std::__throw_logic_error ("basic_string: construction from null is not valid");
+/usr/include/c++/13/bits/stl_algobase.h:262:7: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/stl_algobase.h:262:7: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/stl_algobase.h:262:7: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/stl_algobase.h:262:7: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/stl_algobase.h:262:7: missed: not vectorized: vectorization is not profitable.
+/usr/include/c++/13/bits/stl_algobase.h:262:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:262:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:262:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:262:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:262:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:262:7: optimized: basic block part vectorized using 32 byte vectors

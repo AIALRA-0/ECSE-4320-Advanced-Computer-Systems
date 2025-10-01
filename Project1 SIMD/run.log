@@ -1,0 +1,2064 @@
+simd,saxpy,f32,N=512,stride=1,mis=0
+simd,saxpy,f32,N=512,stride=1,mis=1
+simd,saxpy,f32,N=512,stride=2,mis=0
+simd,saxpy,f32,N=512,stride=2,mis=1
+simd,saxpy,f32,N=512,stride=4,mis=0
+simd,saxpy,f32,N=512,stride=4,mis=1
+simd,saxpy,f32,N=512,stride=8,mis=0
+simd,saxpy,f32,N=512,stride=8,mis=1
+simd,saxpy,f32,N=1024,stride=1,mis=0
+simd,saxpy,f32,N=1024,stride=1,mis=1
+simd,saxpy,f32,N=1024,stride=2,mis=0
+simd,saxpy,f32,N=1024,stride=2,mis=1
+simd,saxpy,f32,N=1024,stride=4,mis=0
+simd,saxpy,f32,N=1024,stride=4,mis=1
+simd,saxpy,f32,N=1024,stride=8,mis=0
+simd,saxpy,f32,N=1024,stride=8,mis=1
+simd,saxpy,f32,N=2048,stride=1,mis=0
+simd,saxpy,f32,N=2048,stride=1,mis=1
+simd,saxpy,f32,N=2048,stride=2,mis=0
+simd,saxpy,f32,N=2048,stride=2,mis=1
+simd,saxpy,f32,N=2048,stride=4,mis=0
+simd,saxpy,f32,N=2048,stride=4,mis=1
+simd,saxpy,f32,N=2048,stride=8,mis=0
+simd,saxpy,f32,N=2048,stride=8,mis=1
+simd,saxpy,f32,N=4096,stride=1,mis=0
+simd,saxpy,f32,N=4096,stride=1,mis=1
+simd,saxpy,f32,N=4096,stride=2,mis=0
+simd,saxpy,f32,N=4096,stride=2,mis=1
+simd,saxpy,f32,N=4096,stride=4,mis=0
+simd,saxpy,f32,N=4096,stride=4,mis=1
+simd,saxpy,f32,N=4096,stride=8,mis=0
+simd,saxpy,f32,N=4096,stride=8,mis=1
+simd,saxpy,f32,N=8192,stride=1,mis=0
+simd,saxpy,f32,N=8192,stride=1,mis=1
+simd,saxpy,f32,N=8192,stride=2,mis=0
+simd,saxpy,f32,N=8192,stride=2,mis=1
+simd,saxpy,f32,N=8192,stride=4,mis=0
+simd,saxpy,f32,N=8192,stride=4,mis=1
+simd,saxpy,f32,N=8192,stride=8,mis=0
+simd,saxpy,f32,N=8192,stride=8,mis=1
+simd,saxpy,f32,N=65536,stride=1,mis=0
+simd,saxpy,f32,N=65536,stride=1,mis=1
+simd,saxpy,f32,N=65536,stride=2,mis=0
+simd,saxpy,f32,N=65536,stride=2,mis=1
+simd,saxpy,f32,N=65536,stride=4,mis=0
+simd,saxpy,f32,N=65536,stride=4,mis=1
+simd,saxpy,f32,N=65536,stride=8,mis=0
+simd,saxpy,f32,N=65536,stride=8,mis=1
+simd,saxpy,f32,N=1048576,stride=1,mis=0
+simd,saxpy,f32,N=1048576,stride=1,mis=1
+simd,saxpy,f32,N=1048576,stride=2,mis=0
+simd,saxpy,f32,N=1048576,stride=2,mis=1
+simd,saxpy,f32,N=1048576,stride=4,mis=0
+simd,saxpy,f32,N=1048576,stride=4,mis=1
+simd,saxpy,f32,N=1048576,stride=8,mis=0
+simd,saxpy,f32,N=1048576,stride=8,mis=1
+simd,saxpy,f32,N=8388608,stride=1,mis=0
+simd,saxpy,f32,N=8388608,stride=1,mis=1
+simd,saxpy,f32,N=8388608,stride=2,mis=0
+simd,saxpy,f32,N=8388608,stride=2,mis=1
+simd,saxpy,f32,N=8388608,stride=4,mis=0
+simd,saxpy,f32,N=8388608,stride=4,mis=1
+simd,saxpy,f32,N=8388608,stride=8,mis=0
+simd,saxpy,f32,N=8388608,stride=8,mis=1
+simd,saxpy,f32,N=33554432,stride=1,mis=0
+simd,saxpy,f32,N=33554432,stride=1,mis=1
+simd,saxpy,f32,N=33554432,stride=2,mis=0
+simd,saxpy,f32,N=33554432,stride=2,mis=1
+simd,saxpy,f32,N=33554432,stride=4,mis=0
+simd,saxpy,f32,N=33554432,stride=4,mis=1
+simd,saxpy,f32,N=33554432,stride=8,mis=0
+simd,saxpy,f32,N=33554432,stride=8,mis=1
+simd,saxpy,f32,N=67108864,stride=1,mis=0
+simd,saxpy,f32,N=67108864,stride=1,mis=1
+simd,saxpy,f32,N=67108864,stride=2,mis=0
+simd,saxpy,f32,N=67108864,stride=2,mis=1
+simd,saxpy,f32,N=67108864,stride=4,mis=0
+simd,saxpy,f32,N=67108864,stride=4,mis=1
+simd,saxpy,f32,N=67108864,stride=8,mis=0
+simd,saxpy,f32,N=67108864,stride=8,mis=1
+simd,saxpy,f64,N=512,stride=1,mis=0
+simd,saxpy,f64,N=512,stride=1,mis=1
+simd,saxpy,f64,N=512,stride=2,mis=0
+simd,saxpy,f64,N=512,stride=2,mis=1
+simd,saxpy,f64,N=512,stride=4,mis=0
+simd,saxpy,f64,N=512,stride=4,mis=1
+simd,saxpy,f64,N=512,stride=8,mis=0
+simd,saxpy,f64,N=512,stride=8,mis=1
+simd,saxpy,f64,N=1024,stride=1,mis=0
+simd,saxpy,f64,N=1024,stride=1,mis=1
+simd,saxpy,f64,N=1024,stride=2,mis=0
+simd,saxpy,f64,N=1024,stride=2,mis=1
+simd,saxpy,f64,N=1024,stride=4,mis=0
+simd,saxpy,f64,N=1024,stride=4,mis=1
+simd,saxpy,f64,N=1024,stride=8,mis=0
+simd,saxpy,f64,N=1024,stride=8,mis=1
+simd,saxpy,f64,N=2048,stride=1,mis=0
+simd,saxpy,f64,N=2048,stride=1,mis=1
+simd,saxpy,f64,N=2048,stride=2,mis=0
+simd,saxpy,f64,N=2048,stride=2,mis=1
+simd,saxpy,f64,N=2048,stride=4,mis=0
+simd,saxpy,f64,N=2048,stride=4,mis=1
+simd,saxpy,f64,N=2048,stride=8,mis=0
+simd,saxpy,f64,N=2048,stride=8,mis=1
+simd,saxpy,f64,N=4096,stride=1,mis=0
+simd,saxpy,f64,N=4096,stride=1,mis=1
+simd,saxpy,f64,N=4096,stride=2,mis=0
+simd,saxpy,f64,N=4096,stride=2,mis=1
+simd,saxpy,f64,N=4096,stride=4,mis=0
+simd,saxpy,f64,N=4096,stride=4,mis=1
+simd,saxpy,f64,N=4096,stride=8,mis=0
+simd,saxpy,f64,N=4096,stride=8,mis=1
+simd,saxpy,f64,N=8192,stride=1,mis=0
+simd,saxpy,f64,N=8192,stride=1,mis=1
+simd,saxpy,f64,N=8192,stride=2,mis=0
+simd,saxpy,f64,N=8192,stride=2,mis=1
+simd,saxpy,f64,N=8192,stride=4,mis=0
+simd,saxpy,f64,N=8192,stride=4,mis=1
+simd,saxpy,f64,N=8192,stride=8,mis=0
+simd,saxpy,f64,N=8192,stride=8,mis=1
+simd,saxpy,f64,N=65536,stride=1,mis=0
+simd,saxpy,f64,N=65536,stride=1,mis=1
+simd,saxpy,f64,N=65536,stride=2,mis=0
+simd,saxpy,f64,N=65536,stride=2,mis=1
+simd,saxpy,f64,N=65536,stride=4,mis=0
+simd,saxpy,f64,N=65536,stride=4,mis=1
+simd,saxpy,f64,N=65536,stride=8,mis=0
+simd,saxpy,f64,N=65536,stride=8,mis=1
+simd,saxpy,f64,N=1048576,stride=1,mis=0
+simd,saxpy,f64,N=1048576,stride=1,mis=1
+simd,saxpy,f64,N=1048576,stride=2,mis=0
+simd,saxpy,f64,N=1048576,stride=2,mis=1
+simd,saxpy,f64,N=1048576,stride=4,mis=0
+simd,saxpy,f64,N=1048576,stride=4,mis=1
+simd,saxpy,f64,N=1048576,stride=8,mis=0
+simd,saxpy,f64,N=1048576,stride=8,mis=1
+simd,saxpy,f64,N=8388608,stride=1,mis=0
+simd,saxpy,f64,N=8388608,stride=1,mis=1
+simd,saxpy,f64,N=8388608,stride=2,mis=0
+simd,saxpy,f64,N=8388608,stride=2,mis=1
+simd,saxpy,f64,N=8388608,stride=4,mis=0
+simd,saxpy,f64,N=8388608,stride=4,mis=1
+simd,saxpy,f64,N=8388608,stride=8,mis=0
+simd,saxpy,f64,N=8388608,stride=8,mis=1
+simd,saxpy,f64,N=33554432,stride=1,mis=0
+simd,saxpy,f64,N=33554432,stride=1,mis=1
+simd,saxpy,f64,N=33554432,stride=2,mis=0
+simd,saxpy,f64,N=33554432,stride=2,mis=1
+simd,saxpy,f64,N=33554432,stride=4,mis=0
+simd,saxpy,f64,N=33554432,stride=4,mis=1
+simd,saxpy,f64,N=33554432,stride=8,mis=0
+simd,saxpy,f64,N=33554432,stride=8,mis=1
+simd,saxpy,f64,N=67108864,stride=1,mis=0
+simd,saxpy,f64,N=67108864,stride=1,mis=1
+simd,saxpy,f64,N=67108864,stride=2,mis=0
+simd,saxpy,f64,N=67108864,stride=2,mis=1
+simd,saxpy,f64,N=67108864,stride=4,mis=0
+simd,saxpy,f64,N=67108864,stride=4,mis=1
+simd,saxpy,f64,N=67108864,stride=8,mis=0
+simd,saxpy,f64,N=67108864,stride=8,mis=1
+simd,dot,f32,N=512,stride=1,mis=0
+simd,dot,f32,N=512,stride=1,mis=1
+simd,dot,f32,N=512,stride=2,mis=0
+simd,dot,f32,N=512,stride=2,mis=1
+simd,dot,f32,N=512,stride=4,mis=0
+simd,dot,f32,N=512,stride=4,mis=1
+simd,dot,f32,N=512,stride=8,mis=0
+simd,dot,f32,N=512,stride=8,mis=1
+simd,dot,f32,N=1024,stride=1,mis=0
+simd,dot,f32,N=1024,stride=1,mis=1
+simd,dot,f32,N=1024,stride=2,mis=0
+simd,dot,f32,N=1024,stride=2,mis=1
+simd,dot,f32,N=1024,stride=4,mis=0
+simd,dot,f32,N=1024,stride=4,mis=1
+simd,dot,f32,N=1024,stride=8,mis=0
+simd,dot,f32,N=1024,stride=8,mis=1
+simd,dot,f32,N=2048,stride=1,mis=0
+simd,dot,f32,N=2048,stride=1,mis=1
+simd,dot,f32,N=2048,stride=2,mis=0
+simd,dot,f32,N=2048,stride=2,mis=1
+simd,dot,f32,N=2048,stride=4,mis=0
+simd,dot,f32,N=2048,stride=4,mis=1
+simd,dot,f32,N=2048,stride=8,mis=0
+simd,dot,f32,N=2048,stride=8,mis=1
+simd,dot,f32,N=4096,stride=1,mis=0
+simd,dot,f32,N=4096,stride=1,mis=1
+simd,dot,f32,N=4096,stride=2,mis=0
+simd,dot,f32,N=4096,stride=2,mis=1
+simd,dot,f32,N=4096,stride=4,mis=0
+simd,dot,f32,N=4096,stride=4,mis=1
+simd,dot,f32,N=4096,stride=8,mis=0
+simd,dot,f32,N=4096,stride=8,mis=1
+simd,dot,f32,N=8192,stride=1,mis=0
+simd,dot,f32,N=8192,stride=1,mis=1
+simd,dot,f32,N=8192,stride=2,mis=0
+simd,dot,f32,N=8192,stride=2,mis=1
+simd,dot,f32,N=8192,stride=4,mis=0
+simd,dot,f32,N=8192,stride=4,mis=1
+simd,dot,f32,N=8192,stride=8,mis=0
+simd,dot,f32,N=8192,stride=8,mis=1
+simd,dot,f32,N=65536,stride=1,mis=0
+simd,dot,f32,N=65536,stride=1,mis=1
+simd,dot,f32,N=65536,stride=2,mis=0
+simd,dot,f32,N=65536,stride=2,mis=1
+simd,dot,f32,N=65536,stride=4,mis=0
+simd,dot,f32,N=65536,stride=4,mis=1
+simd,dot,f32,N=65536,stride=8,mis=0
+simd,dot,f32,N=65536,stride=8,mis=1
+simd,dot,f32,N=1048576,stride=1,mis=0
+simd,dot,f32,N=1048576,stride=1,mis=1
+simd,dot,f32,N=1048576,stride=2,mis=0
+simd,dot,f32,N=1048576,stride=2,mis=1
+simd,dot,f32,N=1048576,stride=4,mis=0
+simd,dot,f32,N=1048576,stride=4,mis=1
+simd,dot,f32,N=1048576,stride=8,mis=0
+simd,dot,f32,N=1048576,stride=8,mis=1
+simd,dot,f32,N=8388608,stride=1,mis=0
+simd,dot,f32,N=8388608,stride=1,mis=1
+simd,dot,f32,N=8388608,stride=2,mis=0
+simd,dot,f32,N=8388608,stride=2,mis=1
+simd,dot,f32,N=8388608,stride=4,mis=0
+simd,dot,f32,N=8388608,stride=4,mis=1
+simd,dot,f32,N=8388608,stride=8,mis=0
+simd,dot,f32,N=8388608,stride=8,mis=1
+simd,dot,f32,N=33554432,stride=1,mis=0
+simd,dot,f32,N=33554432,stride=1,mis=1
+simd,dot,f32,N=33554432,stride=2,mis=0
+simd,dot,f32,N=33554432,stride=2,mis=1
+simd,dot,f32,N=33554432,stride=4,mis=0
+simd,dot,f32,N=33554432,stride=4,mis=1
+simd,dot,f32,N=33554432,stride=8,mis=0
+simd,dot,f32,N=33554432,stride=8,mis=1
+simd,dot,f32,N=67108864,stride=1,mis=0
+simd,dot,f32,N=67108864,stride=1,mis=1
+simd,dot,f32,N=67108864,stride=2,mis=0
+simd,dot,f32,N=67108864,stride=2,mis=1
+simd,dot,f32,N=67108864,stride=4,mis=0
+simd,dot,f32,N=67108864,stride=4,mis=1
+simd,dot,f32,N=67108864,stride=8,mis=0
+simd,dot,f32,N=67108864,stride=8,mis=1
+simd,dot,f64,N=512,stride=1,mis=0
+simd,dot,f64,N=512,stride=1,mis=1
+simd,dot,f64,N=512,stride=2,mis=0
+simd,dot,f64,N=512,stride=2,mis=1
+simd,dot,f64,N=512,stride=4,mis=0
+simd,dot,f64,N=512,stride=4,mis=1
+simd,dot,f64,N=512,stride=8,mis=0
+simd,dot,f64,N=512,stride=8,mis=1
+simd,dot,f64,N=1024,stride=1,mis=0
+simd,dot,f64,N=1024,stride=1,mis=1
+simd,dot,f64,N=1024,stride=2,mis=0
+simd,dot,f64,N=1024,stride=2,mis=1
+simd,dot,f64,N=1024,stride=4,mis=0
+simd,dot,f64,N=1024,stride=4,mis=1
+simd,dot,f64,N=1024,stride=8,mis=0
+simd,dot,f64,N=1024,stride=8,mis=1
+simd,dot,f64,N=2048,stride=1,mis=0
+simd,dot,f64,N=2048,stride=1,mis=1
+simd,dot,f64,N=2048,stride=2,mis=0
+simd,dot,f64,N=2048,stride=2,mis=1
+simd,dot,f64,N=2048,stride=4,mis=0
+simd,dot,f64,N=2048,stride=4,mis=1
+simd,dot,f64,N=2048,stride=8,mis=0
+simd,dot,f64,N=2048,stride=8,mis=1
+simd,dot,f64,N=4096,stride=1,mis=0
+simd,dot,f64,N=4096,stride=1,mis=1
+simd,dot,f64,N=4096,stride=2,mis=0
+simd,dot,f64,N=4096,stride=2,mis=1
+simd,dot,f64,N=4096,stride=4,mis=0
+simd,dot,f64,N=4096,stride=4,mis=1
+simd,dot,f64,N=4096,stride=8,mis=0
+simd,dot,f64,N=4096,stride=8,mis=1
+simd,dot,f64,N=8192,stride=1,mis=0
+simd,dot,f64,N=8192,stride=1,mis=1
+simd,dot,f64,N=8192,stride=2,mis=0
+simd,dot,f64,N=8192,stride=2,mis=1
+simd,dot,f64,N=8192,stride=4,mis=0
+simd,dot,f64,N=8192,stride=4,mis=1
+simd,dot,f64,N=8192,stride=8,mis=0
+simd,dot,f64,N=8192,stride=8,mis=1
+simd,dot,f64,N=65536,stride=1,mis=0
+simd,dot,f64,N=65536,stride=1,mis=1
+simd,dot,f64,N=65536,stride=2,mis=0
+simd,dot,f64,N=65536,stride=2,mis=1
+simd,dot,f64,N=65536,stride=4,mis=0
+simd,dot,f64,N=65536,stride=4,mis=1
+simd,dot,f64,N=65536,stride=8,mis=0
+simd,dot,f64,N=65536,stride=8,mis=1
+simd,dot,f64,N=1048576,stride=1,mis=0
+simd,dot,f64,N=1048576,stride=1,mis=1
+simd,dot,f64,N=1048576,stride=2,mis=0
+simd,dot,f64,N=1048576,stride=2,mis=1
+simd,dot,f64,N=1048576,stride=4,mis=0
+simd,dot,f64,N=1048576,stride=4,mis=1
+simd,dot,f64,N=1048576,stride=8,mis=0
+simd,dot,f64,N=1048576,stride=8,mis=1
+simd,dot,f64,N=8388608,stride=1,mis=0
+simd,dot,f64,N=8388608,stride=1,mis=1
+simd,dot,f64,N=8388608,stride=2,mis=0
+simd,dot,f64,N=8388608,stride=2,mis=1
+simd,dot,f64,N=8388608,stride=4,mis=0
+simd,dot,f64,N=8388608,stride=4,mis=1
+simd,dot,f64,N=8388608,stride=8,mis=0
+simd,dot,f64,N=8388608,stride=8,mis=1
+simd,dot,f64,N=33554432,stride=1,mis=0
+simd,dot,f64,N=33554432,stride=1,mis=1
+simd,dot,f64,N=33554432,stride=2,mis=0
+simd,dot,f64,N=33554432,stride=2,mis=1
+simd,dot,f64,N=33554432,stride=4,mis=0
+simd,dot,f64,N=33554432,stride=4,mis=1
+simd,dot,f64,N=33554432,stride=8,mis=0
+simd,dot,f64,N=33554432,stride=8,mis=1
+simd,dot,f64,N=67108864,stride=1,mis=0
+simd,dot,f64,N=67108864,stride=1,mis=1
+simd,dot,f64,N=67108864,stride=2,mis=0
+simd,dot,f64,N=67108864,stride=2,mis=1
+simd,dot,f64,N=67108864,stride=4,mis=0
+simd,dot,f64,N=67108864,stride=4,mis=1
+simd,dot,f64,N=67108864,stride=8,mis=0
+simd,dot,f64,N=67108864,stride=8,mis=1
+simd,mul,f32,N=512,stride=1,mis=0
+simd,mul,f32,N=512,stride=1,mis=1
+simd,mul,f32,N=512,stride=2,mis=0
+simd,mul,f32,N=512,stride=2,mis=1
+simd,mul,f32,N=512,stride=4,mis=0
+simd,mul,f32,N=512,stride=4,mis=1
+simd,mul,f32,N=512,stride=8,mis=0
+simd,mul,f32,N=512,stride=8,mis=1
+simd,mul,f32,N=1024,stride=1,mis=0
+simd,mul,f32,N=1024,stride=1,mis=1
+simd,mul,f32,N=1024,stride=2,mis=0
+simd,mul,f32,N=1024,stride=2,mis=1
+simd,mul,f32,N=1024,stride=4,mis=0
+simd,mul,f32,N=1024,stride=4,mis=1
+simd,mul,f32,N=1024,stride=8,mis=0
+simd,mul,f32,N=1024,stride=8,mis=1
+simd,mul,f32,N=2048,stride=1,mis=0
+simd,mul,f32,N=2048,stride=1,mis=1
+simd,mul,f32,N=2048,stride=2,mis=0
+simd,mul,f32,N=2048,stride=2,mis=1
+simd,mul,f32,N=2048,stride=4,mis=0
+simd,mul,f32,N=2048,stride=4,mis=1
+simd,mul,f32,N=2048,stride=8,mis=0
+simd,mul,f32,N=2048,stride=8,mis=1
+simd,mul,f32,N=4096,stride=1,mis=0
+simd,mul,f32,N=4096,stride=1,mis=1
+simd,mul,f32,N=4096,stride=2,mis=0
+simd,mul,f32,N=4096,stride=2,mis=1
+simd,mul,f32,N=4096,stride=4,mis=0
+simd,mul,f32,N=4096,stride=4,mis=1
+simd,mul,f32,N=4096,stride=8,mis=0
+simd,mul,f32,N=4096,stride=8,mis=1
+simd,mul,f32,N=8192,stride=1,mis=0
+simd,mul,f32,N=8192,stride=1,mis=1
+simd,mul,f32,N=8192,stride=2,mis=0
+simd,mul,f32,N=8192,stride=2,mis=1
+simd,mul,f32,N=8192,stride=4,mis=0
+simd,mul,f32,N=8192,stride=4,mis=1
+simd,mul,f32,N=8192,stride=8,mis=0
+simd,mul,f32,N=8192,stride=8,mis=1
+simd,mul,f32,N=65536,stride=1,mis=0
+simd,mul,f32,N=65536,stride=1,mis=1
+simd,mul,f32,N=65536,stride=2,mis=0
+simd,mul,f32,N=65536,stride=2,mis=1
+simd,mul,f32,N=65536,stride=4,mis=0
+simd,mul,f32,N=65536,stride=4,mis=1
+simd,mul,f32,N=65536,stride=8,mis=0
+simd,mul,f32,N=65536,stride=8,mis=1
+simd,mul,f32,N=1048576,stride=1,mis=0
+simd,mul,f32,N=1048576,stride=1,mis=1
+simd,mul,f32,N=1048576,stride=2,mis=0
+simd,mul,f32,N=1048576,stride=2,mis=1
+simd,mul,f32,N=1048576,stride=4,mis=0
+simd,mul,f32,N=1048576,stride=4,mis=1
+simd,mul,f32,N=1048576,stride=8,mis=0
+simd,mul,f32,N=1048576,stride=8,mis=1
+simd,mul,f32,N=8388608,stride=1,mis=0
+simd,mul,f32,N=8388608,stride=1,mis=1
+simd,mul,f32,N=8388608,stride=2,mis=0
+simd,mul,f32,N=8388608,stride=2,mis=1
+simd,mul,f32,N=8388608,stride=4,mis=0
+simd,mul,f32,N=8388608,stride=4,mis=1
+simd,mul,f32,N=8388608,stride=8,mis=0
+simd,mul,f32,N=8388608,stride=8,mis=1
+simd,mul,f32,N=33554432,stride=1,mis=0
+simd,mul,f32,N=33554432,stride=1,mis=1
+simd,mul,f32,N=33554432,stride=2,mis=0
+simd,mul,f32,N=33554432,stride=2,mis=1
+simd,mul,f32,N=33554432,stride=4,mis=0
+simd,mul,f32,N=33554432,stride=4,mis=1
+simd,mul,f32,N=33554432,stride=8,mis=0
+simd,mul,f32,N=33554432,stride=8,mis=1
+simd,mul,f32,N=67108864,stride=1,mis=0
+simd,mul,f32,N=67108864,stride=1,mis=1
+simd,mul,f32,N=67108864,stride=2,mis=0
+simd,mul,f32,N=67108864,stride=2,mis=1
+simd,mul,f32,N=67108864,stride=4,mis=0
+simd,mul,f32,N=67108864,stride=4,mis=1
+simd,mul,f32,N=67108864,stride=8,mis=0
+simd,mul,f32,N=67108864,stride=8,mis=1
+simd,mul,f64,N=512,stride=1,mis=0
+simd,mul,f64,N=512,stride=1,mis=1
+simd,mul,f64,N=512,stride=2,mis=0
+simd,mul,f64,N=512,stride=2,mis=1
+simd,mul,f64,N=512,stride=4,mis=0
+simd,mul,f64,N=512,stride=4,mis=1
+simd,mul,f64,N=512,stride=8,mis=0
+simd,mul,f64,N=512,stride=8,mis=1
+simd,mul,f64,N=1024,stride=1,mis=0
+simd,mul,f64,N=1024,stride=1,mis=1
+simd,mul,f64,N=1024,stride=2,mis=0
+simd,mul,f64,N=1024,stride=2,mis=1
+simd,mul,f64,N=1024,stride=4,mis=0
+simd,mul,f64,N=1024,stride=4,mis=1
+simd,mul,f64,N=1024,stride=8,mis=0
+simd,mul,f64,N=1024,stride=8,mis=1
+simd,mul,f64,N=2048,stride=1,mis=0
+simd,mul,f64,N=2048,stride=1,mis=1
+simd,mul,f64,N=2048,stride=2,mis=0
+simd,mul,f64,N=2048,stride=2,mis=1
+simd,mul,f64,N=2048,stride=4,mis=0
+simd,mul,f64,N=2048,stride=4,mis=1
+simd,mul,f64,N=2048,stride=8,mis=0
+simd,mul,f64,N=2048,stride=8,mis=1
+simd,mul,f64,N=4096,stride=1,mis=0
+simd,mul,f64,N=4096,stride=1,mis=1
+simd,mul,f64,N=4096,stride=2,mis=0
+simd,mul,f64,N=4096,stride=2,mis=1
+simd,mul,f64,N=4096,stride=4,mis=0
+simd,mul,f64,N=4096,stride=4,mis=1
+simd,mul,f64,N=4096,stride=8,mis=0
+simd,mul,f64,N=4096,stride=8,mis=1
+simd,mul,f64,N=8192,stride=1,mis=0
+simd,mul,f64,N=8192,stride=1,mis=1
+simd,mul,f64,N=8192,stride=2,mis=0
+simd,mul,f64,N=8192,stride=2,mis=1
+simd,mul,f64,N=8192,stride=4,mis=0
+simd,mul,f64,N=8192,stride=4,mis=1
+simd,mul,f64,N=8192,stride=8,mis=0
+simd,mul,f64,N=8192,stride=8,mis=1
+simd,mul,f64,N=65536,stride=1,mis=0
+simd,mul,f64,N=65536,stride=1,mis=1
+simd,mul,f64,N=65536,stride=2,mis=0
+simd,mul,f64,N=65536,stride=2,mis=1
+simd,mul,f64,N=65536,stride=4,mis=0
+simd,mul,f64,N=65536,stride=4,mis=1
+simd,mul,f64,N=65536,stride=8,mis=0
+simd,mul,f64,N=65536,stride=8,mis=1
+simd,mul,f64,N=1048576,stride=1,mis=0
+simd,mul,f64,N=1048576,stride=1,mis=1
+simd,mul,f64,N=1048576,stride=2,mis=0
+simd,mul,f64,N=1048576,stride=2,mis=1
+simd,mul,f64,N=1048576,stride=4,mis=0
+simd,mul,f64,N=1048576,stride=4,mis=1
+simd,mul,f64,N=1048576,stride=8,mis=0
+simd,mul,f64,N=1048576,stride=8,mis=1
+simd,mul,f64,N=8388608,stride=1,mis=0
+simd,mul,f64,N=8388608,stride=1,mis=1
+simd,mul,f64,N=8388608,stride=2,mis=0
+simd,mul,f64,N=8388608,stride=2,mis=1
+simd,mul,f64,N=8388608,stride=4,mis=0
+simd,mul,f64,N=8388608,stride=4,mis=1
+simd,mul,f64,N=8388608,stride=8,mis=0
+simd,mul,f64,N=8388608,stride=8,mis=1
+simd,mul,f64,N=33554432,stride=1,mis=0
+simd,mul,f64,N=33554432,stride=1,mis=1
+simd,mul,f64,N=33554432,stride=2,mis=0
+simd,mul,f64,N=33554432,stride=2,mis=1
+simd,mul,f64,N=33554432,stride=4,mis=0
+simd,mul,f64,N=33554432,stride=4,mis=1
+simd,mul,f64,N=33554432,stride=8,mis=0
+simd,mul,f64,N=33554432,stride=8,mis=1
+simd,mul,f64,N=67108864,stride=1,mis=0
+simd,mul,f64,N=67108864,stride=1,mis=1
+simd,mul,f64,N=67108864,stride=2,mis=0
+simd,mul,f64,N=67108864,stride=2,mis=1
+simd,mul,f64,N=67108864,stride=4,mis=0
+simd,mul,f64,N=67108864,stride=4,mis=1
+simd,mul,f64,N=67108864,stride=8,mis=0
+simd,mul,f64,N=67108864,stride=8,mis=1
+simd,stencil,f32,N=1024,stride=1,mis=0
+simd,stencil,f32,N=1024,stride=1,mis=1
+simd,stencil,f32,N=2048,stride=1,mis=0
+simd,stencil,f32,N=2048,stride=1,mis=1
+simd,stencil,f32,N=4096,stride=1,mis=0
+simd,stencil,f32,N=4096,stride=1,mis=1
+simd,stencil,f32,N=8192,stride=1,mis=0
+simd,stencil,f32,N=8192,stride=1,mis=1
+simd,stencil,f32,N=65536,stride=1,mis=0
+simd,stencil,f32,N=65536,stride=1,mis=1
+simd,stencil,f32,N=1048576,stride=1,mis=0
+simd,stencil,f32,N=1048576,stride=1,mis=1
+simd,stencil,f32,N=8388608,stride=1,mis=0
+simd,stencil,f32,N=8388608,stride=1,mis=1
+simd,stencil,f32,N=33554432,stride=1,mis=0
+simd,stencil,f32,N=33554432,stride=1,mis=1
+simd,stencil,f32,N=67108864,stride=1,mis=0
+simd,stencil,f32,N=67108864,stride=1,mis=1
+simd,stencil,f64,N=1024,stride=1,mis=0
+simd,stencil,f64,N=1024,stride=1,mis=1
+simd,stencil,f64,N=2048,stride=1,mis=0
+simd,stencil,f64,N=2048,stride=1,mis=1
+simd,stencil,f64,N=4096,stride=1,mis=0
+simd,stencil,f64,N=4096,stride=1,mis=1
+simd,stencil,f64,N=8192,stride=1,mis=0
+simd,stencil,f64,N=8192,stride=1,mis=1
+simd,stencil,f64,N=65536,stride=1,mis=0
+simd,stencil,f64,N=65536,stride=1,mis=1
+simd,stencil,f64,N=1048576,stride=1,mis=0
+simd,stencil,f64,N=1048576,stride=1,mis=1
+simd,stencil,f64,N=8388608,stride=1,mis=0
+simd,stencil,f64,N=8388608,stride=1,mis=1
+simd,stencil,f64,N=33554432,stride=1,mis=0
+simd,stencil,f64,N=33554432,stride=1,mis=1
+simd,stencil,f64,N=67108864,stride=1,mis=0
+simd,stencil,f64,N=67108864,stride=1,mis=1
+simd,saxpy,f32,N=513,stride=1,mis=0 (TAIL)
+simd,saxpy,f32,N=513,stride=1,mis=1 (TAIL)
+simd,saxpy,f32,N=513,stride=2,mis=0 (TAIL)
+simd,saxpy,f32,N=513,stride=2,mis=1 (TAIL)
+simd,saxpy,f32,N=513,stride=4,mis=0 (TAIL)
+simd,saxpy,f32,N=513,stride=4,mis=1 (TAIL)
+simd,saxpy,f32,N=513,stride=8,mis=0 (TAIL)
+simd,saxpy,f32,N=513,stride=8,mis=1 (TAIL)
+simd,saxpy,f32,N=1025,stride=1,mis=0 (TAIL)
+simd,saxpy,f32,N=1025,stride=1,mis=1 (TAIL)
+simd,saxpy,f32,N=1025,stride=2,mis=0 (TAIL)
+simd,saxpy,f32,N=1025,stride=2,mis=1 (TAIL)
+simd,saxpy,f32,N=1025,stride=4,mis=0 (TAIL)
+simd,saxpy,f32,N=1025,stride=4,mis=1 (TAIL)
+simd,saxpy,f32,N=1025,stride=8,mis=0 (TAIL)
+simd,saxpy,f32,N=1025,stride=8,mis=1 (TAIL)
+simd,saxpy,f32,N=2049,stride=1,mis=0 (TAIL)
+simd,saxpy,f32,N=2049,stride=1,mis=1 (TAIL)
+simd,saxpy,f32,N=2049,stride=2,mis=0 (TAIL)
+simd,saxpy,f32,N=2049,stride=2,mis=1 (TAIL)
+simd,saxpy,f32,N=2049,stride=4,mis=0 (TAIL)
+simd,saxpy,f32,N=2049,stride=4,mis=1 (TAIL)
+simd,saxpy,f32,N=2049,stride=8,mis=0 (TAIL)
+simd,saxpy,f32,N=2049,stride=8,mis=1 (TAIL)
+simd,saxpy,f32,N=4097,stride=1,mis=0 (TAIL)
+simd,saxpy,f32,N=4097,stride=1,mis=1 (TAIL)
+simd,saxpy,f32,N=4097,stride=2,mis=0 (TAIL)
+simd,saxpy,f32,N=4097,stride=2,mis=1 (TAIL)
+simd,saxpy,f32,N=4097,stride=4,mis=0 (TAIL)
+simd,saxpy,f32,N=4097,stride=4,mis=1 (TAIL)
+simd,saxpy,f32,N=4097,stride=8,mis=0 (TAIL)
+simd,saxpy,f32,N=4097,stride=8,mis=1 (TAIL)
+simd,saxpy,f32,N=8193,stride=1,mis=0 (TAIL)
+simd,saxpy,f32,N=8193,stride=1,mis=1 (TAIL)
+simd,saxpy,f32,N=8193,stride=2,mis=0 (TAIL)
+simd,saxpy,f32,N=8193,stride=2,mis=1 (TAIL)
+simd,saxpy,f32,N=8193,stride=4,mis=0 (TAIL)
+simd,saxpy,f32,N=8193,stride=4,mis=1 (TAIL)
+simd,saxpy,f32,N=8193,stride=8,mis=0 (TAIL)
+simd,saxpy,f32,N=8193,stride=8,mis=1 (TAIL)
+simd,saxpy,f32,N=65537,stride=1,mis=0 (TAIL)
+simd,saxpy,f32,N=65537,stride=1,mis=1 (TAIL)
+simd,saxpy,f32,N=65537,stride=2,mis=0 (TAIL)
+simd,saxpy,f32,N=65537,stride=2,mis=1 (TAIL)
+simd,saxpy,f32,N=65537,stride=4,mis=0 (TAIL)
+simd,saxpy,f32,N=65537,stride=4,mis=1 (TAIL)
+simd,saxpy,f32,N=65537,stride=8,mis=0 (TAIL)
+simd,saxpy,f32,N=65537,stride=8,mis=1 (TAIL)
+simd,saxpy,f32,N=1048577,stride=1,mis=0 (TAIL)
+simd,saxpy,f32,N=1048577,stride=1,mis=1 (TAIL)
+simd,saxpy,f32,N=1048577,stride=2,mis=0 (TAIL)
+simd,saxpy,f32,N=1048577,stride=2,mis=1 (TAIL)
+simd,saxpy,f32,N=1048577,stride=4,mis=0 (TAIL)
+simd,saxpy,f32,N=1048577,stride=4,mis=1 (TAIL)
+simd,saxpy,f32,N=1048577,stride=8,mis=0 (TAIL)
+simd,saxpy,f32,N=1048577,stride=8,mis=1 (TAIL)
+simd,saxpy,f32,N=8388609,stride=1,mis=0 (TAIL)
+simd,saxpy,f32,N=8388609,stride=1,mis=1 (TAIL)
+simd,saxpy,f32,N=8388609,stride=2,mis=0 (TAIL)
+simd,saxpy,f32,N=8388609,stride=2,mis=1 (TAIL)
+simd,saxpy,f32,N=8388609,stride=4,mis=0 (TAIL)
+simd,saxpy,f32,N=8388609,stride=4,mis=1 (TAIL)
+simd,saxpy,f32,N=8388609,stride=8,mis=0 (TAIL)
+simd,saxpy,f32,N=8388609,stride=8,mis=1 (TAIL)
+simd,saxpy,f32,N=33554433,stride=1,mis=0 (TAIL)
+simd,saxpy,f32,N=33554433,stride=1,mis=1 (TAIL)
+simd,saxpy,f32,N=33554433,stride=2,mis=0 (TAIL)
+simd,saxpy,f32,N=33554433,stride=2,mis=1 (TAIL)
+simd,saxpy,f32,N=33554433,stride=4,mis=0 (TAIL)
+simd,saxpy,f32,N=33554433,stride=4,mis=1 (TAIL)
+simd,saxpy,f32,N=33554433,stride=8,mis=0 (TAIL)
+simd,saxpy,f32,N=33554433,stride=8,mis=1 (TAIL)
+simd,saxpy,f32,N=67108865,stride=1,mis=0 (TAIL)
+simd,saxpy,f32,N=67108865,stride=1,mis=1 (TAIL)
+simd,saxpy,f32,N=67108865,stride=2,mis=0 (TAIL)
+simd,saxpy,f32,N=67108865,stride=2,mis=1 (TAIL)
+simd,saxpy,f32,N=67108865,stride=4,mis=0 (TAIL)
+simd,saxpy,f32,N=67108865,stride=4,mis=1 (TAIL)
+simd,saxpy,f32,N=67108865,stride=8,mis=0 (TAIL)
+simd,saxpy,f32,N=67108865,stride=8,mis=1 (TAIL)
+simd,saxpy,f64,N=514,stride=1,mis=0 (TAIL)
+simd,saxpy,f64,N=514,stride=1,mis=1 (TAIL)
+simd,saxpy,f64,N=514,stride=2,mis=0 (TAIL)
+simd,saxpy,f64,N=514,stride=2,mis=1 (TAIL)
+simd,saxpy,f64,N=514,stride=4,mis=0 (TAIL)
+simd,saxpy,f64,N=514,stride=4,mis=1 (TAIL)
+simd,saxpy,f64,N=514,stride=8,mis=0 (TAIL)
+simd,saxpy,f64,N=514,stride=8,mis=1 (TAIL)
+simd,saxpy,f64,N=1026,stride=1,mis=0 (TAIL)
+simd,saxpy,f64,N=1026,stride=1,mis=1 (TAIL)
+simd,saxpy,f64,N=1026,stride=2,mis=0 (TAIL)
+simd,saxpy,f64,N=1026,stride=2,mis=1 (TAIL)
+simd,saxpy,f64,N=1026,stride=4,mis=0 (TAIL)
+simd,saxpy,f64,N=1026,stride=4,mis=1 (TAIL)
+simd,saxpy,f64,N=1026,stride=8,mis=0 (TAIL)
+simd,saxpy,f64,N=1026,stride=8,mis=1 (TAIL)
+simd,saxpy,f64,N=2050,stride=1,mis=0 (TAIL)
+simd,saxpy,f64,N=2050,stride=1,mis=1 (TAIL)
+simd,saxpy,f64,N=2050,stride=2,mis=0 (TAIL)
+simd,saxpy,f64,N=2050,stride=2,mis=1 (TAIL)
+simd,saxpy,f64,N=2050,stride=4,mis=0 (TAIL)
+simd,saxpy,f64,N=2050,stride=4,mis=1 (TAIL)
+simd,saxpy,f64,N=2050,stride=8,mis=0 (TAIL)
+simd,saxpy,f64,N=2050,stride=8,mis=1 (TAIL)
+simd,saxpy,f64,N=4098,stride=1,mis=0 (TAIL)
+simd,saxpy,f64,N=4098,stride=1,mis=1 (TAIL)
+simd,saxpy,f64,N=4098,stride=2,mis=0 (TAIL)
+simd,saxpy,f64,N=4098,stride=2,mis=1 (TAIL)
+simd,saxpy,f64,N=4098,stride=4,mis=0 (TAIL)
+simd,saxpy,f64,N=4098,stride=4,mis=1 (TAIL)
+simd,saxpy,f64,N=4098,stride=8,mis=0 (TAIL)
+simd,saxpy,f64,N=4098,stride=8,mis=1 (TAIL)
+simd,saxpy,f64,N=8194,stride=1,mis=0 (TAIL)
+simd,saxpy,f64,N=8194,stride=1,mis=1 (TAIL)
+simd,saxpy,f64,N=8194,stride=2,mis=0 (TAIL)
+simd,saxpy,f64,N=8194,stride=2,mis=1 (TAIL)
+simd,saxpy,f64,N=8194,stride=4,mis=0 (TAIL)
+simd,saxpy,f64,N=8194,stride=4,mis=1 (TAIL)
+simd,saxpy,f64,N=8194,stride=8,mis=0 (TAIL)
+simd,saxpy,f64,N=8194,stride=8,mis=1 (TAIL)
+simd,saxpy,f64,N=65538,stride=1,mis=0 (TAIL)
+simd,saxpy,f64,N=65538,stride=1,mis=1 (TAIL)
+simd,saxpy,f64,N=65538,stride=2,mis=0 (TAIL)
+simd,saxpy,f64,N=65538,stride=2,mis=1 (TAIL)
+simd,saxpy,f64,N=65538,stride=4,mis=0 (TAIL)
+simd,saxpy,f64,N=65538,stride=4,mis=1 (TAIL)
+simd,saxpy,f64,N=65538,stride=8,mis=0 (TAIL)
+simd,saxpy,f64,N=65538,stride=8,mis=1 (TAIL)
+simd,saxpy,f64,N=1048578,stride=1,mis=0 (TAIL)
+simd,saxpy,f64,N=1048578,stride=1,mis=1 (TAIL)
+simd,saxpy,f64,N=1048578,stride=2,mis=0 (TAIL)
+simd,saxpy,f64,N=1048578,stride=2,mis=1 (TAIL)
+simd,saxpy,f64,N=1048578,stride=4,mis=0 (TAIL)
+simd,saxpy,f64,N=1048578,stride=4,mis=1 (TAIL)
+simd,saxpy,f64,N=1048578,stride=8,mis=0 (TAIL)
+simd,saxpy,f64,N=1048578,stride=8,mis=1 (TAIL)
+simd,saxpy,f64,N=8388610,stride=1,mis=0 (TAIL)
+simd,saxpy,f64,N=8388610,stride=1,mis=1 (TAIL)
+simd,saxpy,f64,N=8388610,stride=2,mis=0 (TAIL)
+simd,saxpy,f64,N=8388610,stride=2,mis=1 (TAIL)
+simd,saxpy,f64,N=8388610,stride=4,mis=0 (TAIL)
+simd,saxpy,f64,N=8388610,stride=4,mis=1 (TAIL)
+simd,saxpy,f64,N=8388610,stride=8,mis=0 (TAIL)
+simd,saxpy,f64,N=8388610,stride=8,mis=1 (TAIL)
+simd,saxpy,f64,N=33554434,stride=1,mis=0 (TAIL)
+simd,saxpy,f64,N=33554434,stride=1,mis=1 (TAIL)
+simd,saxpy,f64,N=33554434,stride=2,mis=0 (TAIL)
+simd,saxpy,f64,N=33554434,stride=2,mis=1 (TAIL)
+simd,saxpy,f64,N=33554434,stride=4,mis=0 (TAIL)
+simd,saxpy,f64,N=33554434,stride=4,mis=1 (TAIL)
+simd,saxpy,f64,N=33554434,stride=8,mis=0 (TAIL)
+simd,saxpy,f64,N=33554434,stride=8,mis=1 (TAIL)
+simd,saxpy,f64,N=67108866,stride=1,mis=0 (TAIL)
+simd,saxpy,f64,N=67108866,stride=1,mis=1 (TAIL)
+simd,saxpy,f64,N=67108866,stride=2,mis=0 (TAIL)
+simd,saxpy,f64,N=67108866,stride=2,mis=1 (TAIL)
+simd,saxpy,f64,N=67108866,stride=4,mis=0 (TAIL)
+simd,saxpy,f64,N=67108866,stride=4,mis=1 (TAIL)
+simd,saxpy,f64,N=67108866,stride=8,mis=0 (TAIL)
+simd,saxpy,f64,N=67108866,stride=8,mis=1 (TAIL)
+simd,dot,f32,N=513,stride=1,mis=0 (TAIL)
+simd,dot,f32,N=513,stride=1,mis=1 (TAIL)
+simd,dot,f32,N=513,stride=2,mis=0 (TAIL)
+simd,dot,f32,N=513,stride=2,mis=1 (TAIL)
+simd,dot,f32,N=513,stride=4,mis=0 (TAIL)
+simd,dot,f32,N=513,stride=4,mis=1 (TAIL)
+simd,dot,f32,N=513,stride=8,mis=0 (TAIL)
+simd,dot,f32,N=513,stride=8,mis=1 (TAIL)
+simd,dot,f32,N=1025,stride=1,mis=0 (TAIL)
+simd,dot,f32,N=1025,stride=1,mis=1 (TAIL)
+simd,dot,f32,N=1025,stride=2,mis=0 (TAIL)
+simd,dot,f32,N=1025,stride=2,mis=1 (TAIL)
+simd,dot,f32,N=1025,stride=4,mis=0 (TAIL)
+simd,dot,f32,N=1025,stride=4,mis=1 (TAIL)
+simd,dot,f32,N=1025,stride=8,mis=0 (TAIL)
+simd,dot,f32,N=1025,stride=8,mis=1 (TAIL)
+simd,dot,f32,N=2049,stride=1,mis=0 (TAIL)
+simd,dot,f32,N=2049,stride=1,mis=1 (TAIL)
+simd,dot,f32,N=2049,stride=2,mis=0 (TAIL)
+simd,dot,f32,N=2049,stride=2,mis=1 (TAIL)
+simd,dot,f32,N=2049,stride=4,mis=0 (TAIL)
+simd,dot,f32,N=2049,stride=4,mis=1 (TAIL)
+simd,dot,f32,N=2049,stride=8,mis=0 (TAIL)
+simd,dot,f32,N=2049,stride=8,mis=1 (TAIL)
+simd,dot,f32,N=4097,stride=1,mis=0 (TAIL)
+simd,dot,f32,N=4097,stride=1,mis=1 (TAIL)
+simd,dot,f32,N=4097,stride=2,mis=0 (TAIL)
+simd,dot,f32,N=4097,stride=2,mis=1 (TAIL)
+simd,dot,f32,N=4097,stride=4,mis=0 (TAIL)
+simd,dot,f32,N=4097,stride=4,mis=1 (TAIL)
+simd,dot,f32,N=4097,stride=8,mis=0 (TAIL)
+simd,dot,f32,N=4097,stride=8,mis=1 (TAIL)
+simd,dot,f32,N=8193,stride=1,mis=0 (TAIL)
+simd,dot,f32,N=8193,stride=1,mis=1 (TAIL)
+simd,dot,f32,N=8193,stride=2,mis=0 (TAIL)
+simd,dot,f32,N=8193,stride=2,mis=1 (TAIL)
+simd,dot,f32,N=8193,stride=4,mis=0 (TAIL)
+simd,dot,f32,N=8193,stride=4,mis=1 (TAIL)
+simd,dot,f32,N=8193,stride=8,mis=0 (TAIL)
+simd,dot,f32,N=8193,stride=8,mis=1 (TAIL)
+simd,dot,f32,N=65537,stride=1,mis=0 (TAIL)
+simd,dot,f32,N=65537,stride=1,mis=1 (TAIL)
+simd,dot,f32,N=65537,stride=2,mis=0 (TAIL)
+simd,dot,f32,N=65537,stride=2,mis=1 (TAIL)
+simd,dot,f32,N=65537,stride=4,mis=0 (TAIL)
+simd,dot,f32,N=65537,stride=4,mis=1 (TAIL)
+simd,dot,f32,N=65537,stride=8,mis=0 (TAIL)
+simd,dot,f32,N=65537,stride=8,mis=1 (TAIL)
+simd,dot,f32,N=1048577,stride=1,mis=0 (TAIL)
+simd,dot,f32,N=1048577,stride=1,mis=1 (TAIL)
+simd,dot,f32,N=1048577,stride=2,mis=0 (TAIL)
+simd,dot,f32,N=1048577,stride=2,mis=1 (TAIL)
+simd,dot,f32,N=1048577,stride=4,mis=0 (TAIL)
+simd,dot,f32,N=1048577,stride=4,mis=1 (TAIL)
+simd,dot,f32,N=1048577,stride=8,mis=0 (TAIL)
+simd,dot,f32,N=1048577,stride=8,mis=1 (TAIL)
+simd,dot,f32,N=8388609,stride=1,mis=0 (TAIL)
+simd,dot,f32,N=8388609,stride=1,mis=1 (TAIL)
+simd,dot,f32,N=8388609,stride=2,mis=0 (TAIL)
+simd,dot,f32,N=8388609,stride=2,mis=1 (TAIL)
+simd,dot,f32,N=8388609,stride=4,mis=0 (TAIL)
+simd,dot,f32,N=8388609,stride=4,mis=1 (TAIL)
+simd,dot,f32,N=8388609,stride=8,mis=0 (TAIL)
+simd,dot,f32,N=8388609,stride=8,mis=1 (TAIL)
+simd,dot,f32,N=33554433,stride=1,mis=0 (TAIL)
+simd,dot,f32,N=33554433,stride=1,mis=1 (TAIL)
+simd,dot,f32,N=33554433,stride=2,mis=0 (TAIL)
+simd,dot,f32,N=33554433,stride=2,mis=1 (TAIL)
+simd,dot,f32,N=33554433,stride=4,mis=0 (TAIL)
+simd,dot,f32,N=33554433,stride=4,mis=1 (TAIL)
+simd,dot,f32,N=33554433,stride=8,mis=0 (TAIL)
+simd,dot,f32,N=33554433,stride=8,mis=1 (TAIL)
+simd,dot,f32,N=67108865,stride=1,mis=0 (TAIL)
+simd,dot,f32,N=67108865,stride=1,mis=1 (TAIL)
+simd,dot,f32,N=67108865,stride=2,mis=0 (TAIL)
+simd,dot,f32,N=67108865,stride=2,mis=1 (TAIL)
+simd,dot,f32,N=67108865,stride=4,mis=0 (TAIL)
+simd,dot,f32,N=67108865,stride=4,mis=1 (TAIL)
+simd,dot,f32,N=67108865,stride=8,mis=0 (TAIL)
+simd,dot,f32,N=67108865,stride=8,mis=1 (TAIL)
+simd,dot,f64,N=514,stride=1,mis=0 (TAIL)
+simd,dot,f64,N=514,stride=1,mis=1 (TAIL)
+simd,dot,f64,N=514,stride=2,mis=0 (TAIL)
+simd,dot,f64,N=514,stride=2,mis=1 (TAIL)
+simd,dot,f64,N=514,stride=4,mis=0 (TAIL)
+simd,dot,f64,N=514,stride=4,mis=1 (TAIL)
+simd,dot,f64,N=514,stride=8,mis=0 (TAIL)
+simd,dot,f64,N=514,stride=8,mis=1 (TAIL)
+simd,dot,f64,N=1026,stride=1,mis=0 (TAIL)
+simd,dot,f64,N=1026,stride=1,mis=1 (TAIL)
+simd,dot,f64,N=1026,stride=2,mis=0 (TAIL)
+simd,dot,f64,N=1026,stride=2,mis=1 (TAIL)
+simd,dot,f64,N=1026,stride=4,mis=0 (TAIL)
+simd,dot,f64,N=1026,stride=4,mis=1 (TAIL)
+simd,dot,f64,N=1026,stride=8,mis=0 (TAIL)
+simd,dot,f64,N=1026,stride=8,mis=1 (TAIL)
+simd,dot,f64,N=2050,stride=1,mis=0 (TAIL)
+simd,dot,f64,N=2050,stride=1,mis=1 (TAIL)
+simd,dot,f64,N=2050,stride=2,mis=0 (TAIL)
+simd,dot,f64,N=2050,stride=2,mis=1 (TAIL)
+simd,dot,f64,N=2050,stride=4,mis=0 (TAIL)
+simd,dot,f64,N=2050,stride=4,mis=1 (TAIL)
+simd,dot,f64,N=2050,stride=8,mis=0 (TAIL)
+simd,dot,f64,N=2050,stride=8,mis=1 (TAIL)
+simd,dot,f64,N=4098,stride=1,mis=0 (TAIL)
+simd,dot,f64,N=4098,stride=1,mis=1 (TAIL)
+simd,dot,f64,N=4098,stride=2,mis=0 (TAIL)
+simd,dot,f64,N=4098,stride=2,mis=1 (TAIL)
+simd,dot,f64,N=4098,stride=4,mis=0 (TAIL)
+simd,dot,f64,N=4098,stride=4,mis=1 (TAIL)
+simd,dot,f64,N=4098,stride=8,mis=0 (TAIL)
+simd,dot,f64,N=4098,stride=8,mis=1 (TAIL)
+simd,dot,f64,N=8194,stride=1,mis=0 (TAIL)
+simd,dot,f64,N=8194,stride=1,mis=1 (TAIL)
+simd,dot,f64,N=8194,stride=2,mis=0 (TAIL)
+simd,dot,f64,N=8194,stride=2,mis=1 (TAIL)
+simd,dot,f64,N=8194,stride=4,mis=0 (TAIL)
+simd,dot,f64,N=8194,stride=4,mis=1 (TAIL)
+simd,dot,f64,N=8194,stride=8,mis=0 (TAIL)
+simd,dot,f64,N=8194,stride=8,mis=1 (TAIL)
+simd,dot,f64,N=65538,stride=1,mis=0 (TAIL)
+simd,dot,f64,N=65538,stride=1,mis=1 (TAIL)
+simd,dot,f64,N=65538,stride=2,mis=0 (TAIL)
+simd,dot,f64,N=65538,stride=2,mis=1 (TAIL)
+simd,dot,f64,N=65538,stride=4,mis=0 (TAIL)
+simd,dot,f64,N=65538,stride=4,mis=1 (TAIL)
+simd,dot,f64,N=65538,stride=8,mis=0 (TAIL)
+simd,dot,f64,N=65538,stride=8,mis=1 (TAIL)
+simd,dot,f64,N=1048578,stride=1,mis=0 (TAIL)
+simd,dot,f64,N=1048578,stride=1,mis=1 (TAIL)
+simd,dot,f64,N=1048578,stride=2,mis=0 (TAIL)
+simd,dot,f64,N=1048578,stride=2,mis=1 (TAIL)
+simd,dot,f64,N=1048578,stride=4,mis=0 (TAIL)
+simd,dot,f64,N=1048578,stride=4,mis=1 (TAIL)
+simd,dot,f64,N=1048578,stride=8,mis=0 (TAIL)
+simd,dot,f64,N=1048578,stride=8,mis=1 (TAIL)
+simd,dot,f64,N=8388610,stride=1,mis=0 (TAIL)
+simd,dot,f64,N=8388610,stride=1,mis=1 (TAIL)
+simd,dot,f64,N=8388610,stride=2,mis=0 (TAIL)
+simd,dot,f64,N=8388610,stride=2,mis=1 (TAIL)
+simd,dot,f64,N=8388610,stride=4,mis=0 (TAIL)
+simd,dot,f64,N=8388610,stride=4,mis=1 (TAIL)
+simd,dot,f64,N=8388610,stride=8,mis=0 (TAIL)
+simd,dot,f64,N=8388610,stride=8,mis=1 (TAIL)
+simd,dot,f64,N=33554434,stride=1,mis=0 (TAIL)
+simd,dot,f64,N=33554434,stride=1,mis=1 (TAIL)
+simd,dot,f64,N=33554434,stride=2,mis=0 (TAIL)
+simd,dot,f64,N=33554434,stride=2,mis=1 (TAIL)
+simd,dot,f64,N=33554434,stride=4,mis=0 (TAIL)
+simd,dot,f64,N=33554434,stride=4,mis=1 (TAIL)
+simd,dot,f64,N=33554434,stride=8,mis=0 (TAIL)
+simd,dot,f64,N=33554434,stride=8,mis=1 (TAIL)
+simd,dot,f64,N=67108866,stride=1,mis=0 (TAIL)
+simd,dot,f64,N=67108866,stride=1,mis=1 (TAIL)
+simd,dot,f64,N=67108866,stride=2,mis=0 (TAIL)
+simd,dot,f64,N=67108866,stride=2,mis=1 (TAIL)
+simd,dot,f64,N=67108866,stride=4,mis=0 (TAIL)
+simd,dot,f64,N=67108866,stride=4,mis=1 (TAIL)
+simd,dot,f64,N=67108866,stride=8,mis=0 (TAIL)
+simd,dot,f64,N=67108866,stride=8,mis=1 (TAIL)
+simd,mul,f32,N=513,stride=1,mis=0 (TAIL)
+simd,mul,f32,N=513,stride=1,mis=1 (TAIL)
+simd,mul,f32,N=513,stride=2,mis=0 (TAIL)
+simd,mul,f32,N=513,stride=2,mis=1 (TAIL)
+simd,mul,f32,N=513,stride=4,mis=0 (TAIL)
+simd,mul,f32,N=513,stride=4,mis=1 (TAIL)
+simd,mul,f32,N=513,stride=8,mis=0 (TAIL)
+simd,mul,f32,N=513,stride=8,mis=1 (TAIL)
+simd,mul,f32,N=1025,stride=1,mis=0 (TAIL)
+simd,mul,f32,N=1025,stride=1,mis=1 (TAIL)
+simd,mul,f32,N=1025,stride=2,mis=0 (TAIL)
+simd,mul,f32,N=1025,stride=2,mis=1 (TAIL)
+simd,mul,f32,N=1025,stride=4,mis=0 (TAIL)
+simd,mul,f32,N=1025,stride=4,mis=1 (TAIL)
+simd,mul,f32,N=1025,stride=8,mis=0 (TAIL)
+simd,mul,f32,N=1025,stride=8,mis=1 (TAIL)
+simd,mul,f32,N=2049,stride=1,mis=0 (TAIL)
+simd,mul,f32,N=2049,stride=1,mis=1 (TAIL)
+simd,mul,f32,N=2049,stride=2,mis=0 (TAIL)
+simd,mul,f32,N=2049,stride=2,mis=1 (TAIL)
+simd,mul,f32,N=2049,stride=4,mis=0 (TAIL)
+simd,mul,f32,N=2049,stride=4,mis=1 (TAIL)
+simd,mul,f32,N=2049,stride=8,mis=0 (TAIL)
+simd,mul,f32,N=2049,stride=8,mis=1 (TAIL)
+simd,mul,f32,N=4097,stride=1,mis=0 (TAIL)
+simd,mul,f32,N=4097,stride=1,mis=1 (TAIL)
+simd,mul,f32,N=4097,stride=2,mis=0 (TAIL)
+simd,mul,f32,N=4097,stride=2,mis=1 (TAIL)
+simd,mul,f32,N=4097,stride=4,mis=0 (TAIL)
+simd,mul,f32,N=4097,stride=4,mis=1 (TAIL)
+simd,mul,f32,N=4097,stride=8,mis=0 (TAIL)
+simd,mul,f32,N=4097,stride=8,mis=1 (TAIL)
+simd,mul,f32,N=8193,stride=1,mis=0 (TAIL)
+simd,mul,f32,N=8193,stride=1,mis=1 (TAIL)
+simd,mul,f32,N=8193,stride=2,mis=0 (TAIL)
+simd,mul,f32,N=8193,stride=2,mis=1 (TAIL)
+simd,mul,f32,N=8193,stride=4,mis=0 (TAIL)
+simd,mul,f32,N=8193,stride=4,mis=1 (TAIL)
+simd,mul,f32,N=8193,stride=8,mis=0 (TAIL)
+simd,mul,f32,N=8193,stride=8,mis=1 (TAIL)
+simd,mul,f32,N=65537,stride=1,mis=0 (TAIL)
+simd,mul,f32,N=65537,stride=1,mis=1 (TAIL)
+simd,mul,f32,N=65537,stride=2,mis=0 (TAIL)
+simd,mul,f32,N=65537,stride=2,mis=1 (TAIL)
+simd,mul,f32,N=65537,stride=4,mis=0 (TAIL)
+simd,mul,f32,N=65537,stride=4,mis=1 (TAIL)
+simd,mul,f32,N=65537,stride=8,mis=0 (TAIL)
+simd,mul,f32,N=65537,stride=8,mis=1 (TAIL)
+simd,mul,f32,N=1048577,stride=1,mis=0 (TAIL)
+simd,mul,f32,N=1048577,stride=1,mis=1 (TAIL)
+simd,mul,f32,N=1048577,stride=2,mis=0 (TAIL)
+simd,mul,f32,N=1048577,stride=2,mis=1 (TAIL)
+simd,mul,f32,N=1048577,stride=4,mis=0 (TAIL)
+simd,mul,f32,N=1048577,stride=4,mis=1 (TAIL)
+simd,mul,f32,N=1048577,stride=8,mis=0 (TAIL)
+simd,mul,f32,N=1048577,stride=8,mis=1 (TAIL)
+simd,mul,f32,N=8388609,stride=1,mis=0 (TAIL)
+simd,mul,f32,N=8388609,stride=1,mis=1 (TAIL)
+simd,mul,f32,N=8388609,stride=2,mis=0 (TAIL)
+simd,mul,f32,N=8388609,stride=2,mis=1 (TAIL)
+simd,mul,f32,N=8388609,stride=4,mis=0 (TAIL)
+simd,mul,f32,N=8388609,stride=4,mis=1 (TAIL)
+simd,mul,f32,N=8388609,stride=8,mis=0 (TAIL)
+simd,mul,f32,N=8388609,stride=8,mis=1 (TAIL)
+simd,mul,f32,N=33554433,stride=1,mis=0 (TAIL)
+simd,mul,f32,N=33554433,stride=1,mis=1 (TAIL)
+simd,mul,f32,N=33554433,stride=2,mis=0 (TAIL)
+simd,mul,f32,N=33554433,stride=2,mis=1 (TAIL)
+simd,mul,f32,N=33554433,stride=4,mis=0 (TAIL)
+simd,mul,f32,N=33554433,stride=4,mis=1 (TAIL)
+simd,mul,f32,N=33554433,stride=8,mis=0 (TAIL)
+simd,mul,f32,N=33554433,stride=8,mis=1 (TAIL)
+simd,mul,f32,N=67108865,stride=1,mis=0 (TAIL)
+simd,mul,f32,N=67108865,stride=1,mis=1 (TAIL)
+simd,mul,f32,N=67108865,stride=2,mis=0 (TAIL)
+simd,mul,f32,N=67108865,stride=2,mis=1 (TAIL)
+simd,mul,f32,N=67108865,stride=4,mis=0 (TAIL)
+simd,mul,f32,N=67108865,stride=4,mis=1 (TAIL)
+simd,mul,f32,N=67108865,stride=8,mis=0 (TAIL)
+simd,mul,f32,N=67108865,stride=8,mis=1 (TAIL)
+simd,mul,f64,N=514,stride=1,mis=0 (TAIL)
+simd,mul,f64,N=514,stride=1,mis=1 (TAIL)
+simd,mul,f64,N=514,stride=2,mis=0 (TAIL)
+simd,mul,f64,N=514,stride=2,mis=1 (TAIL)
+simd,mul,f64,N=514,stride=4,mis=0 (TAIL)
+simd,mul,f64,N=514,stride=4,mis=1 (TAIL)
+simd,mul,f64,N=514,stride=8,mis=0 (TAIL)
+simd,mul,f64,N=514,stride=8,mis=1 (TAIL)
+simd,mul,f64,N=1026,stride=1,mis=0 (TAIL)
+simd,mul,f64,N=1026,stride=1,mis=1 (TAIL)
+simd,mul,f64,N=1026,stride=2,mis=0 (TAIL)
+simd,mul,f64,N=1026,stride=2,mis=1 (TAIL)
+simd,mul,f64,N=1026,stride=4,mis=0 (TAIL)
+simd,mul,f64,N=1026,stride=4,mis=1 (TAIL)
+simd,mul,f64,N=1026,stride=8,mis=0 (TAIL)
+simd,mul,f64,N=1026,stride=8,mis=1 (TAIL)
+simd,mul,f64,N=2050,stride=1,mis=0 (TAIL)
+simd,mul,f64,N=2050,stride=1,mis=1 (TAIL)
+simd,mul,f64,N=2050,stride=2,mis=0 (TAIL)
+simd,mul,f64,N=2050,stride=2,mis=1 (TAIL)
+simd,mul,f64,N=2050,stride=4,mis=0 (TAIL)
+simd,mul,f64,N=2050,stride=4,mis=1 (TAIL)
+simd,mul,f64,N=2050,stride=8,mis=0 (TAIL)
+simd,mul,f64,N=2050,stride=8,mis=1 (TAIL)
+simd,mul,f64,N=4098,stride=1,mis=0 (TAIL)
+simd,mul,f64,N=4098,stride=1,mis=1 (TAIL)
+simd,mul,f64,N=4098,stride=2,mis=0 (TAIL)
+simd,mul,f64,N=4098,stride=2,mis=1 (TAIL)
+simd,mul,f64,N=4098,stride=4,mis=0 (TAIL)
+simd,mul,f64,N=4098,stride=4,mis=1 (TAIL)
+simd,mul,f64,N=4098,stride=8,mis=0 (TAIL)
+simd,mul,f64,N=4098,stride=8,mis=1 (TAIL)
+simd,mul,f64,N=8194,stride=1,mis=0 (TAIL)
+simd,mul,f64,N=8194,stride=1,mis=1 (TAIL)
+simd,mul,f64,N=8194,stride=2,mis=0 (TAIL)
+simd,mul,f64,N=8194,stride=2,mis=1 (TAIL)
+simd,mul,f64,N=8194,stride=4,mis=0 (TAIL)
+simd,mul,f64,N=8194,stride=4,mis=1 (TAIL)
+simd,mul,f64,N=8194,stride=8,mis=0 (TAIL)
+simd,mul,f64,N=8194,stride=8,mis=1 (TAIL)
+simd,mul,f64,N=65538,stride=1,mis=0 (TAIL)
+simd,mul,f64,N=65538,stride=1,mis=1 (TAIL)
+simd,mul,f64,N=65538,stride=2,mis=0 (TAIL)
+simd,mul,f64,N=65538,stride=2,mis=1 (TAIL)
+simd,mul,f64,N=65538,stride=4,mis=0 (TAIL)
+simd,mul,f64,N=65538,stride=4,mis=1 (TAIL)
+simd,mul,f64,N=65538,stride=8,mis=0 (TAIL)
+simd,mul,f64,N=65538,stride=8,mis=1 (TAIL)
+simd,mul,f64,N=1048578,stride=1,mis=0 (TAIL)
+simd,mul,f64,N=1048578,stride=1,mis=1 (TAIL)
+simd,mul,f64,N=1048578,stride=2,mis=0 (TAIL)
+simd,mul,f64,N=1048578,stride=2,mis=1 (TAIL)
+simd,mul,f64,N=1048578,stride=4,mis=0 (TAIL)
+simd,mul,f64,N=1048578,stride=4,mis=1 (TAIL)
+simd,mul,f64,N=1048578,stride=8,mis=0 (TAIL)
+simd,mul,f64,N=1048578,stride=8,mis=1 (TAIL)
+simd,mul,f64,N=8388610,stride=1,mis=0 (TAIL)
+simd,mul,f64,N=8388610,stride=1,mis=1 (TAIL)
+simd,mul,f64,N=8388610,stride=2,mis=0 (TAIL)
+simd,mul,f64,N=8388610,stride=2,mis=1 (TAIL)
+simd,mul,f64,N=8388610,stride=4,mis=0 (TAIL)
+simd,mul,f64,N=8388610,stride=4,mis=1 (TAIL)
+simd,mul,f64,N=8388610,stride=8,mis=0 (TAIL)
+simd,mul,f64,N=8388610,stride=8,mis=1 (TAIL)
+simd,mul,f64,N=33554434,stride=1,mis=0 (TAIL)
+simd,mul,f64,N=33554434,stride=1,mis=1 (TAIL)
+simd,mul,f64,N=33554434,stride=2,mis=0 (TAIL)
+simd,mul,f64,N=33554434,stride=2,mis=1 (TAIL)
+simd,mul,f64,N=33554434,stride=4,mis=0 (TAIL)
+simd,mul,f64,N=33554434,stride=4,mis=1 (TAIL)
+simd,mul,f64,N=33554434,stride=8,mis=0 (TAIL)
+simd,mul,f64,N=33554434,stride=8,mis=1 (TAIL)
+simd,mul,f64,N=67108866,stride=1,mis=0 (TAIL)
+simd,mul,f64,N=67108866,stride=1,mis=1 (TAIL)
+simd,mul,f64,N=67108866,stride=2,mis=0 (TAIL)
+simd,mul,f64,N=67108866,stride=2,mis=1 (TAIL)
+simd,mul,f64,N=67108866,stride=4,mis=0 (TAIL)
+simd,mul,f64,N=67108866,stride=4,mis=1 (TAIL)
+simd,mul,f64,N=67108866,stride=8,mis=0 (TAIL)
+simd,mul,f64,N=67108866,stride=8,mis=1 (TAIL)
+simd,stencil,f32,N=1025,stride=1,mis=0 (TAIL)
+simd,stencil,f32,N=1025,stride=1,mis=1 (TAIL)
+simd,stencil,f32,N=2049,stride=1,mis=0 (TAIL)
+simd,stencil,f32,N=2049,stride=1,mis=1 (TAIL)
+simd,stencil,f32,N=4097,stride=1,mis=0 (TAIL)
+simd,stencil,f32,N=4097,stride=1,mis=1 (TAIL)
+simd,stencil,f32,N=8193,stride=1,mis=0 (TAIL)
+simd,stencil,f32,N=8193,stride=1,mis=1 (TAIL)
+simd,stencil,f32,N=65537,stride=1,mis=0 (TAIL)
+simd,stencil,f32,N=65537,stride=1,mis=1 (TAIL)
+simd,stencil,f32,N=1048577,stride=1,mis=0 (TAIL)
+simd,stencil,f32,N=1048577,stride=1,mis=1 (TAIL)
+simd,stencil,f32,N=8388609,stride=1,mis=0 (TAIL)
+simd,stencil,f32,N=8388609,stride=1,mis=1 (TAIL)
+simd,stencil,f32,N=33554433,stride=1,mis=0 (TAIL)
+simd,stencil,f32,N=33554433,stride=1,mis=1 (TAIL)
+simd,stencil,f32,N=67108865,stride=1,mis=0 (TAIL)
+simd,stencil,f32,N=67108865,stride=1,mis=1 (TAIL)
+simd,stencil,f64,N=1026,stride=1,mis=0 (TAIL)
+simd,stencil,f64,N=1026,stride=1,mis=1 (TAIL)
+simd,stencil,f64,N=2050,stride=1,mis=0 (TAIL)
+simd,stencil,f64,N=2050,stride=1,mis=1 (TAIL)
+simd,stencil,f64,N=4098,stride=1,mis=0 (TAIL)
+simd,stencil,f64,N=4098,stride=1,mis=1 (TAIL)
+simd,stencil,f64,N=8194,stride=1,mis=0 (TAIL)
+simd,stencil,f64,N=8194,stride=1,mis=1 (TAIL)
+simd,stencil,f64,N=65538,stride=1,mis=0 (TAIL)
+simd,stencil,f64,N=65538,stride=1,mis=1 (TAIL)
+simd,stencil,f64,N=1048578,stride=1,mis=0 (TAIL)
+simd,stencil,f64,N=1048578,stride=1,mis=1 (TAIL)
+simd,stencil,f64,N=8388610,stride=1,mis=0 (TAIL)
+simd,stencil,f64,N=8388610,stride=1,mis=1 (TAIL)
+simd,stencil,f64,N=33554434,stride=1,mis=0 (TAIL)
+simd,stencil,f64,N=33554434,stride=1,mis=1 (TAIL)
+simd,stencil,f64,N=67108866,stride=1,mis=0 (TAIL)
+simd,stencil,f64,N=67108866,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=512,stride=1,mis=0
+scalar,saxpy,f32,N=512,stride=1,mis=1
+scalar,saxpy,f32,N=512,stride=2,mis=0
+scalar,saxpy,f32,N=512,stride=2,mis=1
+scalar,saxpy,f32,N=512,stride=4,mis=0
+scalar,saxpy,f32,N=512,stride=4,mis=1
+scalar,saxpy,f32,N=512,stride=8,mis=0
+scalar,saxpy,f32,N=512,stride=8,mis=1
+scalar,saxpy,f32,N=1024,stride=1,mis=0
+scalar,saxpy,f32,N=1024,stride=1,mis=1
+scalar,saxpy,f32,N=1024,stride=2,mis=0
+scalar,saxpy,f32,N=1024,stride=2,mis=1
+scalar,saxpy,f32,N=1024,stride=4,mis=0
+scalar,saxpy,f32,N=1024,stride=4,mis=1
+scalar,saxpy,f32,N=1024,stride=8,mis=0
+scalar,saxpy,f32,N=1024,stride=8,mis=1
+scalar,saxpy,f32,N=2048,stride=1,mis=0
+scalar,saxpy,f32,N=2048,stride=1,mis=1
+scalar,saxpy,f32,N=2048,stride=2,mis=0
+scalar,saxpy,f32,N=2048,stride=2,mis=1
+scalar,saxpy,f32,N=2048,stride=4,mis=0
+scalar,saxpy,f32,N=2048,stride=4,mis=1
+scalar,saxpy,f32,N=2048,stride=8,mis=0
+scalar,saxpy,f32,N=2048,stride=8,mis=1
+scalar,saxpy,f32,N=4096,stride=1,mis=0
+scalar,saxpy,f32,N=4096,stride=1,mis=1
+scalar,saxpy,f32,N=4096,stride=2,mis=0
+scalar,saxpy,f32,N=4096,stride=2,mis=1
+scalar,saxpy,f32,N=4096,stride=4,mis=0
+scalar,saxpy,f32,N=4096,stride=4,mis=1
+scalar,saxpy,f32,N=4096,stride=8,mis=0
+scalar,saxpy,f32,N=4096,stride=8,mis=1
+scalar,saxpy,f32,N=8192,stride=1,mis=0
+scalar,saxpy,f32,N=8192,stride=1,mis=1
+scalar,saxpy,f32,N=8192,stride=2,mis=0
+scalar,saxpy,f32,N=8192,stride=2,mis=1
+scalar,saxpy,f32,N=8192,stride=4,mis=0
+scalar,saxpy,f32,N=8192,stride=4,mis=1
+scalar,saxpy,f32,N=8192,stride=8,mis=0
+scalar,saxpy,f32,N=8192,stride=8,mis=1
+scalar,saxpy,f32,N=65536,stride=1,mis=0
+scalar,saxpy,f32,N=65536,stride=1,mis=1
+scalar,saxpy,f32,N=65536,stride=2,mis=0
+scalar,saxpy,f32,N=65536,stride=2,mis=1
+scalar,saxpy,f32,N=65536,stride=4,mis=0
+scalar,saxpy,f32,N=65536,stride=4,mis=1
+scalar,saxpy,f32,N=65536,stride=8,mis=0
+scalar,saxpy,f32,N=65536,stride=8,mis=1
+scalar,saxpy,f32,N=1048576,stride=1,mis=0
+scalar,saxpy,f32,N=1048576,stride=1,mis=1
+scalar,saxpy,f32,N=1048576,stride=2,mis=0
+scalar,saxpy,f32,N=1048576,stride=2,mis=1
+scalar,saxpy,f32,N=1048576,stride=4,mis=0
+scalar,saxpy,f32,N=1048576,stride=4,mis=1
+scalar,saxpy,f32,N=1048576,stride=8,mis=0
+scalar,saxpy,f32,N=1048576,stride=8,mis=1
+scalar,saxpy,f32,N=8388608,stride=1,mis=0
+scalar,saxpy,f32,N=8388608,stride=1,mis=1
+scalar,saxpy,f32,N=8388608,stride=2,mis=0
+scalar,saxpy,f32,N=8388608,stride=2,mis=1
+scalar,saxpy,f32,N=8388608,stride=4,mis=0
+scalar,saxpy,f32,N=8388608,stride=4,mis=1
+scalar,saxpy,f32,N=8388608,stride=8,mis=0
+scalar,saxpy,f32,N=8388608,stride=8,mis=1
+scalar,saxpy,f32,N=33554432,stride=1,mis=0
+scalar,saxpy,f32,N=33554432,stride=1,mis=1
+scalar,saxpy,f32,N=33554432,stride=2,mis=0
+scalar,saxpy,f32,N=33554432,stride=2,mis=1
+scalar,saxpy,f32,N=33554432,stride=4,mis=0
+scalar,saxpy,f32,N=33554432,stride=4,mis=1
+scalar,saxpy,f32,N=33554432,stride=8,mis=0
+scalar,saxpy,f32,N=33554432,stride=8,mis=1
+scalar,saxpy,f32,N=67108864,stride=1,mis=0
+scalar,saxpy,f32,N=67108864,stride=1,mis=1
+scalar,saxpy,f32,N=67108864,stride=2,mis=0
+scalar,saxpy,f32,N=67108864,stride=2,mis=1
+scalar,saxpy,f32,N=67108864,stride=4,mis=0
+scalar,saxpy,f32,N=67108864,stride=4,mis=1
+scalar,saxpy,f32,N=67108864,stride=8,mis=0
+scalar,saxpy,f32,N=67108864,stride=8,mis=1
+scalar,saxpy,f64,N=512,stride=1,mis=0
+scalar,saxpy,f64,N=512,stride=1,mis=1
+scalar,saxpy,f64,N=512,stride=2,mis=0
+scalar,saxpy,f64,N=512,stride=2,mis=1
+scalar,saxpy,f64,N=512,stride=4,mis=0
+scalar,saxpy,f64,N=512,stride=4,mis=1
+scalar,saxpy,f64,N=512,stride=8,mis=0
+scalar,saxpy,f64,N=512,stride=8,mis=1
+scalar,saxpy,f64,N=1024,stride=1,mis=0
+scalar,saxpy,f64,N=1024,stride=1,mis=1
+scalar,saxpy,f64,N=1024,stride=2,mis=0
+scalar,saxpy,f64,N=1024,stride=2,mis=1
+scalar,saxpy,f64,N=1024,stride=4,mis=0
+scalar,saxpy,f64,N=1024,stride=4,mis=1
+scalar,saxpy,f64,N=1024,stride=8,mis=0
+scalar,saxpy,f64,N=1024,stride=8,mis=1
+scalar,saxpy,f64,N=2048,stride=1,mis=0
+scalar,saxpy,f64,N=2048,stride=1,mis=1
+scalar,saxpy,f64,N=2048,stride=2,mis=0
+scalar,saxpy,f64,N=2048,stride=2,mis=1
+scalar,saxpy,f64,N=2048,stride=4,mis=0
+scalar,saxpy,f64,N=2048,stride=4,mis=1
+scalar,saxpy,f64,N=2048,stride=8,mis=0
+scalar,saxpy,f64,N=2048,stride=8,mis=1
+scalar,saxpy,f64,N=4096,stride=1,mis=0
+scalar,saxpy,f64,N=4096,stride=1,mis=1
+scalar,saxpy,f64,N=4096,stride=2,mis=0
+scalar,saxpy,f64,N=4096,stride=2,mis=1
+scalar,saxpy,f64,N=4096,stride=4,mis=0
+scalar,saxpy,f64,N=4096,stride=4,mis=1
+scalar,saxpy,f64,N=4096,stride=8,mis=0
+scalar,saxpy,f64,N=4096,stride=8,mis=1
+scalar,saxpy,f64,N=8192,stride=1,mis=0
+scalar,saxpy,f64,N=8192,stride=1,mis=1
+scalar,saxpy,f64,N=8192,stride=2,mis=0
+scalar,saxpy,f64,N=8192,stride=2,mis=1
+scalar,saxpy,f64,N=8192,stride=4,mis=0
+scalar,saxpy,f64,N=8192,stride=4,mis=1
+scalar,saxpy,f64,N=8192,stride=8,mis=0
+scalar,saxpy,f64,N=8192,stride=8,mis=1
+scalar,saxpy,f64,N=65536,stride=1,mis=0
+scalar,saxpy,f64,N=65536,stride=1,mis=1
+scalar,saxpy,f64,N=65536,stride=2,mis=0
+scalar,saxpy,f64,N=65536,stride=2,mis=1
+scalar,saxpy,f64,N=65536,stride=4,mis=0
+scalar,saxpy,f64,N=65536,stride=4,mis=1
+scalar,saxpy,f64,N=65536,stride=8,mis=0
+scalar,saxpy,f64,N=65536,stride=8,mis=1
+scalar,saxpy,f64,N=1048576,stride=1,mis=0
+scalar,saxpy,f64,N=1048576,stride=1,mis=1
+scalar,saxpy,f64,N=1048576,stride=2,mis=0
+scalar,saxpy,f64,N=1048576,stride=2,mis=1
+scalar,saxpy,f64,N=1048576,stride=4,mis=0
+scalar,saxpy,f64,N=1048576,stride=4,mis=1
+scalar,saxpy,f64,N=1048576,stride=8,mis=0
+scalar,saxpy,f64,N=1048576,stride=8,mis=1
+scalar,saxpy,f64,N=8388608,stride=1,mis=0
+scalar,saxpy,f64,N=8388608,stride=1,mis=1
+scalar,saxpy,f64,N=8388608,stride=2,mis=0
+scalar,saxpy,f64,N=8388608,stride=2,mis=1
+scalar,saxpy,f64,N=8388608,stride=4,mis=0
+scalar,saxpy,f64,N=8388608,stride=4,mis=1
+scalar,saxpy,f64,N=8388608,stride=8,mis=0
+scalar,saxpy,f64,N=8388608,stride=8,mis=1
+scalar,saxpy,f64,N=33554432,stride=1,mis=0
+scalar,saxpy,f64,N=33554432,stride=1,mis=1
+scalar,saxpy,f64,N=33554432,stride=2,mis=0
+scalar,saxpy,f64,N=33554432,stride=2,mis=1
+scalar,saxpy,f64,N=33554432,stride=4,mis=0
+scalar,saxpy,f64,N=33554432,stride=4,mis=1
+scalar,saxpy,f64,N=33554432,stride=8,mis=0
+scalar,saxpy,f64,N=33554432,stride=8,mis=1
+scalar,saxpy,f64,N=67108864,stride=1,mis=0
+scalar,saxpy,f64,N=67108864,stride=1,mis=1
+scalar,saxpy,f64,N=67108864,stride=2,mis=0
+scalar,saxpy,f64,N=67108864,stride=2,mis=1
+scalar,saxpy,f64,N=67108864,stride=4,mis=0
+scalar,saxpy,f64,N=67108864,stride=4,mis=1
+scalar,saxpy,f64,N=67108864,stride=8,mis=0
+scalar,saxpy,f64,N=67108864,stride=8,mis=1
+scalar,dot,f32,N=512,stride=1,mis=0
+scalar,dot,f32,N=512,stride=1,mis=1
+scalar,dot,f32,N=512,stride=2,mis=0
+scalar,dot,f32,N=512,stride=2,mis=1
+scalar,dot,f32,N=512,stride=4,mis=0
+scalar,dot,f32,N=512,stride=4,mis=1
+scalar,dot,f32,N=512,stride=8,mis=0
+scalar,dot,f32,N=512,stride=8,mis=1
+scalar,dot,f32,N=1024,stride=1,mis=0
+scalar,dot,f32,N=1024,stride=1,mis=1
+scalar,dot,f32,N=1024,stride=2,mis=0
+scalar,dot,f32,N=1024,stride=2,mis=1
+scalar,dot,f32,N=1024,stride=4,mis=0
+scalar,dot,f32,N=1024,stride=4,mis=1
+scalar,dot,f32,N=1024,stride=8,mis=0
+scalar,dot,f32,N=1024,stride=8,mis=1
+scalar,dot,f32,N=2048,stride=1,mis=0
+scalar,dot,f32,N=2048,stride=1,mis=1
+scalar,dot,f32,N=2048,stride=2,mis=0
+scalar,dot,f32,N=2048,stride=2,mis=1
+scalar,dot,f32,N=2048,stride=4,mis=0
+scalar,dot,f32,N=2048,stride=4,mis=1
+scalar,dot,f32,N=2048,stride=8,mis=0
+scalar,dot,f32,N=2048,stride=8,mis=1
+scalar,dot,f32,N=4096,stride=1,mis=0
+scalar,dot,f32,N=4096,stride=1,mis=1
+scalar,dot,f32,N=4096,stride=2,mis=0
+scalar,dot,f32,N=4096,stride=2,mis=1
+scalar,dot,f32,N=4096,stride=4,mis=0
+scalar,dot,f32,N=4096,stride=4,mis=1
+scalar,dot,f32,N=4096,stride=8,mis=0
+scalar,dot,f32,N=4096,stride=8,mis=1
+scalar,dot,f32,N=8192,stride=1,mis=0
+scalar,dot,f32,N=8192,stride=1,mis=1
+scalar,dot,f32,N=8192,stride=2,mis=0
+scalar,dot,f32,N=8192,stride=2,mis=1
+scalar,dot,f32,N=8192,stride=4,mis=0
+scalar,dot,f32,N=8192,stride=4,mis=1
+scalar,dot,f32,N=8192,stride=8,mis=0
+scalar,dot,f32,N=8192,stride=8,mis=1
+scalar,dot,f32,N=65536,stride=1,mis=0
+scalar,dot,f32,N=65536,stride=1,mis=1
+scalar,dot,f32,N=65536,stride=2,mis=0
+scalar,dot,f32,N=65536,stride=2,mis=1
+scalar,dot,f32,N=65536,stride=4,mis=0
+scalar,dot,f32,N=65536,stride=4,mis=1
+scalar,dot,f32,N=65536,stride=8,mis=0
+scalar,dot,f32,N=65536,stride=8,mis=1
+scalar,dot,f32,N=1048576,stride=1,mis=0
+scalar,dot,f32,N=1048576,stride=1,mis=1
+scalar,dot,f32,N=1048576,stride=2,mis=0
+scalar,dot,f32,N=1048576,stride=2,mis=1
+scalar,dot,f32,N=1048576,stride=4,mis=0
+scalar,dot,f32,N=1048576,stride=4,mis=1
+scalar,dot,f32,N=1048576,stride=8,mis=0
+scalar,dot,f32,N=1048576,stride=8,mis=1
+scalar,dot,f32,N=8388608,stride=1,mis=0
+scalar,dot,f32,N=8388608,stride=1,mis=1
+scalar,dot,f32,N=8388608,stride=2,mis=0
+scalar,dot,f32,N=8388608,stride=2,mis=1
+scalar,dot,f32,N=8388608,stride=4,mis=0
+scalar,dot,f32,N=8388608,stride=4,mis=1
+scalar,dot,f32,N=8388608,stride=8,mis=0
+scalar,dot,f32,N=8388608,stride=8,mis=1
+scalar,dot,f32,N=33554432,stride=1,mis=0
+scalar,dot,f32,N=33554432,stride=1,mis=1
+scalar,dot,f32,N=33554432,stride=2,mis=0
+scalar,dot,f32,N=33554432,stride=2,mis=1
+scalar,dot,f32,N=33554432,stride=4,mis=0
+scalar,dot,f32,N=33554432,stride=4,mis=1
+scalar,dot,f32,N=33554432,stride=8,mis=0
+scalar,dot,f32,N=33554432,stride=8,mis=1
+scalar,dot,f32,N=67108864,stride=1,mis=0
+scalar,dot,f32,N=67108864,stride=1,mis=1
+scalar,dot,f32,N=67108864,stride=2,mis=0
+scalar,dot,f32,N=67108864,stride=2,mis=1
+scalar,dot,f32,N=67108864,stride=4,mis=0
+scalar,dot,f32,N=67108864,stride=4,mis=1
+scalar,dot,f32,N=67108864,stride=8,mis=0
+scalar,dot,f32,N=67108864,stride=8,mis=1
+scalar,dot,f64,N=512,stride=1,mis=0
+scalar,dot,f64,N=512,stride=1,mis=1
+scalar,dot,f64,N=512,stride=2,mis=0
+scalar,dot,f64,N=512,stride=2,mis=1
+scalar,dot,f64,N=512,stride=4,mis=0
+scalar,dot,f64,N=512,stride=4,mis=1
+scalar,dot,f64,N=512,stride=8,mis=0
+scalar,dot,f64,N=512,stride=8,mis=1
+scalar,dot,f64,N=1024,stride=1,mis=0
+scalar,dot,f64,N=1024,stride=1,mis=1
+scalar,dot,f64,N=1024,stride=2,mis=0
+scalar,dot,f64,N=1024,stride=2,mis=1
+scalar,dot,f64,N=1024,stride=4,mis=0
+scalar,dot,f64,N=1024,stride=4,mis=1
+scalar,dot,f64,N=1024,stride=8,mis=0
+scalar,dot,f64,N=1024,stride=8,mis=1
+scalar,dot,f64,N=2048,stride=1,mis=0
+scalar,dot,f64,N=2048,stride=1,mis=1
+scalar,dot,f64,N=2048,stride=2,mis=0
+scalar,dot,f64,N=2048,stride=2,mis=1
+scalar,dot,f64,N=2048,stride=4,mis=0
+scalar,dot,f64,N=2048,stride=4,mis=1
+scalar,dot,f64,N=2048,stride=8,mis=0
+scalar,dot,f64,N=2048,stride=8,mis=1
+scalar,dot,f64,N=4096,stride=1,mis=0
+scalar,dot,f64,N=4096,stride=1,mis=1
+scalar,dot,f64,N=4096,stride=2,mis=0
+scalar,dot,f64,N=4096,stride=2,mis=1
+scalar,dot,f64,N=4096,stride=4,mis=0
+scalar,dot,f64,N=4096,stride=4,mis=1
+scalar,dot,f64,N=4096,stride=8,mis=0
+scalar,dot,f64,N=4096,stride=8,mis=1
+scalar,dot,f64,N=8192,stride=1,mis=0
+scalar,dot,f64,N=8192,stride=1,mis=1
+scalar,dot,f64,N=8192,stride=2,mis=0
+scalar,dot,f64,N=8192,stride=2,mis=1
+scalar,dot,f64,N=8192,stride=4,mis=0
+scalar,dot,f64,N=8192,stride=4,mis=1
+scalar,dot,f64,N=8192,stride=8,mis=0
+scalar,dot,f64,N=8192,stride=8,mis=1
+scalar,dot,f64,N=65536,stride=1,mis=0
+scalar,dot,f64,N=65536,stride=1,mis=1
+scalar,dot,f64,N=65536,stride=2,mis=0
+scalar,dot,f64,N=65536,stride=2,mis=1
+scalar,dot,f64,N=65536,stride=4,mis=0
+scalar,dot,f64,N=65536,stride=4,mis=1
+scalar,dot,f64,N=65536,stride=8,mis=0
+scalar,dot,f64,N=65536,stride=8,mis=1
+scalar,dot,f64,N=1048576,stride=1,mis=0
+scalar,dot,f64,N=1048576,stride=1,mis=1
+scalar,dot,f64,N=1048576,stride=2,mis=0
+scalar,dot,f64,N=1048576,stride=2,mis=1
+scalar,dot,f64,N=1048576,stride=4,mis=0
+scalar,dot,f64,N=1048576,stride=4,mis=1
+scalar,dot,f64,N=1048576,stride=8,mis=0
+scalar,dot,f64,N=1048576,stride=8,mis=1
+scalar,dot,f64,N=8388608,stride=1,mis=0
+scalar,dot,f64,N=8388608,stride=1,mis=1
+scalar,dot,f64,N=8388608,stride=2,mis=0
+scalar,dot,f64,N=8388608,stride=2,mis=1
+scalar,dot,f64,N=8388608,stride=4,mis=0
+scalar,dot,f64,N=8388608,stride=4,mis=1
+scalar,dot,f64,N=8388608,stride=8,mis=0
+scalar,dot,f64,N=8388608,stride=8,mis=1
+scalar,dot,f64,N=33554432,stride=1,mis=0
+scalar,dot,f64,N=33554432,stride=1,mis=1
+scalar,dot,f64,N=33554432,stride=2,mis=0
+scalar,dot,f64,N=33554432,stride=2,mis=1
+scalar,dot,f64,N=33554432,stride=4,mis=0
+scalar,dot,f64,N=33554432,stride=4,mis=1
+scalar,dot,f64,N=33554432,stride=8,mis=0
+scalar,dot,f64,N=33554432,stride=8,mis=1
+scalar,dot,f64,N=67108864,stride=1,mis=0
+scalar,dot,f64,N=67108864,stride=1,mis=1
+scalar,dot,f64,N=67108864,stride=2,mis=0
+scalar,dot,f64,N=67108864,stride=2,mis=1
+scalar,dot,f64,N=67108864,stride=4,mis=0
+scalar,dot,f64,N=67108864,stride=4,mis=1
+scalar,dot,f64,N=67108864,stride=8,mis=0
+scalar,dot,f64,N=67108864,stride=8,mis=1
+scalar,mul,f32,N=512,stride=1,mis=0
+scalar,mul,f32,N=512,stride=1,mis=1
+scalar,mul,f32,N=512,stride=2,mis=0
+scalar,mul,f32,N=512,stride=2,mis=1
+scalar,mul,f32,N=512,stride=4,mis=0
+scalar,mul,f32,N=512,stride=4,mis=1
+scalar,mul,f32,N=512,stride=8,mis=0
+scalar,mul,f32,N=512,stride=8,mis=1
+scalar,mul,f32,N=1024,stride=1,mis=0
+scalar,mul,f32,N=1024,stride=1,mis=1
+scalar,mul,f32,N=1024,stride=2,mis=0
+scalar,mul,f32,N=1024,stride=2,mis=1
+scalar,mul,f32,N=1024,stride=4,mis=0
+scalar,mul,f32,N=1024,stride=4,mis=1
+scalar,mul,f32,N=1024,stride=8,mis=0
+scalar,mul,f32,N=1024,stride=8,mis=1
+scalar,mul,f32,N=2048,stride=1,mis=0
+scalar,mul,f32,N=2048,stride=1,mis=1
+scalar,mul,f32,N=2048,stride=2,mis=0
+scalar,mul,f32,N=2048,stride=2,mis=1
+scalar,mul,f32,N=2048,stride=4,mis=0
+scalar,mul,f32,N=2048,stride=4,mis=1
+scalar,mul,f32,N=2048,stride=8,mis=0
+scalar,mul,f32,N=2048,stride=8,mis=1
+scalar,mul,f32,N=4096,stride=1,mis=0
+scalar,mul,f32,N=4096,stride=1,mis=1
+scalar,mul,f32,N=4096,stride=2,mis=0
+scalar,mul,f32,N=4096,stride=2,mis=1
+scalar,mul,f32,N=4096,stride=4,mis=0
+scalar,mul,f32,N=4096,stride=4,mis=1
+scalar,mul,f32,N=4096,stride=8,mis=0
+scalar,mul,f32,N=4096,stride=8,mis=1
+scalar,mul,f32,N=8192,stride=1,mis=0
+scalar,mul,f32,N=8192,stride=1,mis=1
+scalar,mul,f32,N=8192,stride=2,mis=0
+scalar,mul,f32,N=8192,stride=2,mis=1
+scalar,mul,f32,N=8192,stride=4,mis=0
+scalar,mul,f32,N=8192,stride=4,mis=1
+scalar,mul,f32,N=8192,stride=8,mis=0
+scalar,mul,f32,N=8192,stride=8,mis=1
+scalar,mul,f32,N=65536,stride=1,mis=0
+scalar,mul,f32,N=65536,stride=1,mis=1
+scalar,mul,f32,N=65536,stride=2,mis=0
+scalar,mul,f32,N=65536,stride=2,mis=1
+scalar,mul,f32,N=65536,stride=4,mis=0
+scalar,mul,f32,N=65536,stride=4,mis=1
+scalar,mul,f32,N=65536,stride=8,mis=0
+scalar,mul,f32,N=65536,stride=8,mis=1
+scalar,mul,f32,N=1048576,stride=1,mis=0
+scalar,mul,f32,N=1048576,stride=1,mis=1
+scalar,mul,f32,N=1048576,stride=2,mis=0
+scalar,mul,f32,N=1048576,stride=2,mis=1
+scalar,mul,f32,N=1048576,stride=4,mis=0
+scalar,mul,f32,N=1048576,stride=4,mis=1
+scalar,mul,f32,N=1048576,stride=8,mis=0
+scalar,mul,f32,N=1048576,stride=8,mis=1
+scalar,mul,f32,N=8388608,stride=1,mis=0
+scalar,mul,f32,N=8388608,stride=1,mis=1
+scalar,mul,f32,N=8388608,stride=2,mis=0
+scalar,mul,f32,N=8388608,stride=2,mis=1
+scalar,mul,f32,N=8388608,stride=4,mis=0
+scalar,mul,f32,N=8388608,stride=4,mis=1
+scalar,mul,f32,N=8388608,stride=8,mis=0
+scalar,mul,f32,N=8388608,stride=8,mis=1
+scalar,mul,f32,N=33554432,stride=1,mis=0
+scalar,mul,f32,N=33554432,stride=1,mis=1
+scalar,mul,f32,N=33554432,stride=2,mis=0
+scalar,mul,f32,N=33554432,stride=2,mis=1
+scalar,mul,f32,N=33554432,stride=4,mis=0
+scalar,mul,f32,N=33554432,stride=4,mis=1
+scalar,mul,f32,N=33554432,stride=8,mis=0
+scalar,mul,f32,N=33554432,stride=8,mis=1
+scalar,mul,f32,N=67108864,stride=1,mis=0
+scalar,mul,f32,N=67108864,stride=1,mis=1
+scalar,mul,f32,N=67108864,stride=2,mis=0
+scalar,mul,f32,N=67108864,stride=2,mis=1
+scalar,mul,f32,N=67108864,stride=4,mis=0
+scalar,mul,f32,N=67108864,stride=4,mis=1
+scalar,mul,f32,N=67108864,stride=8,mis=0
+scalar,mul,f32,N=67108864,stride=8,mis=1
+scalar,mul,f64,N=512,stride=1,mis=0
+scalar,mul,f64,N=512,stride=1,mis=1
+scalar,mul,f64,N=512,stride=2,mis=0
+scalar,mul,f64,N=512,stride=2,mis=1
+scalar,mul,f64,N=512,stride=4,mis=0
+scalar,mul,f64,N=512,stride=4,mis=1
+scalar,mul,f64,N=512,stride=8,mis=0
+scalar,mul,f64,N=512,stride=8,mis=1
+scalar,mul,f64,N=1024,stride=1,mis=0
+scalar,mul,f64,N=1024,stride=1,mis=1
+scalar,mul,f64,N=1024,stride=2,mis=0
+scalar,mul,f64,N=1024,stride=2,mis=1
+scalar,mul,f64,N=1024,stride=4,mis=0
+scalar,mul,f64,N=1024,stride=4,mis=1
+scalar,mul,f64,N=1024,stride=8,mis=0
+scalar,mul,f64,N=1024,stride=8,mis=1
+scalar,mul,f64,N=2048,stride=1,mis=0
+scalar,mul,f64,N=2048,stride=1,mis=1
+scalar,mul,f64,N=2048,stride=2,mis=0
+scalar,mul,f64,N=2048,stride=2,mis=1
+scalar,mul,f64,N=2048,stride=4,mis=0
+scalar,mul,f64,N=2048,stride=4,mis=1
+scalar,mul,f64,N=2048,stride=8,mis=0
+scalar,mul,f64,N=2048,stride=8,mis=1
+scalar,mul,f64,N=4096,stride=1,mis=0
+scalar,mul,f64,N=4096,stride=1,mis=1
+scalar,mul,f64,N=4096,stride=2,mis=0
+scalar,mul,f64,N=4096,stride=2,mis=1
+scalar,mul,f64,N=4096,stride=4,mis=0
+scalar,mul,f64,N=4096,stride=4,mis=1
+scalar,mul,f64,N=4096,stride=8,mis=0
+scalar,mul,f64,N=4096,stride=8,mis=1
+scalar,mul,f64,N=8192,stride=1,mis=0
+scalar,mul,f64,N=8192,stride=1,mis=1
+scalar,mul,f64,N=8192,stride=2,mis=0
+scalar,mul,f64,N=8192,stride=2,mis=1
+scalar,mul,f64,N=8192,stride=4,mis=0
+scalar,mul,f64,N=8192,stride=4,mis=1
+scalar,mul,f64,N=8192,stride=8,mis=0
+scalar,mul,f64,N=8192,stride=8,mis=1
+scalar,mul,f64,N=65536,stride=1,mis=0
+scalar,mul,f64,N=65536,stride=1,mis=1
+scalar,mul,f64,N=65536,stride=2,mis=0
+scalar,mul,f64,N=65536,stride=2,mis=1
+scalar,mul,f64,N=65536,stride=4,mis=0
+scalar,mul,f64,N=65536,stride=4,mis=1
+scalar,mul,f64,N=65536,stride=8,mis=0
+scalar,mul,f64,N=65536,stride=8,mis=1
+scalar,mul,f64,N=1048576,stride=1,mis=0
+scalar,mul,f64,N=1048576,stride=1,mis=1
+scalar,mul,f64,N=1048576,stride=2,mis=0
+scalar,mul,f64,N=1048576,stride=2,mis=1
+scalar,mul,f64,N=1048576,stride=4,mis=0
+scalar,mul,f64,N=1048576,stride=4,mis=1
+scalar,mul,f64,N=1048576,stride=8,mis=0
+scalar,mul,f64,N=1048576,stride=8,mis=1
+scalar,mul,f64,N=8388608,stride=1,mis=0
+scalar,mul,f64,N=8388608,stride=1,mis=1
+scalar,mul,f64,N=8388608,stride=2,mis=0
+scalar,mul,f64,N=8388608,stride=2,mis=1
+scalar,mul,f64,N=8388608,stride=4,mis=0
+scalar,mul,f64,N=8388608,stride=4,mis=1
+scalar,mul,f64,N=8388608,stride=8,mis=0
+scalar,mul,f64,N=8388608,stride=8,mis=1
+scalar,mul,f64,N=33554432,stride=1,mis=0
+scalar,mul,f64,N=33554432,stride=1,mis=1
+scalar,mul,f64,N=33554432,stride=2,mis=0
+scalar,mul,f64,N=33554432,stride=2,mis=1
+scalar,mul,f64,N=33554432,stride=4,mis=0
+scalar,mul,f64,N=33554432,stride=4,mis=1
+scalar,mul,f64,N=33554432,stride=8,mis=0
+scalar,mul,f64,N=33554432,stride=8,mis=1
+scalar,mul,f64,N=67108864,stride=1,mis=0
+scalar,mul,f64,N=67108864,stride=1,mis=1
+scalar,mul,f64,N=67108864,stride=2,mis=0
+scalar,mul,f64,N=67108864,stride=2,mis=1
+scalar,mul,f64,N=67108864,stride=4,mis=0
+scalar,mul,f64,N=67108864,stride=4,mis=1
+scalar,mul,f64,N=67108864,stride=8,mis=0
+scalar,mul,f64,N=67108864,stride=8,mis=1
+scalar,stencil,f32,N=1024,stride=1,mis=0
+scalar,stencil,f32,N=1024,stride=1,mis=1
+scalar,stencil,f32,N=2048,stride=1,mis=0
+scalar,stencil,f32,N=2048,stride=1,mis=1
+scalar,stencil,f32,N=4096,stride=1,mis=0
+scalar,stencil,f32,N=4096,stride=1,mis=1
+scalar,stencil,f32,N=8192,stride=1,mis=0
+scalar,stencil,f32,N=8192,stride=1,mis=1
+scalar,stencil,f32,N=65536,stride=1,mis=0
+scalar,stencil,f32,N=65536,stride=1,mis=1
+scalar,stencil,f32,N=1048576,stride=1,mis=0
+scalar,stencil,f32,N=1048576,stride=1,mis=1
+scalar,stencil,f32,N=8388608,stride=1,mis=0
+scalar,stencil,f32,N=8388608,stride=1,mis=1
+scalar,stencil,f32,N=33554432,stride=1,mis=0
+scalar,stencil,f32,N=33554432,stride=1,mis=1
+scalar,stencil,f32,N=67108864,stride=1,mis=0
+scalar,stencil,f32,N=67108864,stride=1,mis=1
+scalar,stencil,f64,N=1024,stride=1,mis=0
+scalar,stencil,f64,N=1024,stride=1,mis=1
+scalar,stencil,f64,N=2048,stride=1,mis=0
+scalar,stencil,f64,N=2048,stride=1,mis=1
+scalar,stencil,f64,N=4096,stride=1,mis=0
+scalar,stencil,f64,N=4096,stride=1,mis=1
+scalar,stencil,f64,N=8192,stride=1,mis=0
+scalar,stencil,f64,N=8192,stride=1,mis=1
+scalar,stencil,f64,N=65536,stride=1,mis=0
+scalar,stencil,f64,N=65536,stride=1,mis=1
+scalar,stencil,f64,N=1048576,stride=1,mis=0
+scalar,stencil,f64,N=1048576,stride=1,mis=1
+scalar,stencil,f64,N=8388608,stride=1,mis=0
+scalar,stencil,f64,N=8388608,stride=1,mis=1
+scalar,stencil,f64,N=33554432,stride=1,mis=0
+scalar,stencil,f64,N=33554432,stride=1,mis=1
+scalar,stencil,f64,N=67108864,stride=1,mis=0
+scalar,stencil,f64,N=67108864,stride=1,mis=1
+scalar,saxpy,f32,N=513,stride=1,mis=0 (TAIL)
+scalar,saxpy,f32,N=513,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=513,stride=2,mis=0 (TAIL)
+scalar,saxpy,f32,N=513,stride=2,mis=1 (TAIL)
+scalar,saxpy,f32,N=513,stride=4,mis=0 (TAIL)
+scalar,saxpy,f32,N=513,stride=4,mis=1 (TAIL)
+scalar,saxpy,f32,N=513,stride=8,mis=0 (TAIL)
+scalar,saxpy,f32,N=513,stride=8,mis=1 (TAIL)
+scalar,saxpy,f32,N=1025,stride=1,mis=0 (TAIL)
+scalar,saxpy,f32,N=1025,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=1025,stride=2,mis=0 (TAIL)
+scalar,saxpy,f32,N=1025,stride=2,mis=1 (TAIL)
+scalar,saxpy,f32,N=1025,stride=4,mis=0 (TAIL)
+scalar,saxpy,f32,N=1025,stride=4,mis=1 (TAIL)
+scalar,saxpy,f32,N=1025,stride=8,mis=0 (TAIL)
+scalar,saxpy,f32,N=1025,stride=8,mis=1 (TAIL)
+scalar,saxpy,f32,N=2049,stride=1,mis=0 (TAIL)
+scalar,saxpy,f32,N=2049,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=2049,stride=2,mis=0 (TAIL)
+scalar,saxpy,f32,N=2049,stride=2,mis=1 (TAIL)
+scalar,saxpy,f32,N=2049,stride=4,mis=0 (TAIL)
+scalar,saxpy,f32,N=2049,stride=4,mis=1 (TAIL)
+scalar,saxpy,f32,N=2049,stride=8,mis=0 (TAIL)
+scalar,saxpy,f32,N=2049,stride=8,mis=1 (TAIL)
+scalar,saxpy,f32,N=4097,stride=1,mis=0 (TAIL)
+scalar,saxpy,f32,N=4097,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=4097,stride=2,mis=0 (TAIL)
+scalar,saxpy,f32,N=4097,stride=2,mis=1 (TAIL)
+scalar,saxpy,f32,N=4097,stride=4,mis=0 (TAIL)
+scalar,saxpy,f32,N=4097,stride=4,mis=1 (TAIL)
+scalar,saxpy,f32,N=4097,stride=8,mis=0 (TAIL)
+scalar,saxpy,f32,N=4097,stride=8,mis=1 (TAIL)
+scalar,saxpy,f32,N=8193,stride=1,mis=0 (TAIL)
+scalar,saxpy,f32,N=8193,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=8193,stride=2,mis=0 (TAIL)
+scalar,saxpy,f32,N=8193,stride=2,mis=1 (TAIL)
+scalar,saxpy,f32,N=8193,stride=4,mis=0 (TAIL)
+scalar,saxpy,f32,N=8193,stride=4,mis=1 (TAIL)
+scalar,saxpy,f32,N=8193,stride=8,mis=0 (TAIL)
+scalar,saxpy,f32,N=8193,stride=8,mis=1 (TAIL)
+scalar,saxpy,f32,N=65537,stride=1,mis=0 (TAIL)
+scalar,saxpy,f32,N=65537,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=65537,stride=2,mis=0 (TAIL)
+scalar,saxpy,f32,N=65537,stride=2,mis=1 (TAIL)
+scalar,saxpy,f32,N=65537,stride=4,mis=0 (TAIL)
+scalar,saxpy,f32,N=65537,stride=4,mis=1 (TAIL)
+scalar,saxpy,f32,N=65537,stride=8,mis=0 (TAIL)
+scalar,saxpy,f32,N=65537,stride=8,mis=1 (TAIL)
+scalar,saxpy,f32,N=1048577,stride=1,mis=0 (TAIL)
+scalar,saxpy,f32,N=1048577,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=1048577,stride=2,mis=0 (TAIL)
+scalar,saxpy,f32,N=1048577,stride=2,mis=1 (TAIL)
+scalar,saxpy,f32,N=1048577,stride=4,mis=0 (TAIL)
+scalar,saxpy,f32,N=1048577,stride=4,mis=1 (TAIL)
+scalar,saxpy,f32,N=1048577,stride=8,mis=0 (TAIL)
+scalar,saxpy,f32,N=1048577,stride=8,mis=1 (TAIL)
+scalar,saxpy,f32,N=8388609,stride=1,mis=0 (TAIL)
+scalar,saxpy,f32,N=8388609,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=8388609,stride=2,mis=0 (TAIL)
+scalar,saxpy,f32,N=8388609,stride=2,mis=1 (TAIL)
+scalar,saxpy,f32,N=8388609,stride=4,mis=0 (TAIL)
+scalar,saxpy,f32,N=8388609,stride=4,mis=1 (TAIL)
+scalar,saxpy,f32,N=8388609,stride=8,mis=0 (TAIL)
+scalar,saxpy,f32,N=8388609,stride=8,mis=1 (TAIL)
+scalar,saxpy,f32,N=33554433,stride=1,mis=0 (TAIL)
+scalar,saxpy,f32,N=33554433,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=33554433,stride=2,mis=0 (TAIL)
+scalar,saxpy,f32,N=33554433,stride=2,mis=1 (TAIL)
+scalar,saxpy,f32,N=33554433,stride=4,mis=0 (TAIL)
+scalar,saxpy,f32,N=33554433,stride=4,mis=1 (TAIL)
+scalar,saxpy,f32,N=33554433,stride=8,mis=0 (TAIL)
+scalar,saxpy,f32,N=33554433,stride=8,mis=1 (TAIL)
+scalar,saxpy,f32,N=67108865,stride=1,mis=0 (TAIL)
+scalar,saxpy,f32,N=67108865,stride=1,mis=1 (TAIL)
+scalar,saxpy,f32,N=67108865,stride=2,mis=0 (TAIL)
+scalar,saxpy,f32,N=67108865,stride=2,mis=1 (TAIL)
+scalar,saxpy,f32,N=67108865,stride=4,mis=0 (TAIL)
+scalar,saxpy,f32,N=67108865,stride=4,mis=1 (TAIL)
+scalar,saxpy,f32,N=67108865,stride=8,mis=0 (TAIL)
+scalar,saxpy,f32,N=67108865,stride=8,mis=1 (TAIL)
+scalar,saxpy,f64,N=514,stride=1,mis=0 (TAIL)
+scalar,saxpy,f64,N=514,stride=1,mis=1 (TAIL)
+scalar,saxpy,f64,N=514,stride=2,mis=0 (TAIL)
+scalar,saxpy,f64,N=514,stride=2,mis=1 (TAIL)
+scalar,saxpy,f64,N=514,stride=4,mis=0 (TAIL)
+scalar,saxpy,f64,N=514,stride=4,mis=1 (TAIL)
+scalar,saxpy,f64,N=514,stride=8,mis=0 (TAIL)
+scalar,saxpy,f64,N=514,stride=8,mis=1 (TAIL)
+scalar,saxpy,f64,N=1026,stride=1,mis=0 (TAIL)
+scalar,saxpy,f64,N=1026,stride=1,mis=1 (TAIL)
+scalar,saxpy,f64,N=1026,stride=2,mis=0 (TAIL)
+scalar,saxpy,f64,N=1026,stride=2,mis=1 (TAIL)
+scalar,saxpy,f64,N=1026,stride=4,mis=0 (TAIL)
+scalar,saxpy,f64,N=1026,stride=4,mis=1 (TAIL)
+scalar,saxpy,f64,N=1026,stride=8,mis=0 (TAIL)
+scalar,saxpy,f64,N=1026,stride=8,mis=1 (TAIL)
+scalar,saxpy,f64,N=2050,stride=1,mis=0 (TAIL)
+scalar,saxpy,f64,N=2050,stride=1,mis=1 (TAIL)
+scalar,saxpy,f64,N=2050,stride=2,mis=0 (TAIL)
+scalar,saxpy,f64,N=2050,stride=2,mis=1 (TAIL)
+scalar,saxpy,f64,N=2050,stride=4,mis=0 (TAIL)
+scalar,saxpy,f64,N=2050,stride=4,mis=1 (TAIL)
+scalar,saxpy,f64,N=2050,stride=8,mis=0 (TAIL)
+scalar,saxpy,f64,N=2050,stride=8,mis=1 (TAIL)
+scalar,saxpy,f64,N=4098,stride=1,mis=0 (TAIL)
+scalar,saxpy,f64,N=4098,stride=1,mis=1 (TAIL)
+scalar,saxpy,f64,N=4098,stride=2,mis=0 (TAIL)
+scalar,saxpy,f64,N=4098,stride=2,mis=1 (TAIL)
+scalar,saxpy,f64,N=4098,stride=4,mis=0 (TAIL)
+scalar,saxpy,f64,N=4098,stride=4,mis=1 (TAIL)
+scalar,saxpy,f64,N=4098,stride=8,mis=0 (TAIL)
+scalar,saxpy,f64,N=4098,stride=8,mis=1 (TAIL)
+scalar,saxpy,f64,N=8194,stride=1,mis=0 (TAIL)
+scalar,saxpy,f64,N=8194,stride=1,mis=1 (TAIL)
+scalar,saxpy,f64,N=8194,stride=2,mis=0 (TAIL)
+scalar,saxpy,f64,N=8194,stride=2,mis=1 (TAIL)
+scalar,saxpy,f64,N=8194,stride=4,mis=0 (TAIL)
+scalar,saxpy,f64,N=8194,stride=4,mis=1 (TAIL)
+scalar,saxpy,f64,N=8194,stride=8,mis=0 (TAIL)
+scalar,saxpy,f64,N=8194,stride=8,mis=1 (TAIL)
+scalar,saxpy,f64,N=65538,stride=1,mis=0 (TAIL)
+scalar,saxpy,f64,N=65538,stride=1,mis=1 (TAIL)
+scalar,saxpy,f64,N=65538,stride=2,mis=0 (TAIL)
+scalar,saxpy,f64,N=65538,stride=2,mis=1 (TAIL)
+scalar,saxpy,f64,N=65538,stride=4,mis=0 (TAIL)
+scalar,saxpy,f64,N=65538,stride=4,mis=1 (TAIL)
+scalar,saxpy,f64,N=65538,stride=8,mis=0 (TAIL)
+scalar,saxpy,f64,N=65538,stride=8,mis=1 (TAIL)
+scalar,saxpy,f64,N=1048578,stride=1,mis=0 (TAIL)
+scalar,saxpy,f64,N=1048578,stride=1,mis=1 (TAIL)
+scalar,saxpy,f64,N=1048578,stride=2,mis=0 (TAIL)
+scalar,saxpy,f64,N=1048578,stride=2,mis=1 (TAIL)
+scalar,saxpy,f64,N=1048578,stride=4,mis=0 (TAIL)
+scalar,saxpy,f64,N=1048578,stride=4,mis=1 (TAIL)
+scalar,saxpy,f64,N=1048578,stride=8,mis=0 (TAIL)
+scalar,saxpy,f64,N=1048578,stride=8,mis=1 (TAIL)
+scalar,saxpy,f64,N=8388610,stride=1,mis=0 (TAIL)
+scalar,saxpy,f64,N=8388610,stride=1,mis=1 (TAIL)
+scalar,saxpy,f64,N=8388610,stride=2,mis=0 (TAIL)
+scalar,saxpy,f64,N=8388610,stride=2,mis=1 (TAIL)
+scalar,saxpy,f64,N=8388610,stride=4,mis=0 (TAIL)
+scalar,saxpy,f64,N=8388610,stride=4,mis=1 (TAIL)
+scalar,saxpy,f64,N=8388610,stride=8,mis=0 (TAIL)
+scalar,saxpy,f64,N=8388610,stride=8,mis=1 (TAIL)
+scalar,saxpy,f64,N=33554434,stride=1,mis=0 (TAIL)
+scalar,saxpy,f64,N=33554434,stride=1,mis=1 (TAIL)
+scalar,saxpy,f64,N=33554434,stride=2,mis=0 (TAIL)
+scalar,saxpy,f64,N=33554434,stride=2,mis=1 (TAIL)
+scalar,saxpy,f64,N=33554434,stride=4,mis=0 (TAIL)
+scalar,saxpy,f64,N=33554434,stride=4,mis=1 (TAIL)
+scalar,saxpy,f64,N=33554434,stride=8,mis=0 (TAIL)
+scalar,saxpy,f64,N=33554434,stride=8,mis=1 (TAIL)
+scalar,saxpy,f64,N=67108866,stride=1,mis=0 (TAIL)
+scalar,saxpy,f64,N=67108866,stride=1,mis=1 (TAIL)
+scalar,saxpy,f64,N=67108866,stride=2,mis=0 (TAIL)
+scalar,saxpy,f64,N=67108866,stride=2,mis=1 (TAIL)
+scalar,saxpy,f64,N=67108866,stride=4,mis=0 (TAIL)
+scalar,saxpy,f64,N=67108866,stride=4,mis=1 (TAIL)
+scalar,saxpy,f64,N=67108866,stride=8,mis=0 (TAIL)
+scalar,saxpy,f64,N=67108866,stride=8,mis=1 (TAIL)
+scalar,dot,f32,N=513,stride=1,mis=0 (TAIL)
+scalar,dot,f32,N=513,stride=1,mis=1 (TAIL)
+scalar,dot,f32,N=513,stride=2,mis=0 (TAIL)
+scalar,dot,f32,N=513,stride=2,mis=1 (TAIL)
+scalar,dot,f32,N=513,stride=4,mis=0 (TAIL)
+scalar,dot,f32,N=513,stride=4,mis=1 (TAIL)
+scalar,dot,f32,N=513,stride=8,mis=0 (TAIL)
+scalar,dot,f32,N=513,stride=8,mis=1 (TAIL)
+scalar,dot,f32,N=1025,stride=1,mis=0 (TAIL)
+scalar,dot,f32,N=1025,stride=1,mis=1 (TAIL)
+scalar,dot,f32,N=1025,stride=2,mis=0 (TAIL)
+scalar,dot,f32,N=1025,stride=2,mis=1 (TAIL)
+scalar,dot,f32,N=1025,stride=4,mis=0 (TAIL)
+scalar,dot,f32,N=1025,stride=4,mis=1 (TAIL)
+scalar,dot,f32,N=1025,stride=8,mis=0 (TAIL)
+scalar,dot,f32,N=1025,stride=8,mis=1 (TAIL)
+scalar,dot,f32,N=2049,stride=1,mis=0 (TAIL)
+scalar,dot,f32,N=2049,stride=1,mis=1 (TAIL)
+scalar,dot,f32,N=2049,stride=2,mis=0 (TAIL)
+scalar,dot,f32,N=2049,stride=2,mis=1 (TAIL)
+scalar,dot,f32,N=2049,stride=4,mis=0 (TAIL)
+scalar,dot,f32,N=2049,stride=4,mis=1 (TAIL)
+scalar,dot,f32,N=2049,stride=8,mis=0 (TAIL)
+scalar,dot,f32,N=2049,stride=8,mis=1 (TAIL)
+scalar,dot,f32,N=4097,stride=1,mis=0 (TAIL)
+scalar,dot,f32,N=4097,stride=1,mis=1 (TAIL)
+scalar,dot,f32,N=4097,stride=2,mis=0 (TAIL)
+scalar,dot,f32,N=4097,stride=2,mis=1 (TAIL)
+scalar,dot,f32,N=4097,stride=4,mis=0 (TAIL)
+scalar,dot,f32,N=4097,stride=4,mis=1 (TAIL)
+scalar,dot,f32,N=4097,stride=8,mis=0 (TAIL)
+scalar,dot,f32,N=4097,stride=8,mis=1 (TAIL)
+scalar,dot,f32,N=8193,stride=1,mis=0 (TAIL)
+scalar,dot,f32,N=8193,stride=1,mis=1 (TAIL)
+scalar,dot,f32,N=8193,stride=2,mis=0 (TAIL)
+scalar,dot,f32,N=8193,stride=2,mis=1 (TAIL)
+scalar,dot,f32,N=8193,stride=4,mis=0 (TAIL)
+scalar,dot,f32,N=8193,stride=4,mis=1 (TAIL)
+scalar,dot,f32,N=8193,stride=8,mis=0 (TAIL)
+scalar,dot,f32,N=8193,stride=8,mis=1 (TAIL)
+scalar,dot,f32,N=65537,stride=1,mis=0 (TAIL)
+scalar,dot,f32,N=65537,stride=1,mis=1 (TAIL)
+scalar,dot,f32,N=65537,stride=2,mis=0 (TAIL)
+scalar,dot,f32,N=65537,stride=2,mis=1 (TAIL)
+scalar,dot,f32,N=65537,stride=4,mis=0 (TAIL)
+scalar,dot,f32,N=65537,stride=4,mis=1 (TAIL)
+scalar,dot,f32,N=65537,stride=8,mis=0 (TAIL)
+scalar,dot,f32,N=65537,stride=8,mis=1 (TAIL)
+scalar,dot,f32,N=1048577,stride=1,mis=0 (TAIL)
+scalar,dot,f32,N=1048577,stride=1,mis=1 (TAIL)
+scalar,dot,f32,N=1048577,stride=2,mis=0 (TAIL)
+scalar,dot,f32,N=1048577,stride=2,mis=1 (TAIL)
+scalar,dot,f32,N=1048577,stride=4,mis=0 (TAIL)
+scalar,dot,f32,N=1048577,stride=4,mis=1 (TAIL)
+scalar,dot,f32,N=1048577,stride=8,mis=0 (TAIL)
+scalar,dot,f32,N=1048577,stride=8,mis=1 (TAIL)
+scalar,dot,f32,N=8388609,stride=1,mis=0 (TAIL)
+scalar,dot,f32,N=8388609,stride=1,mis=1 (TAIL)
+scalar,dot,f32,N=8388609,stride=2,mis=0 (TAIL)
+scalar,dot,f32,N=8388609,stride=2,mis=1 (TAIL)
+scalar,dot,f32,N=8388609,stride=4,mis=0 (TAIL)
+scalar,dot,f32,N=8388609,stride=4,mis=1 (TAIL)
+scalar,dot,f32,N=8388609,stride=8,mis=0 (TAIL)
+scalar,dot,f32,N=8388609,stride=8,mis=1 (TAIL)
+scalar,dot,f32,N=33554433,stride=1,mis=0 (TAIL)
+scalar,dot,f32,N=33554433,stride=1,mis=1 (TAIL)
+scalar,dot,f32,N=33554433,stride=2,mis=0 (TAIL)
+scalar,dot,f32,N=33554433,stride=2,mis=1 (TAIL)
+scalar,dot,f32,N=33554433,stride=4,mis=0 (TAIL)
+scalar,dot,f32,N=33554433,stride=4,mis=1 (TAIL)
+scalar,dot,f32,N=33554433,stride=8,mis=0 (TAIL)
+scalar,dot,f32,N=33554433,stride=8,mis=1 (TAIL)
+scalar,dot,f32,N=67108865,stride=1,mis=0 (TAIL)
+scalar,dot,f32,N=67108865,stride=1,mis=1 (TAIL)
+scalar,dot,f32,N=67108865,stride=2,mis=0 (TAIL)
+scalar,dot,f32,N=67108865,stride=2,mis=1 (TAIL)
+scalar,dot,f32,N=67108865,stride=4,mis=0 (TAIL)
+scalar,dot,f32,N=67108865,stride=4,mis=1 (TAIL)
+scalar,dot,f32,N=67108865,stride=8,mis=0 (TAIL)
+scalar,dot,f32,N=67108865,stride=8,mis=1 (TAIL)
+scalar,dot,f64,N=514,stride=1,mis=0 (TAIL)
+scalar,dot,f64,N=514,stride=1,mis=1 (TAIL)
+scalar,dot,f64,N=514,stride=2,mis=0 (TAIL)
+scalar,dot,f64,N=514,stride=2,mis=1 (TAIL)
+scalar,dot,f64,N=514,stride=4,mis=0 (TAIL)
+scalar,dot,f64,N=514,stride=4,mis=1 (TAIL)
+scalar,dot,f64,N=514,stride=8,mis=0 (TAIL)
+scalar,dot,f64,N=514,stride=8,mis=1 (TAIL)
+scalar,dot,f64,N=1026,stride=1,mis=0 (TAIL)
+scalar,dot,f64,N=1026,stride=1,mis=1 (TAIL)
+scalar,dot,f64,N=1026,stride=2,mis=0 (TAIL)
+scalar,dot,f64,N=1026,stride=2,mis=1 (TAIL)
+scalar,dot,f64,N=1026,stride=4,mis=0 (TAIL)
+scalar,dot,f64,N=1026,stride=4,mis=1 (TAIL)
+scalar,dot,f64,N=1026,stride=8,mis=0 (TAIL)
+scalar,dot,f64,N=1026,stride=8,mis=1 (TAIL)
+scalar,dot,f64,N=2050,stride=1,mis=0 (TAIL)
+scalar,dot,f64,N=2050,stride=1,mis=1 (TAIL)
+scalar,dot,f64,N=2050,stride=2,mis=0 (TAIL)
+scalar,dot,f64,N=2050,stride=2,mis=1 (TAIL)
+scalar,dot,f64,N=2050,stride=4,mis=0 (TAIL)
+scalar,dot,f64,N=2050,stride=4,mis=1 (TAIL)
+scalar,dot,f64,N=2050,stride=8,mis=0 (TAIL)
+scalar,dot,f64,N=2050,stride=8,mis=1 (TAIL)
+scalar,dot,f64,N=4098,stride=1,mis=0 (TAIL)
+scalar,dot,f64,N=4098,stride=1,mis=1 (TAIL)
+scalar,dot,f64,N=4098,stride=2,mis=0 (TAIL)
+scalar,dot,f64,N=4098,stride=2,mis=1 (TAIL)
+scalar,dot,f64,N=4098,stride=4,mis=0 (TAIL)
+scalar,dot,f64,N=4098,stride=4,mis=1 (TAIL)
+scalar,dot,f64,N=4098,stride=8,mis=0 (TAIL)
+scalar,dot,f64,N=4098,stride=8,mis=1 (TAIL)
+scalar,dot,f64,N=8194,stride=1,mis=0 (TAIL)
+scalar,dot,f64,N=8194,stride=1,mis=1 (TAIL)
+scalar,dot,f64,N=8194,stride=2,mis=0 (TAIL)
+scalar,dot,f64,N=8194,stride=2,mis=1 (TAIL)
+scalar,dot,f64,N=8194,stride=4,mis=0 (TAIL)
+scalar,dot,f64,N=8194,stride=4,mis=1 (TAIL)
+scalar,dot,f64,N=8194,stride=8,mis=0 (TAIL)
+scalar,dot,f64,N=8194,stride=8,mis=1 (TAIL)
+scalar,dot,f64,N=65538,stride=1,mis=0 (TAIL)
+scalar,dot,f64,N=65538,stride=1,mis=1 (TAIL)
+scalar,dot,f64,N=65538,stride=2,mis=0 (TAIL)
+scalar,dot,f64,N=65538,stride=2,mis=1 (TAIL)
+scalar,dot,f64,N=65538,stride=4,mis=0 (TAIL)
+scalar,dot,f64,N=65538,stride=4,mis=1 (TAIL)
+scalar,dot,f64,N=65538,stride=8,mis=0 (TAIL)
+scalar,dot,f64,N=65538,stride=8,mis=1 (TAIL)
+scalar,dot,f64,N=1048578,stride=1,mis=0 (TAIL)
+scalar,dot,f64,N=1048578,stride=1,mis=1 (TAIL)
+scalar,dot,f64,N=1048578,stride=2,mis=0 (TAIL)
+scalar,dot,f64,N=1048578,stride=2,mis=1 (TAIL)
+scalar,dot,f64,N=1048578,stride=4,mis=0 (TAIL)
+scalar,dot,f64,N=1048578,stride=4,mis=1 (TAIL)
+scalar,dot,f64,N=1048578,stride=8,mis=0 (TAIL)
+scalar,dot,f64,N=1048578,stride=8,mis=1 (TAIL)
+scalar,dot,f64,N=8388610,stride=1,mis=0 (TAIL)
+scalar,dot,f64,N=8388610,stride=1,mis=1 (TAIL)
+scalar,dot,f64,N=8388610,stride=2,mis=0 (TAIL)
+scalar,dot,f64,N=8388610,stride=2,mis=1 (TAIL)
+scalar,dot,f64,N=8388610,stride=4,mis=0 (TAIL)
+scalar,dot,f64,N=8388610,stride=4,mis=1 (TAIL)
+scalar,dot,f64,N=8388610,stride=8,mis=0 (TAIL)
+scalar,dot,f64,N=8388610,stride=8,mis=1 (TAIL)
+scalar,dot,f64,N=33554434,stride=1,mis=0 (TAIL)
+scalar,dot,f64,N=33554434,stride=1,mis=1 (TAIL)
+scalar,dot,f64,N=33554434,stride=2,mis=0 (TAIL)
+scalar,dot,f64,N=33554434,stride=2,mis=1 (TAIL)
+scalar,dot,f64,N=33554434,stride=4,mis=0 (TAIL)
+scalar,dot,f64,N=33554434,stride=4,mis=1 (TAIL)
+scalar,dot,f64,N=33554434,stride=8,mis=0 (TAIL)
+scalar,dot,f64,N=33554434,stride=8,mis=1 (TAIL)
+scalar,dot,f64,N=67108866,stride=1,mis=0 (TAIL)
+scalar,dot,f64,N=67108866,stride=1,mis=1 (TAIL)
+scalar,dot,f64,N=67108866,stride=2,mis=0 (TAIL)
+scalar,dot,f64,N=67108866,stride=2,mis=1 (TAIL)
+scalar,dot,f64,N=67108866,stride=4,mis=0 (TAIL)
+scalar,dot,f64,N=67108866,stride=4,mis=1 (TAIL)
+scalar,dot,f64,N=67108866,stride=8,mis=0 (TAIL)
+scalar,dot,f64,N=67108866,stride=8,mis=1 (TAIL)
+scalar,mul,f32,N=513,stride=1,mis=0 (TAIL)
+scalar,mul,f32,N=513,stride=1,mis=1 (TAIL)
+scalar,mul,f32,N=513,stride=2,mis=0 (TAIL)
+scalar,mul,f32,N=513,stride=2,mis=1 (TAIL)
+scalar,mul,f32,N=513,stride=4,mis=0 (TAIL)
+scalar,mul,f32,N=513,stride=4,mis=1 (TAIL)
+scalar,mul,f32,N=513,stride=8,mis=0 (TAIL)
+scalar,mul,f32,N=513,stride=8,mis=1 (TAIL)
+scalar,mul,f32,N=1025,stride=1,mis=0 (TAIL)
+scalar,mul,f32,N=1025,stride=1,mis=1 (TAIL)
+scalar,mul,f32,N=1025,stride=2,mis=0 (TAIL)
+scalar,mul,f32,N=1025,stride=2,mis=1 (TAIL)
+scalar,mul,f32,N=1025,stride=4,mis=0 (TAIL)
+scalar,mul,f32,N=1025,stride=4,mis=1 (TAIL)
+scalar,mul,f32,N=1025,stride=8,mis=0 (TAIL)
+scalar,mul,f32,N=1025,stride=8,mis=1 (TAIL)
+scalar,mul,f32,N=2049,stride=1,mis=0 (TAIL)
+scalar,mul,f32,N=2049,stride=1,mis=1 (TAIL)
+scalar,mul,f32,N=2049,stride=2,mis=0 (TAIL)
+scalar,mul,f32,N=2049,stride=2,mis=1 (TAIL)
+scalar,mul,f32,N=2049,stride=4,mis=0 (TAIL)
+scalar,mul,f32,N=2049,stride=4,mis=1 (TAIL)
+scalar,mul,f32,N=2049,stride=8,mis=0 (TAIL)
+scalar,mul,f32,N=2049,stride=8,mis=1 (TAIL)
+scalar,mul,f32,N=4097,stride=1,mis=0 (TAIL)
+scalar,mul,f32,N=4097,stride=1,mis=1 (TAIL)
+scalar,mul,f32,N=4097,stride=2,mis=0 (TAIL)
+scalar,mul,f32,N=4097,stride=2,mis=1 (TAIL)
+scalar,mul,f32,N=4097,stride=4,mis=0 (TAIL)
+scalar,mul,f32,N=4097,stride=4,mis=1 (TAIL)
+scalar,mul,f32,N=4097,stride=8,mis=0 (TAIL)
+scalar,mul,f32,N=4097,stride=8,mis=1 (TAIL)
+scalar,mul,f32,N=8193,stride=1,mis=0 (TAIL)
+scalar,mul,f32,N=8193,stride=1,mis=1 (TAIL)
+scalar,mul,f32,N=8193,stride=2,mis=0 (TAIL)
+scalar,mul,f32,N=8193,stride=2,mis=1 (TAIL)
+scalar,mul,f32,N=8193,stride=4,mis=0 (TAIL)
+scalar,mul,f32,N=8193,stride=4,mis=1 (TAIL)
+scalar,mul,f32,N=8193,stride=8,mis=0 (TAIL)
+scalar,mul,f32,N=8193,stride=8,mis=1 (TAIL)
+scalar,mul,f32,N=65537,stride=1,mis=0 (TAIL)
+scalar,mul,f32,N=65537,stride=1,mis=1 (TAIL)
+scalar,mul,f32,N=65537,stride=2,mis=0 (TAIL)
+scalar,mul,f32,N=65537,stride=2,mis=1 (TAIL)
+scalar,mul,f32,N=65537,stride=4,mis=0 (TAIL)
+scalar,mul,f32,N=65537,stride=4,mis=1 (TAIL)
+scalar,mul,f32,N=65537,stride=8,mis=0 (TAIL)
+scalar,mul,f32,N=65537,stride=8,mis=1 (TAIL)
+scalar,mul,f32,N=1048577,stride=1,mis=0 (TAIL)
+scalar,mul,f32,N=1048577,stride=1,mis=1 (TAIL)
+scalar,mul,f32,N=1048577,stride=2,mis=0 (TAIL)
+scalar,mul,f32,N=1048577,stride=2,mis=1 (TAIL)
+scalar,mul,f32,N=1048577,stride=4,mis=0 (TAIL)
+scalar,mul,f32,N=1048577,stride=4,mis=1 (TAIL)
+scalar,mul,f32,N=1048577,stride=8,mis=0 (TAIL)
+scalar,mul,f32,N=1048577,stride=8,mis=1 (TAIL)
+scalar,mul,f32,N=8388609,stride=1,mis=0 (TAIL)
+scalar,mul,f32,N=8388609,stride=1,mis=1 (TAIL)
+scalar,mul,f32,N=8388609,stride=2,mis=0 (TAIL)
+scalar,mul,f32,N=8388609,stride=2,mis=1 (TAIL)
+scalar,mul,f32,N=8388609,stride=4,mis=0 (TAIL)
+scalar,mul,f32,N=8388609,stride=4,mis=1 (TAIL)
+scalar,mul,f32,N=8388609,stride=8,mis=0 (TAIL)
+scalar,mul,f32,N=8388609,stride=8,mis=1 (TAIL)
+scalar,mul,f32,N=33554433,stride=1,mis=0 (TAIL)
+scalar,mul,f32,N=33554433,stride=1,mis=1 (TAIL)
+scalar,mul,f32,N=33554433,stride=2,mis=0 (TAIL)
+scalar,mul,f32,N=33554433,stride=2,mis=1 (TAIL)
+scalar,mul,f32,N=33554433,stride=4,mis=0 (TAIL)
+scalar,mul,f32,N=33554433,stride=4,mis=1 (TAIL)
+scalar,mul,f32,N=33554433,stride=8,mis=0 (TAIL)
+scalar,mul,f32,N=33554433,stride=8,mis=1 (TAIL)
+scalar,mul,f32,N=67108865,stride=1,mis=0 (TAIL)
+scalar,mul,f32,N=67108865,stride=1,mis=1 (TAIL)
+scalar,mul,f32,N=67108865,stride=2,mis=0 (TAIL)
+scalar,mul,f32,N=67108865,stride=2,mis=1 (TAIL)
+scalar,mul,f32,N=67108865,stride=4,mis=0 (TAIL)
+scalar,mul,f32,N=67108865,stride=4,mis=1 (TAIL)
+scalar,mul,f32,N=67108865,stride=8,mis=0 (TAIL)
+scalar,mul,f32,N=67108865,stride=8,mis=1 (TAIL)
+scalar,mul,f64,N=514,stride=1,mis=0 (TAIL)
+scalar,mul,f64,N=514,stride=1,mis=1 (TAIL)
+scalar,mul,f64,N=514,stride=2,mis=0 (TAIL)
+scalar,mul,f64,N=514,stride=2,mis=1 (TAIL)
+scalar,mul,f64,N=514,stride=4,mis=0 (TAIL)
+scalar,mul,f64,N=514,stride=4,mis=1 (TAIL)
+scalar,mul,f64,N=514,stride=8,mis=0 (TAIL)
+scalar,mul,f64,N=514,stride=8,mis=1 (TAIL)
+scalar,mul,f64,N=1026,stride=1,mis=0 (TAIL)
+scalar,mul,f64,N=1026,stride=1,mis=1 (TAIL)
+scalar,mul,f64,N=1026,stride=2,mis=0 (TAIL)
+scalar,mul,f64,N=1026,stride=2,mis=1 (TAIL)
+scalar,mul,f64,N=1026,stride=4,mis=0 (TAIL)
+scalar,mul,f64,N=1026,stride=4,mis=1 (TAIL)
+scalar,mul,f64,N=1026,stride=8,mis=0 (TAIL)
+scalar,mul,f64,N=1026,stride=8,mis=1 (TAIL)
+scalar,mul,f64,N=2050,stride=1,mis=0 (TAIL)
+scalar,mul,f64,N=2050,stride=1,mis=1 (TAIL)
+scalar,mul,f64,N=2050,stride=2,mis=0 (TAIL)
+scalar,mul,f64,N=2050,stride=2,mis=1 (TAIL)
+scalar,mul,f64,N=2050,stride=4,mis=0 (TAIL)
+scalar,mul,f64,N=2050,stride=4,mis=1 (TAIL)
+scalar,mul,f64,N=2050,stride=8,mis=0 (TAIL)
+scalar,mul,f64,N=2050,stride=8,mis=1 (TAIL)
+scalar,mul,f64,N=4098,stride=1,mis=0 (TAIL)
+scalar,mul,f64,N=4098,stride=1,mis=1 (TAIL)
+scalar,mul,f64,N=4098,stride=2,mis=0 (TAIL)
+scalar,mul,f64,N=4098,stride=2,mis=1 (TAIL)
+scalar,mul,f64,N=4098,stride=4,mis=0 (TAIL)
+scalar,mul,f64,N=4098,stride=4,mis=1 (TAIL)
+scalar,mul,f64,N=4098,stride=8,mis=0 (TAIL)
+scalar,mul,f64,N=4098,stride=8,mis=1 (TAIL)
+scalar,mul,f64,N=8194,stride=1,mis=0 (TAIL)
+scalar,mul,f64,N=8194,stride=1,mis=1 (TAIL)
+scalar,mul,f64,N=8194,stride=2,mis=0 (TAIL)
+scalar,mul,f64,N=8194,stride=2,mis=1 (TAIL)
+scalar,mul,f64,N=8194,stride=4,mis=0 (TAIL)
+scalar,mul,f64,N=8194,stride=4,mis=1 (TAIL)
+scalar,mul,f64,N=8194,stride=8,mis=0 (TAIL)
+scalar,mul,f64,N=8194,stride=8,mis=1 (TAIL)
+scalar,mul,f64,N=65538,stride=1,mis=0 (TAIL)
+scalar,mul,f64,N=65538,stride=1,mis=1 (TAIL)
+scalar,mul,f64,N=65538,stride=2,mis=0 (TAIL)
+scalar,mul,f64,N=65538,stride=2,mis=1 (TAIL)
+scalar,mul,f64,N=65538,stride=4,mis=0 (TAIL)
+scalar,mul,f64,N=65538,stride=4,mis=1 (TAIL)
+scalar,mul,f64,N=65538,stride=8,mis=0 (TAIL)
+scalar,mul,f64,N=65538,stride=8,mis=1 (TAIL)
+scalar,mul,f64,N=1048578,stride=1,mis=0 (TAIL)
+scalar,mul,f64,N=1048578,stride=1,mis=1 (TAIL)
+scalar,mul,f64,N=1048578,stride=2,mis=0 (TAIL)
+scalar,mul,f64,N=1048578,stride=2,mis=1 (TAIL)
+scalar,mul,f64,N=1048578,stride=4,mis=0 (TAIL)
+scalar,mul,f64,N=1048578,stride=4,mis=1 (TAIL)
+scalar,mul,f64,N=1048578,stride=8,mis=0 (TAIL)
+scalar,mul,f64,N=1048578,stride=8,mis=1 (TAIL)
+scalar,mul,f64,N=8388610,stride=1,mis=0 (TAIL)
+scalar,mul,f64,N=8388610,stride=1,mis=1 (TAIL)
+scalar,mul,f64,N=8388610,stride=2,mis=0 (TAIL)
+scalar,mul,f64,N=8388610,stride=2,mis=1 (TAIL)
+scalar,mul,f64,N=8388610,stride=4,mis=0 (TAIL)
+scalar,mul,f64,N=8388610,stride=4,mis=1 (TAIL)
+scalar,mul,f64,N=8388610,stride=8,mis=0 (TAIL)
+scalar,mul,f64,N=8388610,stride=8,mis=1 (TAIL)
+scalar,mul,f64,N=33554434,stride=1,mis=0 (TAIL)
+scalar,mul,f64,N=33554434,stride=1,mis=1 (TAIL)
+scalar,mul,f64,N=33554434,stride=2,mis=0 (TAIL)
+scalar,mul,f64,N=33554434,stride=2,mis=1 (TAIL)
+scalar,mul,f64,N=33554434,stride=4,mis=0 (TAIL)
+scalar,mul,f64,N=33554434,stride=4,mis=1 (TAIL)
+scalar,mul,f64,N=33554434,stride=8,mis=0 (TAIL)
+scalar,mul,f64,N=33554434,stride=8,mis=1 (TAIL)
+scalar,mul,f64,N=67108866,stride=1,mis=0 (TAIL)
+scalar,mul,f64,N=67108866,stride=1,mis=1 (TAIL)
+scalar,mul,f64,N=67108866,stride=2,mis=0 (TAIL)
+scalar,mul,f64,N=67108866,stride=2,mis=1 (TAIL)
+scalar,mul,f64,N=67108866,stride=4,mis=0 (TAIL)
+scalar,mul,f64,N=67108866,stride=4,mis=1 (TAIL)
+scalar,mul,f64,N=67108866,stride=8,mis=0 (TAIL)
+scalar,mul,f64,N=67108866,stride=8,mis=1 (TAIL)
+scalar,stencil,f32,N=1025,stride=1,mis=0 (TAIL)
+scalar,stencil,f32,N=1025,stride=1,mis=1 (TAIL)
+scalar,stencil,f32,N=2049,stride=1,mis=0 (TAIL)
+scalar,stencil,f32,N=2049,stride=1,mis=1 (TAIL)
+scalar,stencil,f32,N=4097,stride=1,mis=0 (TAIL)
+scalar,stencil,f32,N=4097,stride=1,mis=1 (TAIL)
+scalar,stencil,f32,N=8193,stride=1,mis=0 (TAIL)
+scalar,stencil,f32,N=8193,stride=1,mis=1 (TAIL)
+scalar,stencil,f32,N=65537,stride=1,mis=0 (TAIL)
+scalar,stencil,f32,N=65537,stride=1,mis=1 (TAIL)
+scalar,stencil,f32,N=1048577,stride=1,mis=0 (TAIL)
+scalar,stencil,f32,N=1048577,stride=1,mis=1 (TAIL)
+scalar,stencil,f32,N=8388609,stride=1,mis=0 (TAIL)
+scalar,stencil,f32,N=8388609,stride=1,mis=1 (TAIL)
+scalar,stencil,f32,N=33554433,stride=1,mis=0 (TAIL)
+scalar,stencil,f32,N=33554433,stride=1,mis=1 (TAIL)
+scalar,stencil,f32,N=67108865,stride=1,mis=0 (TAIL)
+scalar,stencil,f32,N=67108865,stride=1,mis=1 (TAIL)
+scalar,stencil,f64,N=1026,stride=1,mis=0 (TAIL)
+scalar,stencil,f64,N=1026,stride=1,mis=1 (TAIL)
+scalar,stencil,f64,N=2050,stride=1,mis=0 (TAIL)
+scalar,stencil,f64,N=2050,stride=1,mis=1 (TAIL)
+scalar,stencil,f64,N=4098,stride=1,mis=0 (TAIL)
+scalar,stencil,f64,N=4098,stride=1,mis=1 (TAIL)
+scalar,stencil,f64,N=8194,stride=1,mis=0 (TAIL)
+scalar,stencil,f64,N=8194,stride=1,mis=1 (TAIL)
+scalar,stencil,f64,N=65538,stride=1,mis=0 (TAIL)
+scalar,stencil,f64,N=65538,stride=1,mis=1 (TAIL)
+scalar,stencil,f64,N=1048578,stride=1,mis=0 (TAIL)
+scalar,stencil,f64,N=1048578,stride=1,mis=1 (TAIL)
+scalar,stencil,f64,N=8388610,stride=1,mis=0 (TAIL)
+scalar,stencil,f64,N=8388610,stride=1,mis=1 (TAIL)
+scalar,stencil,f64,N=33554434,stride=1,mis=0 (TAIL)
+scalar,stencil,f64,N=33554434,stride=1,mis=1 (TAIL)
+scalar,stencil,f64,N=67108866,stride=1,mis=0 (TAIL)
+scalar,stencil,f64,N=67108866,stride=1,mis=1 (TAIL)
