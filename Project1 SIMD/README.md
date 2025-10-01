@@ -8,6 +8,7 @@ of common numerical kernels (SAXPY, DOT, MUL, STENCIL)
 It analyzes performance under different data sizes, strides, alignments, and data types, 
 to study compute-bound vs. memory-bound behavior using metrics such as GFLOP/s, CPE, and Speedup
 
+Please check `.\reports\Project 1 Report Lucas Ding.pdf` for detail :)
 
 ## Core Directory Structure
 
@@ -40,8 +41,7 @@ to study compute-bound vs. memory-bound behavior using metrics such as GFLOP/s, 
 │   ├── dtype/                   # Data type comparison figures
 │   └── roofline/                # Roofline model plots
 
-└── reports/             # Documentation & analysis
-├── report.md                # Main experimental report 
+└── reports/             # Documentation & analysis 
 ├── gcc_vectorize_report.*   # Compiler vectorization logs
 ├── *.asm                    # Disassembly files
 └── Project 1 Report *.pdf   # Final formatted report 
