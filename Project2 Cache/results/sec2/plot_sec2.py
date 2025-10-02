@@ -1,42 +1,57 @@
 import pandas as pd, matplotlib.pyplot as plt, numpy as np, os, sys
-
-csv = sys.argv[1]
-mhz = float(sys.argv[2])  # CPU MHz
-fig_path = sys.argv[3]
-md_path  = sys.argv[4]
+csv, mhz, fig_path, md_path = sys.argv[1:5]
+mhz = float(mhz)
 
 df = pd.read_csv(csv)
 df['cycles_per_access'] = pd.to_numeric(df['cycles_per_access'], errors='coerce')
 df = df.dropna(subset=['cycles_per_access'])
-
-# Correct conversion: ns = cycles * 1000 / MHz
 df['ns_per_access'] = df['cycles_per_access'] * 1000.0 / mhz
-df.to_csv(csv.replace(".csv","_ns.csv"), index=False)
 
+summary = df.groupby(['level','rw'])['ns_per_access'].agg(['mean','std']).reset_index()
 levels = ['L1','L2','L3','DRAM']
-fig = plt.figure()
-barw = 0.35
-for i, rw in enumerate(['read','write']):
-    y = [df[(df.level==lv)&(df.rw==rw)]['ns_per_access'].mean() for lv in levels]
-    x = np.arange(len(levels)) + (i-0.5)*barw
-    plt.bar(x, y, width=barw, label=rw)
-plt.xticks(np.arange(len(levels)), levels)
-plt.ylabel('ns per access')
-plt.title('Zero-queue latency by level (QD=1, random, stride=64B)')
-plt.legend()
+rw_types = ['read','write']
 
+fig, ax = plt.subplots(figsize=(8,5))
+bar_width = 0.35
+x = np.arange(len(levels))
+
+for i, rw in enumerate(rw_types):
+    sub = summary[summary['rw']==rw]
+    y = [sub[sub['level']==lv]['mean'].values[0] for lv in levels]
+    err = [sub[sub['level']==lv]['std'].values[0] for lv in levels]
+    ax.bar(
+        x + (i-0.5)*bar_width, y,
+        width=bar_width, label=rw,
+        yerr=err, capsize=6,
+        ecolor='black', error_kw={'elinewidth':1.5, 'alpha':0.9},
+        alpha=0.9
+    )
+
+ax.set_xticks(x)
+ax.set_xticklabels(levels)
+ax.set_ylabel('Latency (ns/access)')
+ax.set_xlabel('Memory Hierarchy Level')
+ax.set_title('Zero-Queue Latency by Level (QD=1, Random, Stride=64B)')
+ax.legend()
+ax.grid(axis='y', linestyle='--', alpha=0.5)
+plt.tight_layout()
 os.makedirs(os.path.dirname(fig_path), exist_ok=True)
-fig.savefig(fig_path, bbox_inches='tight')
+fig.savefig(fig_path, dpi=150)
 
-pivot = df[['level','rw','ns_per_access']].pivot_table(index='level', columns='rw', values='ns_per_access').round(3)
+pivot_mean = summary.pivot(index='level', columns='rw', values='mean').round(3)
+pivot_std  = summary.pivot(index='level', columns='rw', values='std').round(3)
 os.makedirs(os.path.dirname(md_path), exist_ok=True)
 with open(md_path,'w') as f:
     f.write("## 2. Zero-Queue Baseline\n\n")
-    f.write("### 2.3 Results\n\n")
-    f.write(pivot.to_markdown()+"\n\n")
+    f.write("### 2.3 Results (Mean ± Std, ns/access)\n\n")
+    f.write(pivot_mean.to_markdown()+"\n\n")
+    f.write("Standard deviation:\n\n")
+    f.write(pivot_std.to_markdown()+"\n\n")
     rel_img = os.path.relpath(fig_path, start=os.path.dirname(md_path))
     f.write(f"![ZeroQ]({rel_img})\n\n")
     f.write("### 2.4 Analysis\n\n")
-    f.write("- L1 < L2 < L3 < DRAM as expected; writes slower due to write-allocate & clflush.\n")
-    f.write("- Cross-check ns ~= cycles * 1000 / CPU_MHz using Section 1 frequency snapshot.\n")
-print("Wrote markdown to", md_path)
+    f.write("- Latency increases with hierarchy level (L1 < L2 < L3 < DRAM).\n")
+    f.write("- Write operations slower due to write-allocate & flush.\n")
+    f.write("- Error bars represent run-to-run variability (stddev).\n")
+    f.write("- Verify conversion: ns = cycles × 1000 / CPU_MHz.\n")
+print("✅ Markdown written:", md_path)

@@ -8,11 +8,13 @@
 #include <unistd.h>
 #include <sys/mman.h>
 
+// Read timestamp counter
 static inline uint64_t rdtsc() {
   unsigned aux;
   return __rdtscp(&aux);
 }
 
+// Fisher–Yates shuffle for random access order
 static void shuffle(size_t *a, size_t n) {
   for (size_t i = n - 1; i > 0; --i) {
     size_t j = rand() % (i + 1);
@@ -54,18 +56,17 @@ int main(int argc, char** argv) {
   size_t step_stride = stride / sizeof(size_t);
   if (step_stride == 0) step_stride = 1;
 
-  // Single-linked ring
+  // Create a single-linked ring (pointer chasing list)
   for (size_t i=0; i<elems; ++i) {
     size_t next = (i + step_stride) % elems;
     buf[idx[i]] = (size_t)&buf[idx[next]];
   }
 
-  // Warmup
+  // Warmup to stabilize caches
   volatile size_t *p = (volatile size_t*)&buf[idx[0]];
   for (size_t i=0; i<10000; ++i) p = (volatile size_t*)(*p);
 
-  // Measure best-of-N
-  double best_cycles = 1e100;
+  // Measure cycles/access across repeats
   for (int r=0; r<repeats; ++r) {
     _mm_mfence();
     uint64_t t0 = rdtsc();
@@ -75,21 +76,17 @@ int main(int argc, char** argv) {
       if (strcmp(rw,"read")==0) {
         x = (volatile size_t*)(*x);
       } else {
-        *((volatile size_t*)x) = (size_t)x;  // simple store
-        _mm_clflush((void*)x);               // stress store path
+        *((volatile size_t*)x) = (size_t)x;
+        _mm_clflush((void*)x);  // flush to force store miss
         _mm_mfence();
         x = (volatile size_t*)(*x);
       }
-      sink += (size_t)x;                     // defeat DCE
+      sink += (size_t)x;
     }
     uint64_t t1 = rdtsc();
     double cyc = (double)(t1 - t0) / access_per_iter;
-    if (cyc < best_cycles) best_cycles = cyc;
     fprintf(stderr, "rep=%02d guard=%zu cycles_per_access=%.2f\n", r, sink, cyc);
+    printf("level_repeat,%d,cycles_per_access,%.4f\n", r, cyc);
   }
-
-  // Parse-friendly CSV (no spaces in keys)
-  printf("bytes,%zu,stride,%zu,mode,%s,rw,%s,cycles_per_access,%.2f\n",
-         bytes, stride, mode, rw, best_cycles);
   return 0;
 }

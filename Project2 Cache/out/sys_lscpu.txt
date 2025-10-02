@@ -15,7 +15,7 @@ CPU 系列：                               6
 每个座的核数：                           24
 座：                                     1
 步进：                                   1
-CPU(s) scaling MHz:                      51%
+CPU(s) scaling MHz:                      45%
 CPU 最大 MHz：                           5800.0000
 CPU 最小 MHz：                           800.0000
 BogoMIPS：                               5990.40

@@ -1,1 +1,3 @@
-bytes,574619648,stride,64,mode,rand,rw,write,cycles_per_access,391.37
+level_repeat,0,cycles_per_access,387.1478
+level_repeat,1,cycles_per_access,388.4070
+level_repeat,2,cycles_per_access,384.4891

@@ -1,0 +1,8 @@
+212145351,,cpu_atom/cache-references/,7641,0.00,,
+215668492,,cpu_core/cache-references/,4698550718,99.00,,
+11068453,,cpu_atom/cache-misses/,7641,0.00,5.22,of all cache refs
+205025643,,cpu_core/cache-misses/,4698550718,99.00,95.07,of all cache refs
+0,,cpu_atom/LLC-load-misses/,7641,0.00,,
+85987851,,cpu_core/LLC-load-misses/,4698550718,99.00,,
+<not supported>,,cpu_atom/L1-dcache-load-misses/,0,100.00,,
+114277978,,cpu_core/L1-dcache-load-misses/,4698550718,99.00,,
