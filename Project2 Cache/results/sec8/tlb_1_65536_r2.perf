@@ -1,2 +1,4 @@
-3078888,,cpu_atom/dTLB-load-misses/,3458964401,32.00,,
-512487,,cpu_core/dTLB-load-misses/,7150557912,67.00,,
+12394429,,cpu_atom/dTLB-load-misses/,3614384005,7.00,,
+427957,,cpu_core/dTLB-load-misses/,43255297483,92.00,,
+479,,cpu_atom/LLC-load-misses/,3614384005,7.00,,
+896609,,cpu_core/LLC-load-misses/,43255297483,92.00,,
