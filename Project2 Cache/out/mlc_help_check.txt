@@ -1,0 +1,101 @@
+Intel(R) Memory Latency Checker - v3.11b
+Invalid Argument:--help
+
+USAGE: Default and recommended usage is to just run the binary "./mlc". For specific analysis, there are six modes:
+./mlc --latency_matrix 		 prints a matrix of local and cross-socket memory latencies
+./mlc --bandwidth_matrix 	 prints a matrix of local and cross-socket memory bandwidths
+./mlc --peak_injection_bandwidth 		 prints peak memory bandwidths of the platform for various read-write ratios
+./mlc --idle_latency 		 prints the idle memory latency of the platform
+./mlc --loaded_latency 		 prints the loaded memory latency of the platform
+./mlc --c2c_latency 		 prints the cache to cache data transfer latency of the platform
+./mlc --memory_bandwidth_scan 		 prints memory bandwidth across entire memory for each 1GB address range
+
+./mlc [-e] [-r] [-X] [-v]
+	 -e h/w prefetcher state will not be modified
+	 -r random access to get latencies - needed when prefetchers can't be disabled by MLC
+	 -X only one thread from each core used
+	 -v verbose printout
+
+For custom analysis (example: getting the latency matrix with a larger buffer size), specify flags to override the defaults. Each usage mode supports the following flags:
+./mlc --latency_matrix [-a] [-bn] [-Dn] [-e] [-ln] [-L|-h] [-tn] [-r] [-tn] [-xn] [-X]
+./mlc --idle_latency [-a] [-bn] [-cn] [-Dn] [-e] [-fn] [-in] [-jn] [-Jn] [-ln] [-L|-h] [-r] [-tn] [-xn] [-X]
+./mlc --loaded_latency [-bn] [-B] [-cn] [-dn] [-Dn] [-e] [-g<filename>] [-in] [-I] [-jn] [-kn|-mn] [-Kn] [-ln]
+	[-L|-h] [-M<filename>] [-nn] [-o<filename] [-P] [-Q] [-r] [-R] [-tn] [-T] [-u] [-U] [-v] [-Wn] [-X] [-Y] [-Z]
+./mlc --bandwidth_matrix [-bn] [-e] [-ln]  [-L|-h] [-M<filename>] [-R] [-tn] [-Wn] [-X] [-Y] [-Z]
+./mlc --peak_injection_bandwidth [-bn] [-e] [-kn|-mn] [-ln] [-L|-h] [-M<filename>] [-tn] [-X] [-Y] [-Z]
+./mlc --max_bandwidth [-bn] [-e] [-kn|-mn] [-ln] [-L|-h] [-M<filename>] [-tn] [-X] [-Y] [-Z]
+./mlc --c2c_latency [-bn] [-cn] [-Cn] [-Dn] {-En] [-Gn] [-H] [-in] [-L|-h] [-r] [-Sn] [-wn] [-xn]
+./mlc --memory_bandwidth_scan [-jn] [-tn] [-Sn] [-qn] [-nn]
+
+  -a measure idle latencies on all available cpus; if -X is also specified, then only one thread in each core will be used
+  -b buffer size in KiB (default=100000)
+  -B print per-thread throughput
+  -c affinitize the latency measurement thread to core #n
+  -C window size in KB for c2c_latency(default=2000)
+  -d delay cycles injected between requests to memory (default-0), higher value lowers bandwidth
+  -D random access range for latency thread (default=4096)
+  -e do not modify the h/w prefetcher states
+  -E read extra n KB lines in writer thread in c2c_latency(default=0)
+  -f latency histogram bucket size
+  -g <input-file-name> specify input file with delays to inject, for loaded latency measurement
+  -G buffer size in KB for extra reads in reader thread in c2c_latency
+  -h HugePage (1GB) are to be used (on windows only for DAX file mapping w/ 1GB page)
+  -H Test cache to cache transfer latency for clean line transfers
+  -i initialize memory from core #n (determines where requested memory resides)
+  -I Check for data integrity on reads - valid only for all reads in loaded_latency mode
+  -j initialize memory from numa node #n - if specified, this overrides -i
+  -J specify a directory in which files for mmap will be created (by default no files are created) this option is mutually exclusive with -j
+  -k specify a list of core# (use '-' for range e.g 3-6,9-13,19,20 
+  -K option to control partial load/store to 64B lines
+  -l stride length in bytes (default=64)
+  -L large pages (2MB) are to be used (assuming they have been enabled)
+  -m mask in hex value of CPUs to run the throughput threads for bandwidth measurement. It is recommended -k option is used instead
+	latency thread always runs on core 0 and this should be excluded from the mask
+  -M <filename> initialize the memory with specific patterns 
+  -n random access range for random bandwidth generation. In --memory_bandwidth_scan mode
+  	 this specifies the numa node# where the cpu threads accessing memory will be running.
+  -o <input-file-name> specify input file with options for per-thread allocation
+   	 each row should contain thread_id, read/write ratio, random/seq, buffer size in KB, DDR4/pmem, remote node id
+  -p list of the cores separated by comma, where a thread will be run to prevent the corresponding sockets from transitioning to package sleep states
+  -q # of iterations of each 1GB memory region where B/W is measured. Default is 10
+  -P CLFLUSH used to evict stores to persistent memory
+  -Q CLFLUSH used to evict stores to any memory
+  -r random access reads for latency thread
+  -R read-only load generated, if this is used, -W option should NOT be used 
+  -s specify a obj neame that can be triggerd by external application to synchornize the loaded latency traffic. ex: -s/test_flag 
+  -S affinitize 3rd thread in c2c_latency test to core #n. In --memory_bandwidth_scan mode
+  	 this indicates the bandwidth range for each bucket in terms of MB/sec. Default is 5000
+  -t time in seconds (default=2).  In --memory_bandwidth_scan mode
+  	 this specifies the # of cpu threads that will be used to access memory (default is all threads on that numa node)
+  -T throughput threads only, no latency measurement, -m or -k option can select all CPUs including core 0
+  -u same buffer is shared by all load generation threads in loaded_latency tests
+  -U random access for bandwidth generation (default: off, only sequential access)
+  -v print verbose output
+  -w affinitize hit/hitm writer thread to core #n
+  -Wn where n means
+	2  - 2:1 read-write ratio
+	3  - 3:1 read-write ratio
+	4  - 3:2 read-write ratio
+	5  - 1:1 read-write ratio
+	6  - 0:1 read-Non Temporal Write ratio
+	7  - 2:1 read-Non Temporal Write ratio
+	8  - 1:1 read-Non Temporal Write ratio
+	9  - 3:1 read-Non Temporal Write ratio
+	10 - 2:1 read-Non Temporal Write ratio (stream triad-like)
+		 Same as -W7 but the 2 reads are from 2 different buffers
+	11 - 3:1 read-Write ratio (stream triad-like with RFO)
+		 Same as -W3 but the 2 reads are from 2 different buffers
+	12 - 4:1 read-Write ratio
+	21 - 100% read with 2 addr streams - valid with only -o option
+	23 - 3:1 read-write ratio with 2 addr streams - valid with only -o option
+	27 - 2:1 read-NT write with 2 addr streams - valid with only -o option
+  -x number of iterations in #n millions - if specified, -t should not be specified (-x0 is overloaded case for 1 iteration)
+  -X use only 1 hyper-thread per core for bandwidth measurements
+  -Y use AVX2 32-byte load/store instructions
+  -Z use AVX-512 64-byte load/store instructions
+
+Note that the tool uses the following terminology:
+'core' denotes logical core
+'socket' denotes processor socket/package/node 
+'memory node' denotes a distinct memory NUMA region, identifiable using numactl APIs
+Invalid Argument

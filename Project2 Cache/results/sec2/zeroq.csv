@@ -1,0 +1,9 @@
+level,bytes,mode,rw,cycles_per_access
+L1,24576,rand,read,3.510000
+L1,24576,rand,write,445.430000
+L2,1048576,rand,read,11.110000
+L2,1048576,rand,write,443.900000
+L3,18874368,rand,read,44.250000
+L3,18874368,rand,write,357.110000
+DRAM,574619648,rand,read,71.850000
+DRAM,574619648,rand,write,391.370000

@@ -1,0 +1,4 @@
+python: Python 3.12.3
+pip: pip 25.2 from /home/aialra-portable/桌面/4320/ECSE-4320-Advanced-Computer-Systems/Project3 SSD/.venv/lib/python3.12/site-packages/pip (python 3.12)
+perf: /usr/bin/perf
+mlc:  /usr/local/bin/mlc
