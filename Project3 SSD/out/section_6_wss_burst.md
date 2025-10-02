@@ -1,0 +1,1 @@
+#### Working Set & Burst vs Steady (qualitative with optional quant.)\n\nTable: `tables/sect6_summary.csv`\n\nFigures (if generated): `figs/sect6_rr_*`, `figs/sect6_rw_*`\n
