@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1"
+CMAKE_SOURCE_DIR = "<repo>/Project1 SIMD"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/build_scalar"
+CMAKE_BINARY_DIR = "<repo>/Project1 SIMD/build_scalar"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/build_scalar/CMakeFiles" "/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/build_scalar//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "<repo>/Project1 SIMD/build_scalar/CMakeFiles" "<repo>/Project1 SIMD/build_scalar//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj 1/build_scalar/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "<repo>/Project1 SIMD/build_scalar/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

@@ -1,0 +1,24 @@
+# Local language runtimes and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local build and test outputs
+build/
+build-*/
+cmake-build-*/
+.readme-test/
+.playwright-cli/
+
+# Editor and operating-system metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local secrets and overrides
+.env
+.env.*
+!.env.example
+*.local

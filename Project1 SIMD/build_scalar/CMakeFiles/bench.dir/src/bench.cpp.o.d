@@ -1,5 +1,5 @@
 CMakeFiles/bench.dir/src/bench.cpp.o: \
- /mnt/c/Users/AIALRA-PORTABLE/Desktop/Proj\ 1/src/bench.cpp \
+ <repo>/Project1\ SIMD/src/bench.cpp \
  /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/stdc++.h \
  /usr/include/c++/13/cassert \
